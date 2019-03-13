@@ -1,0 +1,18 @@
+.index-hero {
+  @include heroimg('../img/main_hero.png');
+  height: 730px;
+  margin-top: 3.313rem;
+}
+
+
+.dan-hero {
+  @include heroimg('../img/dan_second_hero.jpg');
+  height: 1258px;
+  margin-top: 10px;
+}
+
+
+
+.services-hero {
+  @include heroimg('../img/services_hero.jpg');
+}

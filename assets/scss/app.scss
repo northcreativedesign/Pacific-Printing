@@ -1,0 +1,29 @@
+// Bulma Override Styling
+
+
+$blue: #035b82;
+$green: #96af3c;
+
+
+@import "../vendor/bulma/bulma";
+@import "../vendor/bulma-accordion/src/sass/index";
+
+
+// Abstract
+
+@import "components/abstract/mixins";
+
+
+// Base
+
+@import "components/base/typography";
+
+
+// Components
+
+@import "components/components/heroimgs";
+
+
+// Pages
+
+@import "components/pages/index";

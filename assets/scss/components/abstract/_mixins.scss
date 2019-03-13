@@ -1,0 +1,7 @@
+@mixin heroimg($imgpath, $position: center, $size: cover) {
+  background: {
+    image: url($imgpath);
+    position: $position;
+    size: $size;
+  }
+}
