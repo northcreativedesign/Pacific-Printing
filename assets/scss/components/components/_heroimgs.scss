@@ -15,4 +15,24 @@
 
 .services-hero {
   @include heroimg('../img/services_hero.jpg');
+  position: relative;
+}
+
+
+.print-hero {
+  @include heroimg('../img/print_hero.jpg');
+  position: relative;
+  .is-12 {
+    width: 102%;
+  }
+}
+
+
+.contact-hero {
+  @include heroimg('../img/contact-hero.jpg');
+}
+
+
+.matt-hero {
+  @include heroimg('../img/matt_hero.jpg');
 }

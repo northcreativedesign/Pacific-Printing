@@ -9,6 +9,7 @@ $green: #96af3c;
 @import "../vendor/bulma-accordion/src/sass/index";
 
 
+
 // Abstract
 
 @import "components/abstract/mixins";
@@ -16,14 +17,25 @@ $green: #96af3c;
 
 // Base
 
+@import "components/base/base";
 @import "components/base/typography";
 
 
 // Components
 
 @import "components/components/heroimgs";
+@import "components/components/buttons";
+
+
+// Layouts
+
+@import "components/layouts/footer";
 
 
 // Pages
 
 @import "components/pages/index";
+@import "components/pages/services";
+@import "components/pages/print-requirements";
+@import "components/pages/shop";
+@import "components/pages/contact";

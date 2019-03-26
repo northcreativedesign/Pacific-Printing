@@ -1,0 +1,47 @@
+footer {
+
+  h3 {
+    color: $lightgreencolor;
+    padding-bottom: 40px;
+  }
+
+  h6 {
+    color: $bluecolor;
+    font-family: $thirdfont;
+    font-size: 1.813rem;
+    font-weight: 500;
+    padding-bottom: 8px;
+  }
+
+  p {
+    color: $bluecolor;
+    font-family: $thirdfont;
+    font-size: 1.375rem;
+    font-weight: 500;
+    span {
+      font-size: 0.938rem;
+    }
+  }
+
+  a {
+    &:hover {
+      color: $lightgreencolor;
+    }
+  }
+
+  .image {
+    padding-top: 50px;
+  }
+
+  .is-8 {
+    padding-left: 5%;
+  }
+
+
+
+  .contact-footer {
+    .fb {
+      padding-left: 17px;
+    }
+  }
+}

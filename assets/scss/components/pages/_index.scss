@@ -18,6 +18,74 @@
   }
 }
 
+// BRANDS SECTION
+
+
+.featured-brands {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  h3 {
+    color: $bluecolor
+  }
+  h4 {
+    color: $lightbluecolor;
+    margin-top: -10px;
+    margin-bottom: 100px;
+  }
+  img {
+    padding-left: 80px;
+  }
+  &--top-level {
+    padding-bottom: 80px;
+  }
+}
+
+
+// WHAT MAKES US GREAT SECTION
+
+.index-services {
+
+  h3 {
+    color: $bluecolor;
+    margin-top: 100px;
+  }
+  h4 {
+    color: $lightbluecolor;
+    margin-top: -15px;
+    margin-bottom: 100px;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+  p {
+    text-align: center;
+  }
+
+  .commerical-logo {
+    padding-top: 19px;
+  }
+
+  .wholesale-logo {
+    padding-top: 16px;
+  }
+  .artist-logo {
+    padding-top: 51px;
+  }
+
+  &--description {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    p {
+      color: $blue;
+      padding-bottom: 35px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+
+}
 
 
 // TESTIMONIALS SECTION
@@ -31,5 +99,28 @@
 
 
 .mailer-section {
-  height: 23.125rem;
+  height: 25rem;
+
+  h4 {
+    margin-top: -20px;
+    margin-bottom: 30px;
+  }
+
+  .is-4 {
+    width: 31%;
+    padding-bottom: 50px;
+  }
+
+  .is-offset-3 {
+    margin-left: 22.5%;
+  }
+
+  input {
+    width: 32.688rem;
+    height: 4.125rem;
+    border-radius: 0.688rem;
+    border: 0.063rem solid #707070;
+    background-color: #ffffff;
+  }
+  
 }

@@ -1,0 +1,68 @@
+// MATT HAMILITON COLLECTION STYLING
+
+.matt-statement {
+  h3 {
+    color: $bluecolor;
+    margin-top: 70px;
+  }
+  h4 {
+    color: $bluecolor;
+    font-weight: 700;
+    &:last-child {
+      color: $lightbluecolor;
+      margin-bottom: 25px;
+    }
+  }
+  p {
+    padding-right: 120px;
+    padding-bottom: 50px;
+    line-height: 1.5;
+  }
+}
+
+
+.shop-header {
+  height: 22rem;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  h3 {
+    color: $greencolor;
+    margin-top: 30px;
+  }
+  h4 {
+    color: $lightgreencolor;
+  }
+}
+
+
+
+// SINGLE ITEM STYLING
+
+.single-item {
+ h3 {
+   color: $greencolor;
+   margin-top: -30px;
+  }
+ h6 {
+   margin-bottom: 30px;
+   color: $lightgreencolor;
+   font-family: $thirdfont;
+ }
+ p {
+   color: #808080;
+    font-family: $thirdfont;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1.5;
+    &:last-child {
+      padding-top: 15px;
+    }
+ }
+ a {
+   color: $greencolor;
+   &:hover {
+     color: $lightgreencolor;
+   }
+ }
+}

@@ -1,0 +1,92 @@
+.contact-form {
+
+  h3 {
+    color: $blue;
+    margin-top: 60px;
+  }
+
+  h4 {
+    color: $lightbluecolor;
+    font-family: $thirdfont;
+    margin-top: -25px;
+  }
+
+  h5 {
+    color: #2585af;
+    font-family: $secondfont;
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  #contactform {
+    margin-top: 100px;
+    margin-bottom: 200px;
+
+    input {
+      width: 100%;
+      height: 4.188rem;
+      border: 0.125rem solid #707070;
+      font-family: $mainfont;
+      font-size: 1.875rem;
+      font-weight: 500;
+      font-style: italic;
+    }
+
+    ::-webkit-input-placeholder {
+      color: #808080;
+      padding-left: 20px;
+    }
+
+    select {
+      -webkit-appearance: none;
+      appearance: none;
+      background-image: url(../img/contact_select.png);
+      background-size: 4.8rem;
+      background-position: right;
+      background-repeat: no-repeat;
+      width: 33.5rem;
+      height: 4.188rem;
+      border: 0.125rem solid #707070;
+      border-radius: 0;
+      padding-left: 10px;
+      color: #808080;
+      font-family: $mainfont;
+      font-size: 1.5rem;
+      font-weight: 500;
+      font-style: italic;
+    }
+
+    .enter-message {
+      margin-top: 50px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 18.375rem;
+      border: 0.125rem solid #707070;
+     &::-webkit-input-placeholder {
+       font-family: $mainfont;
+       font-size: 1.875rem;
+       font-weight: 500;
+       font-style: italic;
+       padding-left: 10px;
+     }
+    }
+
+
+    .button {
+      width: 24.875rem;
+      height: 4.5rem;
+      background-color: #96af3c;
+      color: #ffffff;
+      font-family: $secondfont;
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: 0.125rem;
+      text-transform: uppercase;
+      padding: 0;
+    }
+
+  }
+}

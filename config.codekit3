@@ -110,6 +110,28 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/assets/img/contact-hero.jpg": {
+		"ft": 16384,
+		"iS": 1109060,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/img/contact-hero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/img/contact_select.png": {
+		"ft": 32768,
+		"iS": 346,
+		"oA": 0,
+		"oAP": "/assets/img/contact_select.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/assets/img/custom_gear_icon.png": {
 		"ft": 32768,
 		"iS": 1856,
@@ -140,6 +162,39 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
+		"q": 100
+		},
+	"/assets/img/footer_fb.png": {
+		"ft": 32768,
+		"iS": 357,
+		"oA": 0,
+		"oAP": "/assets/img/footer_fb.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/img/footer_ig.png": {
+		"ft": 32768,
+		"iS": 581,
+		"oA": 0,
+		"oAP": "/assets/img/footer_ig.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/img/footer_logo.png": {
+		"ft": 32768,
+		"iS": 36279,
+		"oA": 0,
+		"oAP": "/assets/img/footer_logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"/assets/img/hanes_logo.png": {
@@ -173,6 +228,39 @@
 		"oIPL": 1,
 		"opt": 1,
 		"oT": 1,
+		"q": 100
+		},
+	"/assets/img/matt_h_907.png": {
+		"ft": 32768,
+		"iS": 79297,
+		"oA": 0,
+		"oAP": "/assets/img/matt_h_907.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/img/matt_hero.jpg": {
+		"ft": 16384,
+		"iS": 1579810,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/img/matt_hero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/img/matt_selfie.jpg": {
+		"ft": 16384,
+		"iS": 178116,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/img/matt_selfie.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/assets/img/new_era_logo.png": {
@@ -262,6 +350,182 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/assets/img/shop/matt_h_907.png": {
+		"ft": 32768,
+		"iS": 79297,
+		"oA": 0,
+		"oAP": "/assets/img/shop/matt_h_907.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/img/shop/matt_h_ak_01.jpg": {
+		"ft": 16384,
+		"iS": 61694,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/img/shop/matt_h_ak_01.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/img/shop/matt_h_ak_flag.jpg": {
+		"ft": 16384,
+		"iS": 66973,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/img/shop/matt_h_ak_flag.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/img/shop/matt_h_bear_mountian.jpg": {
+		"ft": 16384,
+		"iS": 56917,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/img/shop/matt_h_bear_mountian.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/img/shop/matt_h_bear_skull.png": {
+		"ft": 32768,
+		"iS": 89388,
+		"oA": 0,
+		"oAP": "/assets/img/shop/matt_h_bear_skull.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/img/shop/matt_h_chc2.jpg": {
+		"ft": 16384,
+		"iS": 55924,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/img/shop/matt_h_chc2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/img/shop/matt_h_cockpit.png": {
+		"ft": 32768,
+		"iS": 93115,
+		"oA": 0,
+		"oAP": "/assets/img/shop/matt_h_cockpit.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/img/shop/matt_h_crab_pots.png": {
+		"ft": 32768,
+		"iS": 76558,
+		"oA": 0,
+		"oAP": "/assets/img/shop/matt_h_crab_pots.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/img/shop/matt_h_cut_bait.png": {
+		"ft": 32768,
+		"iS": 83778,
+		"oA": 0,
+		"oAP": "/assets/img/shop/matt_h_cut_bait.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/img/shop/matt_h_dude_mtn.png": {
+		"ft": 32768,
+		"iS": 87585,
+		"oA": 0,
+		"oAP": "/assets/img/shop/matt_h_dude_mtn.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/img/shop/matt_h_nightmare_creekstreet.png": {
+		"ft": 32768,
+		"iS": 92164,
+		"oA": 0,
+		"oAP": "/assets/img/shop/matt_h_nightmare_creekstreet.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/img/shop_select.png": {
+		"ft": 32768,
+		"iS": 344,
+		"oA": 0,
+		"oAP": "/assets/img/shop_select.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/img/sizechart.png": {
+		"ft": 32768,
+		"iS": 108072,
+		"oA": 0,
+		"oAP": "/assets/img/sizechart.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/img/skiff_1_shop.jpg": {
+		"ft": 16384,
+		"iS": 60852,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/img/skiff_1_shop.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/img/skiff_2_shop.jpg": {
+		"ft": 16384,
+		"iS": 38285,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/img/skiff_2_shop.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/img/skiff_3_shop.jpg": {
+		"ft": 16384,
+		"iS": 112230,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/img/skiff_3_shop.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"/assets/img/slider_image_1.jpg": {
 		"ft": 16384,
 		"iS": 1172957,
@@ -295,6 +559,14 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/assets/scss/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/scss/.gitignore",
+		"oF": 0
+		},
 	"/assets/scss/app.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -305,7 +577,7 @@
 		"oA": 0,
 		"oAP": "/assets/css/app.css",
 		"oF": 2,
-		"oS": 2,
+		"oS": 3,
 		"uL": 1
 		},
 	"/assets/scss/components/abstract/_functions.scss": {
@@ -1446,6 +1718,14 @@
 		"oAP": "/views/layouts/layouts.hbs",
 		"oF": 0
 		},
+	"/views/matt-hamiliton-collection.hbs": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/views/matt-hamiliton-collection.hbs",
+		"oF": 0
+		},
 	"/views/partials/footer.hbs": {
 		"cB": 0,
 		"ft": 8192,
@@ -1478,12 +1758,12 @@
 		"oAP": "/views/services.hbs",
 		"oF": 0
 		},
-	"/views/shop.hbs": {
+	"/views/shop-item.hbs": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/views/shop.hbs",
+		"oAP": "/views/shop-item.hbs",
 		"oF": 0
 		}
 	},

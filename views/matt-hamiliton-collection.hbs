@@ -1,0 +1,67 @@
+<div class="hero matt-hero is-fullheight">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-12 has-text-centered has-text-white hero-text">
+        <h1>MATT HAMILITON ARTIST COLLECTION</h1>
+        <h2>Shop the latest apparel by Creative Hustler Company.</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ARTIST INFORMATION SECTION -->
+
+<section class="section matt-statement">
+  <div class="container is-fluid">
+    <div class="columns is-multiline">
+      <div class="column is-12">
+        <h3>Matt Hamilton</h3>
+        <h4>Creative Hustler Company | creativehustlercompany.com | IG @creativehustlercompany</h4>
+        <h4>Alaskan Artist Creates Unique Art & Clothing Line Celebrating Alaskan Life, Pop Culture</h4>
+      </div>
+      <div class="column is-3">
+        <img src="/img/matt_selfie.jpg" alt="">
+      </div>
+      <div class="column is-9">
+        <p>KETCHIKAN, AK— Matt Hamilton is a seventh-generation Alaskan who has a clothing line featuring his own artwork. His art draws cues from nature  and society, celebrating the beautiful woods of Alaska and seaside customs that come from living on the coast of southeast Alaska. Hamilton sees strong and motivated people in the community members of his hometown, and he strives to cultivate pride for them through his art. Hamilton got an early start in the art world. As a child,  Hamilton started making art to pass the time and help with his dyslexia, and discovered that he was very talented. Artwork became a coping mechanism and a way to distract himself from the difficulties around him.  Living in Alaska has given Hamilton a distinct appreciation for life, and for the people and places around him.</p>
+
+        <p>Hamilton draws from pop culture for inspiration, mixing relevant TV shows and Netflix series, with the unique style and variety of life that comes from the culture of his hometown.  Above all, Hamilton wants to celebrate the people that he lives in community with.</p>
+
+        <p>“My business model is to be good to the people who are good to me. I’m inspired by music, TV, movies, and even graffiti. I mix it with the Alaskan Grit that makes us unique.” – Matt Hamilton, Artist</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section shop-header has-background-light">
+  <div class="container is-fluid">
+    <div class="columns">
+      <div class="column is-12">
+        <h3>SHOP THE ART</h3>
+        <h4>Hoodies, Tees, Canvas Bags - all with your favorite local art.</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section shop-section">
+  <div class="container">
+    <div class="columns is-multiline">
+      {{#each pacificshop}}
+      <div class="column is-4">
+        <div class="card shop-card">
+          <a href="/shop/{{_id}}">
+          <div class="card-image">
+            <figure class="image">
+              <img src="{{imagemock}}" alt="">
+            </figure>
+          </div>
+          </a>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</section>

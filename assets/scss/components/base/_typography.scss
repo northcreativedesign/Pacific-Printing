@@ -1,3 +1,37 @@
+// GLOBAL FONT STYLING
+
+
+h1 {
+  font-size: 6.313rem;
+  font-family: $secondfont;
+  font-weight: 700;
+}
+
+
+h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: $mainfont;
+}
+
+h3 {
+  font-family: $secondfont;
+  font-size: 4.625rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 2.25rem;
+  font-weight: 500;
+  font-family: $mainfont;
+}
+
+p {
+  font-family: $thirdfont;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+}
 
 
 
@@ -6,9 +40,12 @@
 
 
 
+// HERO HEADER TEXT STYLING
 
-
-
+.hero-text {
+  position: absolute;
+  top: 37vh;
+}
 
 
 
@@ -41,4 +78,43 @@
     font-size: 2.25rem;
     font-weight: 300;
   }
+}
+
+
+
+// SERVICES PAGE TYPOGRAPHY
+
+.services-embroidery, .services-screenprinting, .heattransfer-section, .promotional-section, .serviceterms-section {
+
+  h3 {
+    color: $greencolor;
+    margin-top: -25px;
+  }
+  h4 {
+    color: $lightgreencolor;
+    margin-top: -15px;
+    padding-right: 100px;
+  }
+}
+
+
+.services-embroidery, .heattransfer-section, .promotional-section {
+  p {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-right: 100px;
+  }
+}
+
+.services-screenprinting {
+
+  .first-paragraph {
+    margin-top: 50px;
+  }
+
+  p {
+    margin-top: 30px;
+    padding-right: 100px;
+  }
+
 }

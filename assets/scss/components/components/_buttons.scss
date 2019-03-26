@@ -1,0 +1,67 @@
+
+
+// Accordion Plus Sign Styling
+
+.fas {
+  font-size: 1.7rem;
+}
+
+
+
+
+// MAIL SUBSCRIBE BUTTON
+
+
+.mailer-section {
+  .button {
+    width: 22.875rem;
+    height: 4.125rem;
+    border-radius: 0.75rem;
+    background-color: #96af3c;
+    color: #ffffff;
+    font-family: Upgrade;
+    font-size: 2.25rem;
+    font-weight: 500;
+    font-style: italic;
+    padding-top: 5px;
+  }
+}
+
+
+
+
+
+
+// Single item Shopping Styling
+
+.single-item {
+  select {
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(../img/shop_select.png);
+    background-size: 4.8rem;
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 33.5rem;
+    height: 4.188rem;
+    border: 0.125rem solid #707070;
+    padding-left: 10px;
+    color: #808080;
+    font-family: $thirdfont;
+    font-size: 1.5rem;
+    border-radius: 0;
+  }
+
+  &--cart {
+    width: 24.875rem;
+    height: 5.063rem;
+    border: 0.188rem solid #96af3c;
+    background-color: transparent;
+    font-family: $secondfont;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.125rem;
+    color: $lightgreencolor;
+    padding: 0;
+  }
+}

@@ -1,0 +1,28 @@
+.services-embroidery {
+  margin-top: 100px;
+}
+
+.service-header {
+ height: 22rem;
+  h3 {
+    color: $greencolor;
+  }
+  h4 {
+    color: $lightgreencolor;
+  }
+}
+
+.serviceterms-section {
+  .accordions {
+    .accordion {
+      background-color: white;
+      margin-top: 30px;
+      .accordion-header {
+        background-color: $neongreen;
+      }
+    }
+  }
+  p {
+    font-weight: 500;
+  }
+}

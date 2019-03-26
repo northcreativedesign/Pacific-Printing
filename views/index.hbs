@@ -26,15 +26,22 @@
 
 <!-- IMAGE SLIDER SECTION -->
 
-<section class="carousel">
-  <div class="container is-fluid">
-    <div class="columns">
-      <div class="column is-12">
-        <img src="/img/slider_image_1.jpg" alt="">
-      </div>
-    </div>
-  </div>
-</section>
+<section class="hero is-fullheight has-carousel">
+			<div id="carousel-demo" class="hero-carousel">
+				<div class="item-1">
+					<img src="/img/slider_image_1.jpg" alt="">
+				</div>
+				<div class="item-2">
+          <img src="/img/slider_image_2.jpg" alt="">
+				</div>
+				<div class="item-3">
+          <img src="/img/slider_image_3.jpg" alt="">
+				</div>
+			</div>
+			<div class="hero-head"></div>
+			<div class="hero-body"></div>
+			<div class="hero-foot"></div>
+		</section>
 
 
 
@@ -42,27 +49,31 @@
 
 <section class="section featured-brands">
   <div class="container">
-    <div class="columns is-multiline">
+    <div class="columns">
       <div class="column is-12 has-text-centered">
         <h3>FEATURED BRANDS</h3>
         <h4>Styles for all.</h4>
       </div>
-      <div class="column is-6">
-        <img src="/img/bella_logo.png" alt="">
-      </div>
-      <div class="column is-6">
-        <img src="/img/alternative_logo.png" alt="">
-      </div>
-      <div class="column is-4">
-        <img src="/img/port_logo.png" alt="">
-      </div>
-      <div class="column is-4">
-        <img src="/img/new_era_logo.png" alt="">
-      </div>
-      <div class="column is-4">
-        <img src="/img/hanes_logo.png" alt="">
-      </div>
     </div>
+      <div class="featured-brands--top-level columns">
+        <div class="column is-6">
+          <img src="/img/bella_logo.png" alt="">
+        </div>
+        <div class="column is-6">
+          <img src="/img/alternative_logo.png" alt="">
+        </div>
+      </div>
+      <div class="featued-brands--lower-level columns">
+        <div class="column is-4">
+          <img src="/img/port_logo.png" alt="">
+        </div>
+        <div class="column is-4">
+          <img src="/img/new_era_logo.png" alt="">
+        </div>
+        <div class="column is-4">
+          <img src="/img/hanes_logo.png" alt="">
+        </div>
+      </div>
   </div>
 </section>
 
@@ -76,7 +87,7 @@
         <h3>WHAT MAKES US GREAT</h3>
         <h4>Our print capabilities and passion are unsurpassed.</h4>
       </div>
-      <div class="column is-3">
+      <div class="column is-3 commerical-logo">
         <img src="/img/commercial_logo.png" alt="">
         <p>Commercial Grade Embroidery</p>
       </div>
@@ -84,15 +95,15 @@
         <img src="/img/screen_printing_icon.svg" alt="">
         <p>Screen Printing & Heat Transfer</p>
       </div>
-      <div class="column is-3">
+      <div class="column is-3 wholesale-logo">
         <img src="/img/catalouge_icon.svg" alt="">
         <p>Download our Wholesale Catalog</p>
       </div>
-      <div class="column is-3">
+      <div class="column is-3 artist-logo">
         <img src="/img/custom_gear_icon.png" alt="">
         <p>Shop Custom Gear by Local Artists</p>
       </div>
-      <div class="column is-12 has-text-centered">
+      <div class="column is-12 has-text-centered index-services--description">
         <p>Pacific Printing was founded on the belief that building relationships with our customers hinges on our ability to provide the best quality products that bring real value to our customer’s businesses, personal projects or promotional programs.</p>
         <p>The process all starts with your artwork and the garment. From there Pacific Printing will help guide you to make the best decisions possible to produce exceptional custom screen printed or embroidered apparel.</p>
       </div>
@@ -114,7 +125,7 @@
 </section>
 
 <section class="section has-background-link mailer-section">
- <div class="container">
+ <div class="container is-fluid">
    <div class="columns is-multiline">
      <div class="column is-12 has-text-centered has-text-white">
        <h3>SIGN UP & GAIN ACCESS TO THE LATEST ARTWORK RELEASES</h3>
@@ -124,8 +135,20 @@
        <input type="text" class="input" name="mailer" placeholer="Enter your email address.">
      </div>
      <div class="column is-4">
-       <button class="button is-success">Submit</button>
+       <button class="button is-success">Subscribe</button>
      </div>
    </div>
  </div>
 </section>
+
+<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+		<script>
+			bulmaCarousel.attach('#carousel-demo', {
+				slidesToScroll: 1,
+				slidesToShow: 1,
+        autoplay: true,
+        loop: true,
+        duration: 600,
+        autoplaySpeed: 6000
+			});
+		</script>

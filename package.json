@@ -13,6 +13,8 @@
     "bulma-extensions": "^6.2.2",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
-    "express-session": "^1.15.6"
+    "express-session": "^1.15.6",
+    "mongodb": "^3.1.13",
+    "mongoose": "^5.4.19"
   }
 }
