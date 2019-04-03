@@ -50,8 +50,11 @@ const PacificShop = mongoose.model("PacificShop", pacificshopSchema);
 
 // PacificShop.create(
 //   {
-//     name: "Testing MongoDb",
-//     imagemock: "/img/shop/matt_h_907.png"
+//     name: "Skiff Hair",
+//     imagemock: "/img/shop/matt_h_skiff_hair.png",
+//     image1: "/img/skiff_1_shop.jpg",
+//     image2: "/img/skiff_2_shop.jpg",
+//     image3: "/img/skiff_3_shop.jpg"
 //   }, function(err, announcements){
 //    if(err) {
 //      console.log(err);

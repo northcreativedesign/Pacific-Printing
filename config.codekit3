@@ -79,6 +79,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/assets/img/cart_icon.png": {
+		"ft": 32768,
+		"iS": 521,
+		"oA": 0,
+		"oAP": "/assets/img/cart_icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/assets/img/catalouge_icon.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -261,6 +272,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"/assets/img/nav_logo.png": {
+		"ft": 32768,
+		"iS": 3735,
+		"oA": 0,
+		"oAP": "/assets/img/nav_logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"/assets/img/new_era_logo.png": {
@@ -465,6 +487,17 @@
 		"iS": 92164,
 		"oA": 0,
 		"oAP": "/assets/img/shop/matt_h_nightmare_creekstreet.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/img/shop/matt_h_skiff_hair.png": {
+		"ft": 32768,
+		"iS": 88431,
+		"oA": 0,
+		"oAP": "/assets/img/shop/matt_h_skiff_hair.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
