@@ -7,6 +7,7 @@ const express    = require('express'),
 
 const app = express();
 var session = require('express-session');
+var nodemailer = require('nodemailer');
 
 
 app.use(express.static('assets'));
@@ -43,29 +44,23 @@ const pacificshopSchema = new mongoose.Schema({
 
 const PacificShop = mongoose.model("PacificShop", pacificshopSchema);
 
-
-
-
-
-
-// PacificShop.create(
-//   {
-//     name: "Skiff Hair",
-//     imagemock: "/img/shop/matt_h_skiff_hair.png",
-//     image1: "/img/skiff_1_shop.jpg",
-//     image2: "/img/skiff_2_shop.jpg",
-//     image3: "/img/skiff_3_shop.jpg"
-//   }, function(err, announcements){
-//    if(err) {
-//      console.log(err);
-//    } else {
-//      console.log("CREATED SHOP ITEM: ");
-//      console.log(announcements);
-//    }
-// });
-
-
-
+ // PacificShop.create(
+ //   {
+ //     name: "Skiff Hair2",
+ //     imagemock: "/img/shop/matt_h_skiff_hair.png",
+ //     image1: "/img/skiff_1_shop.jpg",
+ //     image2: "/img/skiff_2_shop.jpg",
+ //     image3: "/img/skiff_3_shop.jpg"
+ //   }, function(err, announcements){
+ //    if(err) {
+ //      console.log(err);
+ //    } else {
+ //      console.log("CREATED SHOP ITEM: ");
+ //      console.log(announcements);
+ //    }
+ // });
+ //
+ //
 
 app.get("/shop", function(req, res){
   // Get all Announcements from database
@@ -121,11 +116,29 @@ app.get("/print-requirements", function(req, res){
 
 app.get("/contact", function(req, res){
   res.render("contact")
+  var transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'aanandchamp@gmail.com',
+    pass: 'omsairam@#jio'
+  }
 });
 
+var mailOptions = {
+  from: 'aanandchamp@gmail.com',
+  to: 'hiteshchandwani@gmail.com',
+  subject: 'Sending Email using Node.js',
+  text: 'That was easy!'
+};
 
-
-
+transporter.sendMail(mailOptions, function(error, info){
+  if (error) {
+    console.log(error);
+  } else {
+    console.log('Email sent: ' + info.response);
+  }
+});
+});
 
 
 app.listen(process.env.PORT || 8002, function(){
