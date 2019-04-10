@@ -296,6 +296,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/assets/img/phone_number.png": {
+		"ft": 32768,
+		"iS": 5099,
+		"oA": 0,
+		"oAP": "/assets/img/phone_number.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/assets/img/port_logo.png": {
 		"ft": 32768,
 		"iS": 17596,

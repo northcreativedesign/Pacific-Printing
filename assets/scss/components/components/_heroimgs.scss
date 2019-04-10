@@ -2,6 +2,7 @@
   @include heroimg('../img/main_hero.png');
   height: 730px;
   margin-top: 3.313rem;
+  margin-top: -157px;
 }
 
 
@@ -15,13 +16,12 @@
 
 .services-hero {
   @include heroimg('../img/services_hero.jpg');
-  position: relative;
+  margin-top: -157px;
 }
 
 
 .print-hero {
   @include heroimg('../img/print_hero.jpg');
-  position: relative;
   margin-top: -157px;
   .is-12 {
     width: 102%;
@@ -31,9 +31,11 @@
 
 .contact-hero {
   @include heroimg('../img/contact-hero.jpg');
+  margin-top: -157.5px;
 }
 
 
 .matt-hero {
   @include heroimg('../img/matt_hero.jpg');
+  margin-top: -157px;
 }
