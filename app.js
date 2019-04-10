@@ -7,7 +7,7 @@ const express    = require('express'),
 
 const app = express();
 //var session = require('express-session');
-//var nodemailer = require('nodemailer');
+var nodemailer = require('nodemailer');
 
 
 app.use(express.static('assets'));
@@ -117,7 +117,7 @@ app.get("/print-requirements", function(req, res){
 // CONTACT ROUTE
 
 app.get("/contact", function(req, res){
-  res.render("contact")
+  //res.render("contact")
   var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
