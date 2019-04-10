@@ -6,7 +6,7 @@ const express    = require('express'),
 
 
 const app = express();
-var session = require('express-session');
+//var session = require('express-session');
 //var nodemailer = require('nodemailer');
 
 
@@ -20,14 +20,16 @@ app.set('view engine', 'hbs');
 
 
 // MONGO CLIENT CONNECT LOGIC
-
-var MongoClient = require('mongodb').MongoClient;
-mongoose.connect('mongodb://localhost:27017/pacific_printing');
-app.use(session({
-  secret: 'keyboard cat',
-  resave: false,
-  saveUninitialized: false,
-}));
+mongoose.connect('mongodb://anand:omsairam123@ds135456.mlab.com:35456/pacific_printing',
+{useNewUrlParser: true }
+);
+//var MongoClient = require('mongodb').MongoClient;
+//mongoose.connect('mongodb://localhost:27017/pacific_printing');
+// app.use(session({
+//   secret: 'keyboard cat',
+//   resave: false,
+//   saveUninitialized: false,
+// }));
 
 // mongoose.connect('mongodb://localhost:27017/pacific_printing');
 
