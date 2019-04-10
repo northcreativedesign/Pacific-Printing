@@ -15,7 +15,7 @@
       </div>
     </div>
   </div>
-      <form id="contactform" action="" method="post">
+      <form id="contactform" action="/contact" method="post">
         <div class="container is-fluid">
           <div class="columns is-multiline">
             <div class="column is-4">
@@ -36,44 +36,45 @@
             </div>
             <div class="column is-4">
               <h5>QUANTITY</h5>
-              <select class="" name="">
-                <option value="">12-25</option>
-                <option value="">25-50</option>
-                <option value="">50-100</option>
+              <select class="" name="qty">
+                <option value="12-25">12-25</option>
+                <option value="25-50">25-50</option>
+                <option value="50-100">50-100</option>
               </select>
             </div>
             <div class="column is-4">
               <h5>INQUIRY TYPE</h5>
-              <select class="" name="">
-                <option value="">General Inquiry</option>
-                <option value="">Custom Order</option>
-                <option value="">Artist Shop</option>
-                <option value="">Wholesale</option>
+              <select class="" name="type">
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Custom Order">Custom Order</option>
+                <option value="Artist Shop">Artist Shop</option>
+                <option value="Wholesale">Wholesale</option>
               </select>
             </div>
             <div class="column is-4">
               <h5>TYPE OF SERVICE</h5>
-              <select class="" name="">
-                <option value="">Make A Suggestion</option>
-                <option value="">Embroidery</option>
-                <option value="">Screen Printing</option>
-                <option value="">Heat Transfer Vinyl</option>
+              <select class="" name="service">
+                <option value="Make A Suggestion">Make A Suggestion</option>
+                <option value="Embroidery">Embroidery</option>
+                <option value="Screen Printing">Screen Printing</option>
+                <option value="Heat Transfer Vinyl">Heat Transfer Vinyl</option>
               </select>
             </div>
             <div class="column is-4">
               <h5>ARTWORK READY?</h5>
-              <select class="" name="">
-                <option value="">Yes</option>
-                <option value="">No</option>
-                <option value="">I need some help</option>
+              <select class="" name="ready">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="I need some help">I need some help</option>
               </select>
             </div>
             <div class="column is-4">
               <h5>UPLOAD ARTWORK</h5>
+              <input type="file" name='file' class="artwork">
             </div>
             <div class="column is-12 enter-message">
               <h5>ADDITIONAL QUESTIONS / COMMENTS</h5>
-              <textarea class="textarea" placeholder="Enter Your Message"></textarea>
+              <textarea class="textarea" placeholder="Enter Your Message" name="msg"></textarea>
             </div>
             <div class="g-recaptcha" data-sitekey="6LdJUJ0UAAAAAJ1QHFiJsNqVx9q3bF0k0VS212p3"></div>
             <div class="column is-1 is-offset-9">
