@@ -15,7 +15,8 @@
     "express-handlebars": "^3.0.2",
     "express-session": "^1.15.6",
     "mongodb": "^3.1.13",
-    "mongoose": "^5.4.19"
+    "mongoose": "^5.4.19",
+    "nodemailer": "^6.1.0"
   },
   "engines": {
     "node": "10.15.2"
