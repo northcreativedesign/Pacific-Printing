@@ -4,7 +4,7 @@
   "description": "Pacific Printing Website",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
@@ -15,7 +15,9 @@
     "express-handlebars": "^3.0.2",
     "express-session": "^1.15.6",
     "mongodb": "^3.1.13",
-    "mongoose": "^5.4.19",
-    "nodemailer": "^6.1.0"
+    "mongoose": "^5.4.19"
+  },
+  "engines": {
+    "node": "10.15.2"
   }
 }
