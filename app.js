@@ -7,7 +7,7 @@ const express    = require('express'),
 
 const app = express();
 //var session = require('express-session');
-var nodemailer = require('nodemailer');
+const nodemailer = require('nodemailer');
 
 
 app.use(express.static('assets'));
