@@ -24,7 +24,7 @@ mongoose.connect('mongodb://anand:omsairam123@ds135456.mlab.com:35456/pacific_pr
 //   saveUninitialized: false,
 // }));
 
- //mongoose.connect('mongodb://localhost:27017/pacific_printing');
+ //mongoose.connect('mongodb://localhost:27017/pacific_printing2');
 
 // SCHEMA SETUP FOR SHOP PAGES
 
@@ -34,37 +34,30 @@ const pacificshopSchema = new mongoose.Schema({
   image1: String,
   image2: String,
   image3: String,
-  image4: String,
-  image5: String,
-  image5: String,
-  image7: String,
-  image8: String,
-
+  price:Number,
+  desc:String,
   imagemock: String
 });
 
 const PacificShop = mongoose.model("PacificShop", pacificshopSchema);
 
-  PacificShop.create(
-    {
-      name: "Skiff Hair new",
-      imagemock: "/img/shop/matt_h_skiff_hair.png",
-      image1: "/img/skiff_1_shop.jpg",
-      image2: "/img/skiff_2_shop.jpg",
-      image3: "/img/skiff_3_shop.jpg",
-      image4: "/img/shop/matt_h_907.png",
-      image5: "/img/shop/matt_h_ak_01.png",
-      image6: "/img/shop/matt_h_bear_skull.png",
-      image7: "/img/shop/matt_h_cockpit.png",
-      image8: "/img/shop/matt_h_skiff_hair.png"
-    }, function(err, announcements){
-          if(err) {
-       console.log(err);
-     } else {
-       console.log("CREATED SHOP ITEM: ");
-       console.log(announcements);
-     }
-  });
+  // PacificShop.create(
+  //   {
+  //     name: "Skiff3 Hair 2",
+  //     imagemock: "/img/shop/matt_h_skiff_hair.png",
+  //     image1: "/img/skiff_1_shop.jpg",
+  //     image2: "/img/skiff_2_shop.jpg",
+  //     image3: "/img/skiff_3_shop.jpg",
+  //     desc:"test",
+  //     price:10
+  //       }, function(err, announcements){
+  //         if(err) {
+  //      console.log(err);
+  //    } else {
+  //      console.log("CREATED SHOP ITEM: ");
+  //      console.log(announcements);
+  //    }
+  // });
 
 app.get("/shop", function(req, res){
   // Get all Announcements from database
