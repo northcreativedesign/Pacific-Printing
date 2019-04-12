@@ -13,9 +13,9 @@ app.engine('hbs', hbs({extname: 'hbs', defaultLayout: 'layouts', layoutsDir: __d
 app.set('view engine', 'hbs');
 
 // MONGO CLIENT CONNECT LOGIC
-//mongoose.connect('mongodb://anand:omsairam123@ds135456.mlab.com:35456/pacific_printing',
-//{useNewUrlParser: true }
-//);
+mongoose.connect('mongodb://anand:omsairam123@ds135456.mlab.com:35456/pacific_printing',
+{useNewUrlParser: true }
+);
 //var MongoClient = require('mongodb').MongoClient;
 //mongoose.connect('mongodb://localhost:27017/pacific_printing');
 // app.use(session({
@@ -24,7 +24,7 @@ app.set('view engine', 'hbs');
 //   saveUninitialized: false,
 // }));
 
- mongoose.connect('mongodb://localhost:27017/pacific_printing2');
+ //mongoose.connect('mongodb://localhost:27017/pacific_printing2');
 
 // SCHEMA SETUP FOR SHOP PAGES
 
