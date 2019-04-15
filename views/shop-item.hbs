@@ -38,7 +38,7 @@
               <option value="">Size</option>
             </select>
           </div>
-          <div class="column is-12">
+          <div class="column is-12" id="results">
             <span>Quantity</span> <span>1</span>
           </div>
           <div class="column is-12">
@@ -80,6 +80,31 @@
      $('.single-item__featureditem img').css('width','100%');
      $(this).attr('src',largeSrc);
    })
+   $.get( '/garment', function(data) {
+    $.each(data, function(index) {
+       console.log(data[index].garment);
+          $('.single-item--garment').append("<option value="+data[index]._id+">"+data[index].garment+"</option>");
 
+        });
+    });
+    $('.single-item--garment').on("change",function(){
+      var garmentName = $(this).val();
+       console.log(garmentName);
+      $.get( '/garmentSingle',{garmentName:garmentName},function(data) {
+        $.each(data, function(index) {
+          $('.single-item__featureditem img').attr('src',data[index].image).css('width',"660px");
+
+          var colors = data[index].color.split(",");
+          $('.single-item--color').html('');
+
+            $.each(colors, function(index) {
+                $('.single-item--color').append("<option>"+colors[index]+"</option>");
+
+            });
+
+           });
+       });
+
+   });
  })
 </script>

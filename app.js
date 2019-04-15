@@ -27,7 +27,7 @@ mongoose.connect('mongodb://anand:omsairam123@ds135456.mlab.com:35456/pacific_pr
 //   saveUninitialized: false,
 // }));
 
- //mongoose.connect('mongodb://localhost:27017/pacific_printing2');
+ mongoose.connect('mongodb://localhost:27017/pacific_printing3');
 
 // SCHEMA SETUP FOR SHOP PAGES
 const pacificshopSchema = new mongoose.Schema({
@@ -42,6 +42,7 @@ const pacificshopSchema = new mongoose.Schema({
 const PacificShop = mongoose.model("PacificShop", pacificshopSchema);
 
 var productMetaSchema = new mongoose.Schema({
+  garment:String,
   color    : String,
   size     : Number,
   image:String,
@@ -49,37 +50,6 @@ var productMetaSchema = new mongoose.Schema({
 });
 
 const ProductMeta = mongoose.model("ProductMeta", productMetaSchema);
-   // PacificShop.create(
-   //   {
-   //     name: "Nike",
-   //     imagemock: "/img/shop/matt_h_skiff_hair.png",
-   //     image1: "/img/skiff_1_shop.jpg",
-   //     image2: "/img/skiff_2_shop.jpg",
-   //     image3: "/img/skiff_3_shop.jpg",
-   //     desc:"test",
-   //     price:10
-   //       }, function(err, announcements){
-   //         if(err) {
-   //      console.log(err);
-   //    } else {
-   //      console.log("CREATED SHOP ITEM: ");
-   //      console.log(announcements);
-   //      ProductMeta.create(
-   //        {
-   //          color: "red",
-   //          image:"/img/download.jpg",
-   //          productID:announcements._id
-   //            }, function(err, announcements){
-   //              if(err) {
-   //           console.log(err);
-   //         } else {
-   //           console.log("CREATED SHOP ITEM: ");
-   //           console.log(announcements);
-   //         }
-   //      });
-   //    }
-   // });
-
 
 
 app.get("/shop", function(req, res){
@@ -91,6 +61,52 @@ app.get("/shop", function(req, res){
       res.render("matt-hamiliton-collection", {pacificshop:allPacificShop});
     }
   });
+});
+const ProductMeta = mongoose.model("ProductMeta", productMetaSchema);
+PacificShop.create(
+ {
+   name: "Nike",
+   imagemock: "/img/shop/matt_h_skiff_hair.png",
+   image1: "/img/skiff_1_shop.jpg",
+   image2: "/img/skiff_2_shop.jpg",
+   image3: "/img/skiff_3_shop.jpg",
+   desc:"test",
+   price:10
+     }, function(err, announcements){
+       if(err) {
+  console.log(err);
+  } else {
+    console.log("CREATED SHOP ITEM: ");
+    console.log(announcements);
+    ProductMeta.create(
+      {
+        garment: "Uni - Sex Tee Shirts",
+        color:["Black", "Gray", "Navy", "Royal", "Dk","Green"],
+        image:"/img/download.jpg",
+        productID:announcements._id
+          }, function(err, announcements){
+           if(err) {
+        console.log(err);
+       } else {
+         console.log("CREATED SHOP ITEM: ");
+         console.log(announcements);
+       }
+    });
+    ProductMeta.create(
+      {
+        garment: "Premium Mens Tee Shirt",
+        color:["Vintage" ,"Black", "Gray", "Navy", "Ocean","Blue", "Heather","Green"],
+        image:"/img/download2.jpg",
+        productID:announcements._id
+          }, function(err, announcements){
+           if(err) {
+        console.log(err);
+       } else {
+         console.log("CREATED SHOP ITEM: ");
+         console.log(announcements);
+       }
+    });
+  }
 });
 
 
@@ -155,7 +171,7 @@ app.post('/contact', upload.single('file'),function(req, res) {
 });
   var mailOptions = {
    from: senderMail.email,
-   to: 'jeremy@northcreativedesign.com',
+   to: 'aanandchamp@gmail.com',
    subject: 'Contact Info',
    html:content,
    attachments: [
@@ -173,6 +189,30 @@ transporter.sendMail(mailOptions, function(error, info){
   }
 });
 }
+
+app.get("/garment", function(req, res){
+  // find the shop item with provided id
+  ProductMeta.find({productID:"5cb4c93cba7298347cc5c5e6"}, function(err, foundPacificShop){
+    if (err) {
+      console.log(err);
+    } else {
+      // render show template with the shop item
+      res.send(foundPacificShop);
+    }
+  });
+});
+
+app.get("/garmentSingle", function(req, res){
+  // find the shop item with provided id
+  ProductMeta.find({productID:"5cb4c93cba7298347cc5c5e6",_id:req.query.garmentName}, function(err, foundPacificShop){
+    if (err) {
+      console.log(err);
+    } else {
+      // render show template with the shop item
+      res.send(foundPacificShop);
+    }
+  });
+});
 app.listen(process.env.PORT || 8002, function(){
   console.log(`Pacific Printing Server Is Running`);
 });
