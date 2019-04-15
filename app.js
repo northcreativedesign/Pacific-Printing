@@ -192,7 +192,7 @@ transporter.sendMail(mailOptions, function(error, info){
 
 app.get("/garment", function(req, res){
   // find the shop item with provided id
-  ProductMeta.find({productID:"5cb4c93cba7298347cc5c5e6"}, function(err, foundPacificShop){
+  ProductMeta.find({productID:"5cb4d83ed9c171001700857e"}, function(err, foundPacificShop){
     if (err) {
       console.log(err);
     } else {
@@ -204,7 +204,7 @@ app.get("/garment", function(req, res){
 
 app.get("/garmentSingle", function(req, res){
   // find the shop item with provided id
-  ProductMeta.find({productID:"5cb4c93cba7298347cc5c5e6",_id:req.query.garmentName}, function(err, foundPacificShop){
+  ProductMeta.find({productID:"5cb4d83ed9c171001700857e",_id:req.query.garmentName}, function(err, foundPacificShop){
     if (err) {
       console.log(err);
     } else {
