@@ -49,7 +49,7 @@ var productMetaSchema = new mongoose.Schema({
   productID : { type: mongoose.Schema.Types.ObjectId, ref: 'PacificShop' }
 });
 
-const ProductMeta = mongoose.model("ProductMeta", productMetaSchema);
+//const ProductMeta = mongoose.model("ProductMeta", productMetaSchema);
 
 
 app.get("/shop", function(req, res){
