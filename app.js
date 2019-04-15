@@ -27,7 +27,7 @@ mongoose.connect('mongodb://anand:omsairam123@ds135456.mlab.com:35456/pacific_pr
 //   saveUninitialized: false,
 // }));
 
- mongoose.connect('mongodb://localhost:27017/pacific_printing3');
+ //mongoose.connect('mongodb://localhost:27017/pacific_printing3');
 
 // SCHEMA SETUP FOR SHOP PAGES
 const pacificshopSchema = new mongoose.Schema({
