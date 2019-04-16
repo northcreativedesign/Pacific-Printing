@@ -39,7 +39,17 @@
             </select>
           </div>
           <div class="column is-12" id="results">
-            <span>Quantity</span> <span>1</span>
+            <span>Quantity</span> <span><select class="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+
+            </select></span
           </div>
           <div class="column is-12">
             <p>The product depicted here is a representation of the approximate artwork size in relationship to the garment. Note that variation may exist per the nature of printing and across sizing. 2XL - 4XL will see slightly higher price - add to bag for details.</p>
@@ -52,7 +62,9 @@
                             data-item-id={{pacificshop._id}}
                             data-item-name={{pacificshop.name}}
                             data-item-price="3.0"
+                            data-item-quantity ="1",
                             data-item-weight="20"
+                            data-item-image ={{pacificshop.image3}}
                             data-item-url="https://pacific-new.herokuapp.com/shop/{{pacificshop._id}}"
                             data-item-description="tshirt">
                             ADD TO BAG
@@ -63,6 +75,10 @@
       </div>
     </div>
   </div>
+  <div class="snipcart-summary">
+    Number of items: <span class="snipcart-total-items"></span>
+    Total price: <span class="snipcart-total-price"></span>
+</div>
 </section>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" data-api-key="MGZkODU3MGUtYmM0MS00ZWFlLWFiNGItMTk4NGVkZmUwOWFiNjM2OTA2MzU2MDU2NDMwODg3" id="snipcart"></script>
@@ -89,9 +105,15 @@
     });
     $('.single-item--garment').on("change",function(){
       var garmentName = $(this).val();
+
        console.log(garmentName);
       $.get( '/garmentSingle',{garmentName:garmentName},function(data) {
+        //$('.snipcart-add-item').data('data-item-image',data[index].image)
         $.each(data, function(index) {
+          $('.snipcart-add-item').data('item-image',data[index].image);
+          $('.snipcart-add-item').data('item-id',data[index]._id);
+          $('.snipcart-add-item').data('item-description',data[index].garment);
+
           $('.single-item__featureditem img').attr('src',data[index].image).css('width',"660px");
 
           var colors = data[index].color.split(",");
@@ -104,7 +126,9 @@
 
            });
        });
-
+    $('.quantity').on('change',function(){
+       $(".snipcart-add-item").data("item-quantity",$(this).val());
+    });
    });
  })
 </script>
