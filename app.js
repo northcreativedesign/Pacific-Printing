@@ -15,7 +15,7 @@ app.engine('hbs', hbs({extname: 'hbs', defaultLayout: 'layouts', layoutsDir: __d
 app.set('view engine', 'hbs');
 
 
- //MONGO CLIENT CONNECT LOGIC
+// MONGO CLIENT CONNECT LOGIC
 mongoose.connect('mongodb://anand:omsairam123@ds135456.mlab.com:35456/pacific_printing',
 {useNewUrlParser: true }
 );
@@ -27,7 +27,7 @@ mongoose.connect('mongodb://anand:omsairam123@ds135456.mlab.com:35456/pacific_pr
 //   saveUninitialized: false,
 // }));
 
- //mongoose.connect('mongodb://localhost:27017/pacific_printing3');
+ //mongoose.connect('mongodb://localhost:27017/pacific_printing4');
 
 // SCHEMA SETUP FOR SHOP PAGES
 const pacificshopSchema = new mongoose.Schema({
@@ -35,7 +35,9 @@ const pacificshopSchema = new mongoose.Schema({
   image1: String,
   image2: String,
   image3: String,
-  price:Number,
+  price_small:Number,
+  price_big:Number,
+  size:String,
   desc:String,
   imagemock: String
 });
@@ -44,14 +46,17 @@ const PacificShop = mongoose.model("PacificShop", pacificshopSchema);
 var productMetaSchema = new mongoose.Schema({
   garment:String,
   color    : String,
-  size     : Number,
-  image:String,
+  size     : String,
+  image1:String,
+  image2:String,
+  image3:String,
+  images:String,
+  price_small:Number,
+  price_big:Number,
   productID : { type: mongoose.Schema.Types.ObjectId, ref: 'PacificShop' }
 });
 
-//const ProductMeta = mongoose.model("ProductMeta", productMetaSchema);
-
-
+//const ProductMeta = mongoose.model("ProductMeta", productMetaSchema)
 app.get("/shop", function(req, res){
   // Get all Announcements from database
   PacificShop.find({}, function(err, allPacificShop){
@@ -63,52 +68,66 @@ app.get("/shop", function(req, res){
   });
 });
 const ProductMeta = mongoose.model("ProductMeta", productMetaSchema);
-// PacificShop.create(
-//  {
-//    name: "Nike",
-//    imagemock: "/img/shop/matt_h_skiff_hair.png",
-//    image1: "/img/skiff_1_shop.jpg",
-//    image2: "/img/skiff_2_shop.jpg",
-//    image3: "/img/skiff_3_shop.jpg",
-//    desc:"test",
-//    price:10
-//      }, function(err, announcements){
-//        if(err) {
-//   console.log(err);
-//   } else {
-//     console.log("CREATED SHOP ITEM: ");
-//     console.log(announcements);
-//     ProductMeta.create(
-//       {
-//         garment: "Uni - Sex Tee Shirts",
-//         color:["Black", "Gray", "Navy", "Royal", "Dk","Green"],
-//         image:"/img/download.jpg",
-//         productID:announcements._id
-//           }, function(err, announcements){
-//            if(err) {
-//         console.log(err);
-//        } else {
-//          console.log("CREATED SHOP ITEM: ");
-//          console.log(announcements);
-//        }
-//     });
-//     ProductMeta.create(
-//       {
-//         garment: "Premium Mens Tee Shirt",
-//         color:["Vintage" ,"Black", "Gray", "Navy", "Ocean","Blue", "Heather","Green"],
-//         image:"/img/download2.jpg",
-//         productID:announcements._id
-//           }, function(err, announcements){
-//            if(err) {
-//         console.log(err);
-//        } else {
-//          console.log("CREATED SHOP ITEM: ");
-//          console.log(announcements);
-//        }
-//     });
-//   }
-// });
-//
+PacificShop.create(
+ {
+   name: "Nike",
+   imagemock: "/img/shop/matt_h_skiff_hair.png",
+   image1: "/img/skiff_1_shop.jpg",
+   image2: "/img/skiff_2_shop.jpg",
+   image3: "/img/skiff_3_shop.jpg",
+   desc:"test",
+   size:['SM','M','L','XL','2XL','3XL','4XL'],
+   price_small:17.99,
+   price_big:19.99,
+     }, function(err, announcements){
+       if(err) {
+  console.log(err);
+  } else {
+    console.log("CREATED SHOP ITEM: ");
+    console.log(announcements);
+    ProductMeta.create(
+      {
+        garment: "Uni - Sex Tee Shirts",
+        color:["Black", "Gray", "Navy", "Royal", "Dk","Green"],
+        images:["/img/black.jpg","/img/gray.jpg","/img/navy.jpg"],
+        image1:"/img/download.jpg",
+        image2:"/img/download3.jpg",
+        image3:"/img/downloa4.jpg",
+        size:['SM','M','L','XL','2XL','3XL','4XL'],
+        price_small:17.99,
+        price_big:19.99,
+        productID:announcements._id
+          }, function(err, announcements){
+           if(err) {
+        console.log(err);
+       } else {
+         console.log("CREATED SHOP ITEM: ");
+         console.log(announcements);
+       }
+    });
+    ProductMeta.create(
+      {
+        garment: "Premium Mens Tee Shirt",
+        color:["Vintage Black", "Gray", "Navy", "Ocean","Blue", "Heather","Green"],
+        image:"/img/download2.jpg",
+        images:["/img/black.jpg","/img/gray.jpg","/img/navy.jpg"],
+        image1:"/img/download.jpg",
+        image2:"/img/download3.jpg",
+        image3:"/img/downloa4.jpg",
+        price_small:19.99,
+        price_big:21.99,
+        size:['SM','M','L','XL','2XL','3XL','4XL'],
+        productID:announcements._id
+          }, function(err, announcements){
+           if(err) {
+        console.log(err);
+       } else {
+         console.log("CREATED SHOP ITEM: ");
+         console.log(announcements);
+       }
+    });
+  }
+});
 
 
 // SINGLE ITEM SHOP
@@ -192,7 +211,7 @@ transporter.sendMail(mailOptions, function(error, info){
 
 app.get("/garment", function(req, res){
   // find the shop item with provided id
-  ProductMeta.find({productID:"5cb4d83ed9c171001700857e"}, function(err, foundPacificShop){
+  ProductMeta.find({productID:req.query._id},function(err, foundPacificShop){
     if (err) {
       console.log(err);
     } else {
@@ -204,7 +223,30 @@ app.get("/garment", function(req, res){
 
 app.get("/garmentSingle", function(req, res){
   // find the shop item with provided id
-  ProductMeta.find({productID:"5cb4d83ed9c171001700857e",_id:req.query.garmentName}, function(err, foundPacificShop){
+  ProductMeta.find({_id:req.query._id}, function(err, foundPacificShop){
+    if (err) {
+      console.log(err);
+    } else {
+      // render show template with the shop item
+      res.send(foundPacificShop);
+    }
+  });
+});
+app.get("/colors", function(req, res){
+  // find the shop item with provided id
+  ProductMeta.find({_id:req.query._id}, function(err, foundPacificShop){
+    if (err) {
+      console.log(err);
+    } else {
+      // render show template with the shop item
+      res.send(foundPacificShop);
+    }
+  });
+});
+
+app.get("/size", function(req, res){
+  // find the shop item with provided id
+  ProductMeta.find({_id:req.query._id},function(err, foundPacificShop){
     if (err) {
       console.log(err);
     } else {

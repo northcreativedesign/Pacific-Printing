@@ -34,7 +34,7 @@
             </select>
           </div>
           <div class="column is-12">
-            <select class="" name="">
+            <select class="size" name="">
               <option value="">Size</option>
             </select>
           </div>
@@ -49,7 +49,7 @@
               <option value="7">7</option>
               <option value="8">8</option>
 
-            </select></span
+            </select></span>
           </div>
           <div class="column is-12">
             <p>The product depicted here is a representation of the approximate artwork size in relationship to the garment. Note that variation may exist per the nature of printing and across sizing. 2XL - 4XL will see slightly higher price - add to bag for details.</p>
@@ -86,8 +86,10 @@
 <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" />
 <script>
  $(document).ready(function(){
+   var name = $('.snipcart-add-item').data('item-name');
    $('.pimage img').click(function(){
-     var thumbSrc = $(this).attr('src');
+      var thumbSrc = $(this).attr('src');
+      var productID;
      console.log(thumbSrc);
      var largeSrc = $('.single-item__featureditem img').attr('src');
      console.log(largeSrc);
@@ -96,38 +98,69 @@
      $('.single-item__featureditem img').css('width','100%');
      $(this).attr('src',largeSrc);
    })
-   $.get( '/garment', function(data) {
+   $.get( '/garment',{_id:$('.snipcart-add-item').data('item-id')},function(data) {
     $.each(data, function(index) {
        console.log(data[index].garment);
+       group_id = data[index]._id;
           $('.single-item--garment').append("<option value="+data[index]._id+">"+data[index].garment+"</option>");
 
         });
     });
     $('.single-item--garment').on("change",function(){
-      var garmentName = $(this).val();
-
-       console.log(garmentName);
-      $.get( '/garmentSingle',{garmentName:garmentName},function(data) {
+       productID = $(this).val();
+       console.log(productID);
+      $.get( '/garmentSingle',{_id:productID},function(data) {
         //$('.snipcart-add-item').data('data-item-image',data[index].image)
         $.each(data, function(index) {
-          $('.snipcart-add-item').data('item-image',data[index].image);
+
+          //group_id = data[index]._id;
+          console.log(group_id);
+          $('.snipcart-add-item').data('item-image',data[index].image1);
           $('.snipcart-add-item').data('item-id',data[index]._id);
           $('.snipcart-add-item').data('item-description',data[index].garment);
+          $('.snipcart-add-item').data('item-price',data[index].price_small);
+          $('.single-item__featureditem img').attr('src',data[index].image1).css('width',"660px");
+          $('.size').html('');
+          $('.size').on("change",function(){
+            console.log($(this).val());
+                $('.snipcart-add-item').data('item-name',name+" "+$(this).val());
 
-          $('.single-item__featureditem img').attr('src',data[index].image).css('width',"660px");
+            $('.snipcart-add-item').data('item-id',data[index]._id+$(this).val());
+           if($(this).val() =='2XL' || $(this).val() == '3XL' ||$(this).val() == '4XL' ||$(this).val() == 'XS')
+           $('.snipcart-add-item').data('item-price',data[index].price_big);
+          });
 
           var colors = data[index].color.split(",");
+          var size = data[index].size.split(",");
+
           $('.single-item--color').html('');
 
             $.each(colors, function(index) {
-                $('.single-item--color').append("<option>"+colors[index]+"</option>");
-
+                $('.single-item--color').append("<option value="+index+">"+colors[index]+"</option>");
             });
-
+            $.each(size, function(index) {
+                $('.size').append("<option value="+size[index]+">"+size[index]+"</option>");
+            });
            });
        });
     $('.quantity').on('change',function(){
        $(".snipcart-add-item").data("item-quantity",$(this).val());
+    });
+    $('.single-item--color').on('change',function(){
+      var color_index = $(this).val();
+      console.log(color_index);
+
+      $.get('/colors',{_id:productID},function(data) {
+        //$('.snipcart-add-item').data('data-item-image',data[index].image)
+         console.log(data);
+        $.each(data, function(index) {
+          var colors_images = data[index].images.split(",");
+          $('.snipcart-add-item').data('item-id',data[index]._id+color_index);
+          console.log(colors_images[0]);
+          $('.snipcart-add-item').data('item-image',colors_images[color_index]);
+          $('.single-item__featureditem img').attr('src',colors_images[color_index]).css('width',"660px");
+      });
+    });
     });
    });
  })
