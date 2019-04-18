@@ -12,10 +12,7 @@
           <div class="column is-12 pimage" >
             <img src="{{pacificshop.image2}}" alt="">
           </div>
-          <div class="column is-12 pimage" >
-            <img src="{{pacificshop.image3}}" alt="">
-          </div>
-              </div>
+       </div>
       </div>
       <div class="column is-6 single-item__featureditem">
         <img src="{{pacificshop.image3}}" alt="">
@@ -65,7 +62,7 @@
                             data-item-quantity ="1",
                             data-item-weight="20"
                             data-item-image ={{pacificshop.image3}}
-                            data-item-url="https://pacific-new.herokuapp.com/shop/{{pacificshop._id}}"
+                            data-item-url="http://localhost:8002/shop/{{pacificshop._id}}"
                             data-item-description="tshirt">
                             ADD TO BAG
                         </button>
@@ -94,7 +91,7 @@
      var largeSrc = $('.single-item__featureditem img').attr('src');
      console.log(largeSrc);
      $('.single-item__featureditem img').attr('src',thumbSrc);
-     $('.single-item__featureditem img').css('height','600px');
+     $('.single-item__featureditem img').css('height','100%',);
      $('.single-item__featureditem img').css('width','100%');
      $(this).attr('src',largeSrc);
    })
@@ -119,7 +116,7 @@
           $('.snipcart-add-item').data('item-id',data[index]._id);
           $('.snipcart-add-item').data('item-description',data[index].garment);
           $('.snipcart-add-item').data('item-price',data[index].price_small);
-          $('.single-item__featureditem img').attr('src',data[index].image1).css('width',"660px");
+          $('.single-item__featureditem img').attr('src',data[index].image1);
           $('.size').html('');
           $('.size').on("change",function(){
             console.log($(this).val());

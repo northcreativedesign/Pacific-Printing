@@ -16,18 +16,8 @@ app.set('view engine', 'hbs');
 
 
 // MONGO CLIENT CONNECT LOGIC
-mongoose.connect('mongodb://anand:omsairam123@ds135456.mlab.com:35456/pacific_printing',
-{useNewUrlParser: true }
-);
-//var MongoClient = require('mongodb').MongoClient;
-//mongoose.connect('mongodb://localhost:27017/pacific_printing');
-// app.use(session({
-//   secret: 'keyboard cat',
-//   resave: false,
-//   saveUninitialized: false,
-// }));
 
- //mongoose.connect('mongodb://localhost:27017/pacific_printing4');
+ mongoose.connect('mongodb://localhost:27017/pacific_printing');
 
 // SCHEMA SETUP FOR SHOP PAGES
 const pacificshopSchema = new mongoose.Schema({
@@ -56,7 +46,74 @@ var productMetaSchema = new mongoose.Schema({
   productID : { type: mongoose.Schema.Types.ObjectId, ref: 'PacificShop' }
 });
 
-//const ProductMeta = mongoose.model("ProductMeta", productMetaSchema)
+
+
+
+const ProductMeta = mongoose.model("ProductMeta", productMetaSchema);
+
+
+// PacificShop.create(
+//  {
+//    name: "907",
+//    imagemock: "/img/shop/matt_h_collection/matt_h_907/matt_h_907_mock.png",
+//    image1: "/img/skiff_1_shop.jpg",
+//    image2: "/img/skiff_2_shop.jpg",
+//    image3: "/img/shop/matt_h_collection/matt_h_907/matt_h_907_mock.png",
+//    desc:"test",
+//    size:['SM','M','L','XL','2XL','3XL','4XL'],
+//    price_small:17.99,
+//    price_big:19.99,
+//      }, function(err, announcements){
+//        if(err) {
+//   console.log(err);
+//   } else {
+//     console.log("CREATED SHOP ITEM: ");
+//     console.log(announcements);
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Tee Shirts",
+//         color:["Black", "Gray", "Navy", "Royal", "Dk Green"],
+//         images:["/img/shop/matt_h_collection/matt_h_907/uni_tshirt/matt_h_907_uni_black.png","/img/shop/matt_h_collection/matt_h_907/uni_tshirt/matt_h_907_uni_ash.png","/img/shop/matt_h_collection/matt_h_907/uni_tshirt/matt_h_907_uni_navy.png", "/img/shop/matt_h_collection/matt_h_907/uni_tshirt/matt_h_907_uni_royal.png", "/img/shop/matt_h_collection/matt_h_907/uni_tshirt/matt_h_907_dk_green.png"],
+//         image1:"/img/shop/matt_h_collection/matt_h_907/uni_tshirt/matt_h_907_uni_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:['SM','M','L','XL','2XL','3XL','4XL'],
+//         price_small:17.99,
+//         price_big:19.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Premium Mens Tee Shirt",
+//         color:["Vintage Black", "Gray", "Navy", "Ocean","Blue", "Heather","Green"],
+//         image:"/img/download2.jpg",
+//         images:["/img/black.jpg","/img/gray.jpg","/img/navy.jpg"],
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:['SM','M','L','XL','2XL','3XL','4XL'],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//   }
+// });
+
+
 app.get("/shop", function(req, res){
   // Get all Announcements from database
   PacificShop.find({}, function(err, allPacificShop){
@@ -67,67 +124,9 @@ app.get("/shop", function(req, res){
     }
   });
 });
-const ProductMeta = mongoose.model("ProductMeta", productMetaSchema);
-PacificShop.create(
- {
-   name: "Nike",
-   imagemock: "/img/shop/matt_h_skiff_hair.png",
-   image1: "/img/skiff_1_shop.jpg",
-   image2: "/img/skiff_2_shop.jpg",
-   image3: "/img/skiff_3_shop.jpg",
-   desc:"test",
-   size:['SM','M','L','XL','2XL','3XL','4XL'],
-   price_small:17.99,
-   price_big:19.99,
-     }, function(err, announcements){
-       if(err) {
-  console.log(err);
-  } else {
-    console.log("CREATED SHOP ITEM: ");
-    console.log(announcements);
-    ProductMeta.create(
-      {
-        garment: "Uni - Sex Tee Shirts",
-        color:["Black", "Gray", "Navy", "Royal", "Dk","Green"],
-        images:["/img/black.jpg","/img/gray.jpg","/img/navy.jpg"],
-        image1:"/img/download.jpg",
-        image2:"/img/download3.jpg",
-        image3:"/img/downloa4.jpg",
-        size:['SM','M','L','XL','2XL','3XL','4XL'],
-        price_small:17.99,
-        price_big:19.99,
-        productID:announcements._id
-          }, function(err, announcements){
-           if(err) {
-        console.log(err);
-       } else {
-         console.log("CREATED SHOP ITEM: ");
-         console.log(announcements);
-       }
-    });
-    ProductMeta.create(
-      {
-        garment: "Premium Mens Tee Shirt",
-        color:["Vintage Black", "Gray", "Navy", "Ocean","Blue", "Heather","Green"],
-        image:"/img/download2.jpg",
-        images:["/img/black.jpg","/img/gray.jpg","/img/navy.jpg"],
-        image1:"/img/download.jpg",
-        image2:"/img/download3.jpg",
-        image3:"/img/downloa4.jpg",
-        price_small:19.99,
-        price_big:21.99,
-        size:['SM','M','L','XL','2XL','3XL','4XL'],
-        productID:announcements._id
-          }, function(err, announcements){
-           if(err) {
-        console.log(err);
-       } else {
-         console.log("CREATED SHOP ITEM: ");
-         console.log(announcements);
-       }
-    });
-  }
-});
+
+
+
 
 
 // SINGLE ITEM SHOP
@@ -232,6 +231,8 @@ app.get("/garmentSingle", function(req, res){
     }
   });
 });
+
+
 app.get("/colors", function(req, res){
   // find the shop item with provided id
   ProductMeta.find({_id:req.query._id}, function(err, foundPacificShop){
@@ -255,6 +256,8 @@ app.get("/size", function(req, res){
     }
   });
 });
+
+
 app.listen(process.env.PORT || 8002, function(){
   console.log(`Pacific Printing Server Is Running`);
 });
