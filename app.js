@@ -52,66 +52,66 @@ var productMetaSchema = new mongoose.Schema({
 const ProductMeta = mongoose.model("ProductMeta", productMetaSchema);
 
 
-// PacificShop.create(
-//  {
-//    name: "907",
-//    imagemock: "/img/shop/matt_h_collection/matt_h_907/matt_h_907_mock.png",
-//    image1: "/img/skiff_1_shop.jpg",
-//    image2: "/img/skiff_2_shop.jpg",
-//    image3: "/img/shop/matt_h_collection/matt_h_907/matt_h_907_mock.png",
-//    desc:"test",
-//    size:['SM','M','L','XL','2XL','3XL','4XL'],
-//    price_small:17.99,
-//    price_big:19.99,
-//      }, function(err, announcements){
-//        if(err) {
-//   console.log(err);
-//   } else {
-//     console.log("CREATED SHOP ITEM: ");
-//     console.log(announcements);
-//     ProductMeta.create(
-//       {
-//         garment: "Uni - Sex Tee Shirts",
-//         color:["Black", "Gray", "Navy", "Royal", "Dk Green"],
-//         images:["/img/shop/matt_h_collection/matt_h_907/uni_tshirt/matt_h_907_uni_black.png","/img/shop/matt_h_collection/matt_h_907/uni_tshirt/matt_h_907_uni_ash.png","/img/shop/matt_h_collection/matt_h_907/uni_tshirt/matt_h_907_uni_navy.png", "/img/shop/matt_h_collection/matt_h_907/uni_tshirt/matt_h_907_uni_royal.png", "/img/shop/matt_h_collection/matt_h_907/uni_tshirt/matt_h_907_dk_green.png"],
-//         image1:"/img/shop/matt_h_collection/matt_h_907/uni_tshirt/matt_h_907_uni_black.png",
-//         image2:"/img/download3.jpg",
-//         image3:"/img/downloa4.jpg",
-//         size:['SM','M','L','XL','2XL','3XL','4XL'],
-//         price_small:17.99,
-//         price_big:19.99,
-//         productID:announcements._id
-//           }, function(err, announcements){
-//            if(err) {
-//         console.log(err);
-//        } else {
-//          console.log("CREATED SHOP ITEM: ");
-//          console.log(announcements);
-//        }
-//     });
-//     ProductMeta.create(
-//       {
-//         garment: "Premium Mens Tee Shirt",
-//         color:["Vintage Black", "Gray", "Navy", "Ocean","Blue", "Heather","Green"],
-//         image:"/img/download2.jpg",
-//         images:["/img/black.jpg","/img/gray.jpg","/img/navy.jpg"],
-//         image1:"/img/download.jpg",
-//         image2:"/img/download3.jpg",
-//         image3:"/img/downloa4.jpg",
-//         price_small:19.99,
-//         price_big:21.99,
-//         size:['SM','M','L','XL','2XL','3XL','4XL'],
-//         productID:announcements._id
-//           }, function(err, announcements){
-//            if(err) {
-//         console.log(err);
-//        } else {
-//          console.log("CREATED SHOP ITEM: ");
-//          console.log(announcements);
-//        }
-//     });
-//   }
-// });
+PacificShop.create(
+ {
+   name: "907",
+   imagemock: "/img/shop/matt_h_collection/matt_h_907/matt_h_907_mock.png",
+   image1: "/img/skiff_1_shop.jpg",
+   image2: "/img/skiff_2_shop.jpg",
+   image3: "/img/shop/matt_h_collection/matt_h_907/matt_h_907_mock.png",
+   desc:"test",
+   size:['SM','M','L','XL','2XL','3XL','4XL'],
+   price_small:17.99,
+   price_big:19.99,
+     }, function(err, announcements){
+       if(err) {
+  console.log(err);
+  } else {
+    console.log("CREATED SHOP ITEM: ");
+    console.log(announcements);
+    ProductMeta.create(
+      {
+        garment: "Uni - Sex Tee Shirts",
+        color:["Black", "Gray", "Navy", "Royal", "Dk Green"],
+        images:["/img/shop/matt_h_collection/matt_h_907/uni_tshirt/matt_h_907_uni_black.png","/img/shop/matt_h_collection/matt_h_907/uni_tshirt/matt_h_907_uni_ash.png","/img/shop/matt_h_collection/matt_h_907/uni_tshirt/matt_h_907_uni_navy.png", "/img/shop/matt_h_collection/matt_h_907/uni_tshirt/matt_h_907_uni_royal.png", "/img/shop/matt_h_collection/matt_h_907/uni_tshirt/matt_h_907_dk_green.png"],
+        image1:"/img/shop/matt_h_collection/matt_h_907/uni_tshirt/matt_h_907_uni_black.png",
+        image2:"/img/download3.jpg",
+        image3:"/img/downloa4.jpg",
+        size:['SM','M','L','XL','2XL','3XL','4XL'],
+        price_small:17.99,
+        price_big:19.99,
+        productID:announcements._id
+          }, function(err, announcements){
+           if(err) {
+        console.log(err);
+       } else {
+         console.log("CREATED SHOP ITEM: ");
+         console.log(announcements);
+       }
+    });
+    ProductMeta.create(
+      {
+        garment: "Premium Mens Tee Shirt",
+        color:["Vintage Black", "Gray", "Navy", "Ocean","Blue", "Heather","Green"],
+        image:"/img/download2.jpg",
+        images:["/img/black.jpg","/img/gray.jpg","/img/navy.jpg"],
+        image1:"/img/download.jpg",
+        image2:"/img/download3.jpg",
+        image3:"/img/downloa4.jpg",
+        price_small:19.99,
+        price_big:21.99,
+        size:['SM','M','L','XL','2XL','3XL','4XL'],
+        productID:announcements._id
+          }, function(err, announcements){
+           if(err) {
+        console.log(err);
+       } else {
+         console.log("CREATED SHOP ITEM: ");
+         console.log(announcements);
+       }
+    });
+  }
+});
 
 
 app.get("/shop", function(req, res){
