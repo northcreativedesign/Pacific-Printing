@@ -18,7 +18,7 @@ app.set('view engine', 'hbs');
 // MONGO CLIENT CONNECT LOGIC
 
  // mongoose.connect('mongodb://localhost:27017/pacific_printing');
- mongoos.connect('mongodb://ncdesignco:NCAK20!9@ds031223.mlab.com:31223/heroku_1gbtwtrj');
+ mongoose.connect('mongodb://ncdesignco:NCAK20!9@ds031223.mlab.com:31223/heroku_1gbtwtrj');
 
 // SCHEMA SETUP FOR SHOP PAGES
 const pacificshopSchema = new mongoose.Schema({
