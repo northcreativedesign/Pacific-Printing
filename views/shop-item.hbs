@@ -25,7 +25,7 @@
         <div class="columns is-multiline single-item__cart-form">
           <div class="column is-12">
             <select class="single-item--garment" name="Garmant">
-
+           <option>Garment Style</option>
             </select>
           </div>
           <div class="column is-12">
@@ -129,7 +129,10 @@
           //$('.snipcart-add-item').data('item-id',data[index]._id);
           $('.snipcart-add-item').data('item-description',data[index].garment);
           //$('.snipcart-add-item').data('item-price',data[index].price_small);
-          $('.single-item__featureditem img').attr('src',data[index].image1).css('width',"660px");
+          var colors_images = data[index].images.split(",");
+          $('.single-item__featureditem img').attr('src',colors_images[0]).css('width',"660px");
+
+          //$('.single-item__featureditem img').attr('src',data[index].image1).css('width',"660px");
           $('.size').html('');
           $('.size').on("change",function(){
             //console.log($(this).val());
@@ -157,7 +160,6 @@
     $('.single-item--color').on('change',function(){
       var color_index = $(this).val();
       console.log(color_index);
-
       $.get('/colors',{_id:productID},function(data) {
         //$('.snipcart-add-item').data('data-item-image',data[index].image)
          console.log(data);

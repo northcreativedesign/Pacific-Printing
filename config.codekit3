@@ -1887,14 +1887,6 @@
 		"oAP": "/views/services.hbs",
 		"oF": 0
 		},
-	"/views/shop-item.hbs": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/views/shop-item.hbs",
-		"oF": 0
-		},
 	"/views/shopitem_backup/shop-item.hbs": {
 		"cB": 0,
 		"ft": 8192,
