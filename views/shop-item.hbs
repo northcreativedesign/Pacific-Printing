@@ -30,7 +30,7 @@
           </div>
           <div class="column is-12">
             <select class="single-item--color" name="">
-              <option value="">Color</option>
+              <option value="Color">Color</option>
             </select>
           </div>
           <div class="column is-12">
@@ -67,7 +67,9 @@
                             data-item-url="https://pacific-printingak.herokuapp.com/shop/{{pacificshop._id}}"
                             data-item-custom2-name="Size"
                             data-item-custom2-options="SM Uni - Sex Tee Shirts[+0]|SM Premium Mens Tee Shirt[+2]|M Uni - Sex Tee Shirts[+0]|Premium Mens Tee Shirt[+2]|L Uni - Sex Tee Shirts[+0]|L Premium Mens Tee Shirt[+2]|XL Uni - Sex Tee Shirts[+0]|XL Premium Mens Tee Shirt[+2]|2XL Uni - Sex Tee Shirts[+2]|2XL Premium Mens Tee Shirt[+4]|3XL Premium Mens Tee Shirt[+4]|3XL Uni - Sex Tee Shirts[+2]|4XL Premium Mens Tee Shirt[+4]|4XL Uni - Sex Tee Shirts[+2]"
-                            data-item-description="tshirt">
+                            data-item-description="tshirt"
+                            data-item-custom3-name="Color"
+                                                        >
                             ADD TO BAG
                         </button>
           </div>
@@ -159,6 +161,7 @@
     });
     $('.single-item--color').on('change',function(){
       var color_index = $(this).val();
+      $('.snipcart-add-item').data("item-custom3-value",$(this).find(":selected").text());
       console.log(color_index);
       $.get('/colors',{_id:productID},function(data) {
         //$('.snipcart-add-item').data('data-item-image',data[index].image)
