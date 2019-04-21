@@ -15,6 +15,8 @@ app.engine('hbs', hbs({extname: 'hbs', defaultLayout: 'layouts', layoutsDir: __d
 app.set('view engine', 'hbs');
 
 
+
+
 // MONGO CLIENT CONNECT LOGIC
 
  // mongoose.connect('mongodb://localhost:27017/pacific_printing');
