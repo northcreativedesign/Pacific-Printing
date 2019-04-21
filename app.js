@@ -264,6 +264,112 @@ PacificShop.create(
 });
 
 
+// MATT H AK Flag
+
+PacificShop.create(
+ {
+   name: "AK",
+   imagemock: "/img/shop/matt_h_collection/matt_h_ak_flag/matt_h_ak_flag_mock.png",
+   image1: "/img/skiff_1_shop.jpg",
+   image2: "/img/skiff_2_shop.jpg",
+   image3: "/img/shop/matt_h_collection/matt_h_ak_flag/matt_h_ak_flag_mock.png",
+   desc:"test",
+   size:['SM','M','L','XL','2XL','3XL','4XL'],
+   price_small:17.99,
+   price_big:19.99,
+     }, function(err, announcements){
+       if(err) {
+  console.log(err);
+  } else {
+    console.log("CREATED SHOP ITEM:");
+    console.log(announcements);
+    ProductMeta.create(
+      {
+        garment: "Uni - Sex Tee Shirts",
+        color:["White"],
+        images:["/img/shop/matt_h_collection/matt_h_ak_flag/uni_tshirt/matt_h_ak_flag_uni_white.png"],
+        image1:"/img/shop/matt_h_collection/matt_h_ak_flag/uni_tshirt/matt_h_ak_flag_uni_white.png",
+        image2:"/img/download3.jpg",
+        image3:"/img/downloa4.jpg",
+        size:['SM','M','L','XL','2XL','3XL','4XL'],
+        price_small:17.99,
+        price_big:19.99,
+        productID:announcements._id
+          }, function(err, announcements){
+           if(err) {
+        console.log(err);
+       } else {
+         console.log("CREATED SHOP ITEM: ");
+         console.log(announcements);
+       }
+    });
+    ProductMeta.create(
+      {
+        garment: "Premium Mens Tee Shirt",
+        color:["White"],
+        images:["/img/shop/matt_h_collection/matt_h_ak_flag/mens_tshirt/matt_h_ak_flag_menst_white.png"],
+        image:"/img/download2.jpg",
+        image1:"/img/shop/matt_h_collection/matt_h_ak_flag/mens_tshirt/matt_h_ak_flag_menst_white.png",
+        image2:"/img/download3.jpg",
+        image3:"/img/downloa4.jpg",
+        price_small:19.99,
+        price_big:21.99,
+        size:['SM','M','L','XL','2XL','3XL','4XL'],
+        productID:announcements._id
+          }, function(err, announcements){
+           if(err) {
+        console.log(err);
+       } else {
+         console.log("CREATED SHOP ITEM: ");
+         console.log(announcements);
+       }
+    });
+    ProductMeta.create(
+      {
+        garment: "Womens V - Neck",
+        color:["White"],
+        images:["/img/shop/matt_h_collection/matt_h_ak_flag/womans_vneck/matt_h_akflag_womansv_white.png"],
+        image:"/img/download2.jpg",
+        image1:"assets/img/shop/matt_h_collection/matt_h_ak_flag/womans_vneck/matt_h_akflag_womansv_white.png",
+        image2:"/img/download3.jpg",
+        image3:"/img/downloa4.jpg",
+        price_small:19.99,
+        price_big:21.99,
+        size:['SM','M','L','XL','2XL','3XL','4XL'],
+        productID:announcements._id
+          }, function(err, announcements){
+           if(err) {
+        console.log(err);
+       } else {
+         console.log("CREATED SHOP ITEM: ");
+         console.log(announcements);
+       }
+    });
+    ProductMeta.create(
+      {
+        garment: "Womens Tee Shirt",
+        color:["White"],
+        images:["/img/shop/matt_h_collection/matt_h_ak_flag/womans_tshirt/matt_h_akflag_womans_white.png"],
+        image:"/img/download2.jpg",
+        image1:"assets/img/shop/matt_h_collection/matt_h_ak_flag/womans_tshirt/matt_h_akflag_womans_white.png",
+        image2:"/img/download3.jpg",
+        image3:"/img/downloa4.jpg",
+        price_small:19.99,
+        price_big:21.99,
+        size:['SM','M','L','XL','2XL','3XL','4XL'],
+        productID:announcements._id
+          }, function(err, announcements){
+           if(err) {
+        console.log(err);
+       } else {
+         console.log("CREATED SHOP ITEM: ");
+         console.log(announcements);
+       }
+    });
+  }
+});
+
+
 app.get("/shop", function(req, res){
   // Get all Announcements from database
   PacificShop.find({}, function(err, allPacificShop){
