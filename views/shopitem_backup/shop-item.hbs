@@ -12,7 +12,7 @@
           <div class="column is-12 pimage" >
             <img src="{{pacificshop.image2}}" alt="">
           </div>
-       </div>
+        </div>
       </div>
       <div class="column is-6 single-item__featureditem">
         <img src="{{pacificshop.image3}}" alt="">
@@ -21,31 +21,42 @@
         <h3>{{pacificshop.name}}</h3>
         <div class="columns is-multiline single-item__cart-form">
           <div class="column is-12">
-            <select class="single-item--garment" name="">
-              <option value="">Garment Style</option>
+            <select class="single-item--garment" name="Garmant">
+           <option>Garment Style</option>
             </select>
           </div>
           <div class="column is-12">
             <select class="single-item--color" name="">
-              <option value="">Color</option>
+              <option value="Color">Color</option>
             </select>
           </div>
           <div class="column is-12">
-            <select class="size" name="">
+            <select class="size" name="Size">
               <option value="">Size</option>
             </select>
           </div>
           <div class="column is-12" id="results">
-            <span>Quantity</span> <span><select class="quantity">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-
+           <span><select class="quantity">
+              <option value="1">QUANTITY 1</option>
+              <option value="2">QUANTITY 2</option>
+              <option value="3">QUANTITY 3</option>
+              <option value="4">QUANTITY 4</option>
+              <option value="5">QUANTITY 5</option>
+              <option value="6">QUANTITY 6</option>
+              <option value="7">QUANTITY 7</option>
+              <option value="8">QUANTITY 8</option>
+              <option value="9">QUANTITY 9</option>
+              <option value="10">QUANTITY 10</option>
+              <option value="1">QUANTITY 11</option>
+              <option value="2">QUANTITY 12</option>
+              <option value="3">QUANTITY 13</option>
+              <option value="4">QUANTITY 14</option>
+              <option value="5">QUANTITY 15</option>
+              <option value="6">QUANTITY 16</option>
+              <option value="7">QUANTITY 17</option>
+              <option value="8">QUANTITY 18</option>
+              <option value="9">QUANTITY 19</option>
+              <option value="10">QUANTITY 20</option>
             </select></span>
           </div>
           <div class="column is-12">
@@ -53,29 +64,27 @@
             <p><a href="#">Size Chart</a></p>
           </div>
           <div class="column is-12">
-
                         <button
                             class="snipcart-add-item button single-item--cart"
+
                             data-item-id={{pacificshop._id}}
                             data-item-name={{pacificshop.name}}
-                            data-item-price="3.0"
-                            data-item-quantity ="1",
-                            data-item-weight="20"
+                            data-item-price={{pacificshop.price_small}}
+                            data-item-quantity ="1"
                             data-item-image ={{pacificshop.image3}}
                             data-item-url="https://pacific-printingak.herokuapp.com/shop/{{pacificshop._id}}"
-                            data-item-description="tshirt">
+                            data-item-custom2-name="Size"
+                            data-item-custom2-options="SM Uni - Sex Tee Shirts[+0]|SM Premium Mens Tee Shirt[+2]|SM Womens V - Neck[+2]|SM Womens Tee Shirt[+2]|M Uni - Sex Tee Shirts[+0]|Premium Mens Tee Shirt[+2]|M Womens V - Neck[+2]|M Womens Tee Shirt[+2]|L Uni - Sex Tee Shirts[+0]|L Premium Mens Tee Shirt[+2]|L Womens V - Neck[+2]|L Womens Tee Shirt[+2]|XL Uni - Sex Tee Shirts[+0]|XL Premium Mens Tee Shirt[+2]|XL Womens V - Neck[+2]|XL Womens Tee Shirt[+2]|2XL Uni - Sex Tee Shirts[+2]|2XL Premium Mens Tee Shirt[+4]|2XL Womens V - Neck[+4]|2XL Womens Tee Shirt[+4]|3XL Premium Mens Tee Shirt[+4]|3XL Uni - Sex Tee Shirts[+2]|3XL Womens V - Neck[+4]|3XL Womens Tee Shirt[+4]|4XL Premium Mens Tee Shirt[+4]|4XL Uni - Sex Tee Shirts[+2]|4XL Womens V - Neck[+4]|4XL Womens Tee Shirt[+4]"
+                            data-item-description="tshirt"
+                            data-item-custom3-name="Color"
+                                                        >
                             ADD TO BAG
                         </button>
-
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="snipcart-summary">
-    Number of items: <span class="snipcart-total-items"></span>
-    Total price: <span class="snipcart-total-price"></span>
-</div>
 </section>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" data-api-key="OWY2NzIyMWItYTI3NC00NTg3LTllM2EtY2FjNDBiOWI5Nzc1NjM2ODkzODk3MjI0ODg0ODAw" id="snipcart"></script>
@@ -84,6 +93,7 @@
 <script>
  $(document).ready(function(){
    var name = $('.snipcart-add-item').data('item-name');
+   var garment;
    $('.pimage img').click(function(){
       var thumbSrc = $(this).attr('src');
       var productID;
@@ -91,7 +101,7 @@
      var largeSrc = $('.single-item__featureditem img').attr('src');
      console.log(largeSrc);
      $('.single-item__featureditem img').attr('src',thumbSrc);
-     $('.single-item__featureditem img').css('height','100%',);
+     $('.single-item__featureditem img').css('height','100%');
      $('.single-item__featureditem img').css('width','100%');
      $(this).attr('src',largeSrc);
    })
@@ -100,38 +110,48 @@
        console.log(data[index].garment);
        group_id = data[index]._id;
           $('.single-item--garment').append("<option value="+data[index]._id+">"+data[index].garment+"</option>");
-
+          var colors = data[0].color.split(",");
+          var size = data[0].size.split(",");
+          $('.single-item--color').html('');
+            $.each(colors, function(index) {
+                $('.single-item--color').append("<option value="+index+">"+colors[index]+"</option>");
+            });
+            $.each(size, function(index) {
+                $('.size').append("<option value="+size[index]+">"+size[index]+"</option>");
+            });
         });
     });
     $('.single-item--garment').on("change",function(){
        productID = $(this).val();
-       console.log(productID);
+       //$('.snipcart-add-item').data("item-custom2-value",$(this).child.html());
+       garment = $(this).find(":selected").text();
+
       $.get( '/garmentSingle',{_id:productID},function(data) {
         //$('.snipcart-add-item').data('data-item-image',data[index].image)
         $.each(data, function(index) {
-
           //group_id = data[index]._id;
           console.log(group_id);
           $('.snipcart-add-item').data('item-image',data[index].image1);
-          $('.snipcart-add-item').data('item-id',data[index]._id);
+          //$('.snipcart-add-item').data('item-id',data[index]._id);
           $('.snipcart-add-item').data('item-description',data[index].garment);
-          $('.snipcart-add-item').data('item-price',data[index].price_small);
-          $('.single-item__featureditem img').attr('src',data[index].image1);
+          //$('.snipcart-add-item').data('item-price',data[index].price_small);
+          var colors_images = data[index].images.split(",");
+          $('.single-item__featureditem img').attr('src',colors_images[0]).css('width',"660px");
+
+          //$('.single-item__featureditem img').attr('src',data[index].image1).css('width',"660px");
           $('.size').html('');
           $('.size').on("change",function(){
-            console.log($(this).val());
-                $('.snipcart-add-item').data('item-name',name+" "+$(this).val());
+            //console.log($(this).val());
+            $('.snipcart-add-item').data('item-name',name+" "+$(this).val());
+            $('.snipcart-add-item').data("item-custom2-value",$(this).val()+" "+garment);
 
-            $('.snipcart-add-item').data('item-id',data[index]._id+$(this).val());
-           if($(this).val() =='2XL' || $(this).val() == '3XL' ||$(this).val() == '4XL' ||$(this).val() == 'XS')
-           $('.snipcart-add-item').data('item-price',data[index].price_big);
-          });
-
+            //$('.snipcart-add-item').data('item-id',data[index]._id+$(this).val());
+             //if($(this).val() =='2XL' || $(this).val() == '3XL' ||$(this).val() == '4XL' ||$(this).val() == 'XS')
+           //$('.snipcart-add-item').data('item-price',data[index].price_big);
+           });
           var colors = data[index].color.split(",");
           var size = data[index].size.split(",");
-
           $('.single-item--color').html('');
-
             $.each(colors, function(index) {
                 $('.single-item--color').append("<option value="+index+">"+colors[index]+"</option>");
             });
@@ -145,14 +165,16 @@
     });
     $('.single-item--color').on('change',function(){
       var color_index = $(this).val();
+      $('.snipcart-add-item').data("item-custom3-value",$(this).find(":selected").text());
       console.log(color_index);
-
       $.get('/colors',{_id:productID},function(data) {
         //$('.snipcart-add-item').data('data-item-image',data[index].image)
          console.log(data);
         $.each(data, function(index) {
           var colors_images = data[index].images.split(",");
-          $('.snipcart-add-item').data('item-id',data[index]._id+color_index);
+          //$('.snipcart-add-item').data('item-id',data[index]._id+color_index);
+          //$('.snipcart-add-item').data('item-url',"https://pacific-new.herokuapp.com/shop/"+data[index]._id+color_index);
+
           console.log(colors_images[0]);
           $('.snipcart-add-item').data('item-image',colors_images[color_index]);
           $('.single-item__featureditem img').attr('src',colors_images[color_index]).css('width',"660px");
