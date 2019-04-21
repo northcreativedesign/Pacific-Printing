@@ -158,6 +158,112 @@ PacificShop.create(
 });
 
 
+// MATT H AK
+
+PacificShop.create(
+ {
+   name: "AK",
+   imagemock: "/img/shop/matt_h_collection/matt_h_ak/matt_h_ak_mock.png",
+   image1: "/img/skiff_1_shop.jpg",
+   image2: "/img/skiff_2_shop.jpg",
+   image3: "/img/shop/matt_h_collection/matt_h_ak/matt_h_ak_mock.png",
+   desc:"test",
+   size:['SM','M','L','XL','2XL','3XL','4XL'],
+   price_small:17.99,
+   price_big:19.99,
+     }, function(err, announcements){
+       if(err) {
+  console.log(err);
+  } else {
+    console.log("CREATED SHOP ITEM:");
+    console.log(announcements);
+    ProductMeta.create(
+      {
+        garment: "Uni - Sex Tee Shirts",
+        color:["Black", "Gray", "Navy", "Royal", "Dk Green"],
+        images:["/img/shop/matt_h_collection/matt_h_ak/uni_tshirt/matt_h_ak_uni_black.png","/img/shop/matt_h_collection/matt_h_ak/uni_tshirt/matt_h_ak_uni_ash.png","/img/shop/matt_h_collection/matt_h_ak/uni_tshirt/matt_h_ak_uni_navy.png", "/img/shop/matt_h_collection/matt_h_ak/uni_tshirt/matt_h_ak_uni_royal.png","/img/shop/matt_h_collection/matt_h_ak/uni_tshirt/matt_h_ak_uni_dkgreen.png"],
+        image1:"/img/shop/matt_h_collection/matt_h_ak/uni_tshirt/matt_h_ak_uni_black.png",
+        image2:"/img/download3.jpg",
+        image3:"/img/downloa4.jpg",
+        size:['SM','M','L','XL','2XL','3XL','4XL'],
+        price_small:17.99,
+        price_big:19.99,
+        productID:announcements._id
+          }, function(err, announcements){
+           if(err) {
+        console.log(err);
+       } else {
+         console.log("CREATED SHOP ITEM: ");
+         console.log(announcements);
+       }
+    });
+    ProductMeta.create(
+      {
+        garment: "Premium Mens Tee Shirt",
+        color:["Vintage Black", "Gray", "Navy", "Ocean","Blue", "Heather","Green"],
+        image:"/img/download2.jpg",
+        images:["/img/black.jpg","/img/gray.jpg","/img/navy.jpg"],
+        image1:"/img/download.jpg",
+        image2:"/img/download3.jpg",
+        image3:"/img/downloa4.jpg",
+        price_small:19.99,
+        price_big:21.99,
+        size:['SM','M','L','XL','2XL','3XL','4XL'],
+        productID:announcements._id
+          }, function(err, announcements){
+           if(err) {
+        console.log(err);
+       } else {
+         console.log("CREATED SHOP ITEM: ");
+         console.log(announcements);
+       }
+    });
+    ProductMeta.create(
+      {
+        garment: "Womens V - Neck",
+        color:["Black", "New Navy", "Dark Fuchsia", "Deep Royal"],
+        images:["/img/shop/matt_h_collection/matt_h_ak/womans_vneck/matt_h_ak_womansv_black.png","/img/shop/matt_h_collection/matt_h_ak/womans_vneck/matt_h_ak_womansv_newnavy.png","/img/shop/matt_h_collection/matt_h_ak/womans_vneck/matt_h_ak_womansv_darkfuchsia.png","/img/shop/matt_h_collection/matt_h_ak/womans_vneck/matt_h_ak_womansv_deeproyal.png"],
+        image:"/img/download2.jpg",
+        image1:"/img/download.jpg",
+        image2:"/img/download3.jpg",
+        image3:"/img/downloa4.jpg",
+        price_small:19.99,
+        price_big:21.99,
+        size:['SM','M','L','XL','2XL','3XL','4XL'],
+        productID:announcements._id
+          }, function(err, announcements){
+           if(err) {
+        console.log(err);
+       } else {
+         console.log("CREATED SHOP ITEM: ");
+         console.log(announcements);
+       }
+    });
+    ProductMeta.create(
+      {
+        garment: "Womens Tee Shirt",
+        color:["Black", "New Navy", "Dark Fuchsia", "Deep Royal"],
+        images:["/img/shop/matt_h_collection/matt_h_ak/womans_tshirt/matt_h_ak_womans_black.png","/img/shop/matt_h_collection/matt_h_ak/womans_tshirt/matt_h_ak_womans_newnavy.png","/img/shop/matt_h_collection/matt_h_ak/womans_tshirt/matt_h_ak_womans_darkfuchsia.png","/img/shop/matt_h_collection/matt_h_ak/womans_tshirt/matt_h_ak_womans_deeproyal.png"],
+        image:"/img/download2.jpg",
+        image1:"/img/download.jpg",
+        image2:"/img/download3.jpg",
+        image3:"/img/downloa4.jpg",
+        price_small:19.99,
+        price_big:21.99,
+        size:['SM','M','L','XL','2XL','3XL','4XL'],
+        productID:announcements._id
+          }, function(err, announcements){
+           if(err) {
+        console.log(err);
+       } else {
+         console.log("CREATED SHOP ITEM: ");
+         console.log(announcements);
+       }
+    });
+  }
+});
+
+
 app.get("/shop", function(req, res){
   // Get all Announcements from database
   PacificShop.find({}, function(err, allPacificShop){
