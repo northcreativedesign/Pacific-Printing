@@ -45,6 +45,16 @@
 
 // SINGLE ITEM STYLING
 
+
+.shopitem-hero {
+  background-image: url('../img/shop_item_hero.jpg');
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  margin-top: -157px;
+}
+
+
 .single-item {
  h3 {
    color: $greencolor;
