@@ -7,6 +7,24 @@
 }
 
 
+.btn-outline {
+  width: 24.875rem;
+  height: 5.063rem;
+  border: 0.188rem solid #96af3c;
+  color: #96af3c;
+  font-family: Rift;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+  padding: 0;
+  &:hover {
+    border: 0.188rem solid $printcolor;
+    color: $bluecolor;
+  }
+}
+
+
 
 
 // MAIL SUBSCRIBE BUTTON
