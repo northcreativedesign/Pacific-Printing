@@ -3856,97 +3856,97 @@ app.get("/shop/:id", function(req, res){
 });
 
 
-// // CONTACT ROUTE
-// app.get("/contact", function(req, res){
-//   res.render("contact", {
-//     navstrip: "phone-nav",
-//     stripimage: "/img/phone_number.png"
-//   });
-// });
-//
-// app.post('/contact', upload.single('file'),function(req, res) {
-//   if(req.file!=undefined){
-//    sendMails(req.body,req.file,res);
-//  }
-//  else{sendMailsContent(req.body,res);}
-//    // if(req.body['g-recaptcha-response'] === undefined || req.body['g-recaptcha-response'] === '' || req.body['g-recaptcha-response'] === null)
-//    // {
-//    //   return res.json({"responseError" : "Please select captcha first"});
-//    // }
-//    // const secretKey = "6LdJUJ0UAAAAAOHPiNuPKQRQ-iNg0Z_XuHqESDW7";
-//    // const verificationURL = "https://www.google.com/recaptcha/api/siteverify?secret=" + secretKey + "&response=" + req.body['g-recaptcha-response'] + "&remoteip=" + req.connection.remoteAddress;
-//    //
-//    // request(verificationURL,function(error,response,body) {
-//    // body = JSON.parse(body);
-//    //
-//    // if(body.success !== undefined && !body.success) {
-//    //   return res.json({"responseError" : "Failed captcha verification"});
-//    // }
-//    //   res.json({"responseSuccess" : "Sucess"});
-//    // });
-// });
-//  function sendMails(senderMail,filet,res){
-//
-//    var ext =  filet.originalname.split('.').pop();
-//    console.log(ext);
-//         if(ext !== 'png' && ext !== 'jpg' && ext !== 'pdf' && ext !== 'jpeg') {
-//             res.send('Only images and pdf are allowed');
-//             return false;
-//         }
-//   var content = "<p>name-</p>"+senderMail.name+"<p>email-</p>"+senderMail.email+"<p>phone-</p>"+senderMail.phone+"<p>bussinessName-</p>"+senderMail.bussinessName+"<p>QUANTITY-</p>"+senderMail.qty+"<p>type-</p>"+senderMail.type+"<p>service-</p>"+senderMail.service;
-//   var transporter = nodemailer.createTransport({
-//    service: 'gmail',
-//      auth: {
-//         user: 'aanandchamp@gmail.com',
-//         pass: 'omsairam@#jio'
-//     }
-// });
-//   var mailOptions = {
-//    from: senderMail.email,
-//    to: 'aanandchamp@gmail.com',
-//    subject: 'Contact Info',
-//    html:content,
-//    attachments: [
-//         {   // utf-8 string as an attachment
-//             filename: filet.originalname,
-//             path:filet.path
-//         }
-//     ]
-//   };
-// transporter.sendMail(mailOptions, function(error, info){
-//   if (error) {
-//     console.log(error);
-//   } else {
-//     res.send('Successfully submitted ');
-//   }
-// });
-// }
-//
-//
-// function sendMailsContent(senderMail,res){
-//  var content = "<p>name-</p>"+senderMail.name+"<p>email-</p>"+senderMail.email+"<p>phone-</p>"+senderMail.phone+"<p>bussinessName-</p>"+senderMail.bussinessName+"<p>QUANTITY-</p>"+senderMail.qty+"<p>type-</p>"+senderMail.type+"<p>service-</p>"+senderMail.service;
-//  var transporter = nodemailer.createTransport({
-//   service: 'gmail',
-//     auth: {
-//        user: 'aanandchamp@gmail.com',
-//        pass: 'omsairam@#jio'
-//    }
-// });
-//  var mailOptions = {
-//   from: senderMail.email,
-//   to: 'aanandchamp@gmail.com',
-//   subject: 'Contact Info',
-//   html:content,
-//  };
-// transporter.sendMail(mailOptions, function(error, info){
-//  if (error) {
-//    console.log(error);
-//  } else {
-//    res.send('Successfully submitted ');
-//
-//  }
-// });
-// }
+// CONTACT ROUTE
+app.get("/contact", function(req, res){
+  res.render("contact", {
+    navstrip: "phone-nav",
+    stripimage: "/img/phone_number.png"
+  });
+});
+
+app.post('/contact', upload.single('file'),function(req, res) {
+  if(req.file!=undefined){
+   sendMails(req.body,req.file,res);
+ }
+ else{sendMailsContent(req.body,res);}
+   // if(req.body['g-recaptcha-response'] === undefined || req.body['g-recaptcha-response'] === '' || req.body['g-recaptcha-response'] === null)
+   // {
+   //   return res.json({"responseError" : "Please select captcha first"});
+   // }
+   // const secretKey = "6LdJUJ0UAAAAAOHPiNuPKQRQ-iNg0Z_XuHqESDW7";
+   // const verificationURL = "https://www.google.com/recaptcha/api/siteverify?secret=" + secretKey + "&response=" + req.body['g-recaptcha-response'] + "&remoteip=" + req.connection.remoteAddress;
+   //
+   // request(verificationURL,function(error,response,body) {
+   // body = JSON.parse(body);
+   //
+   // if(body.success !== undefined && !body.success) {
+   //   return res.json({"responseError" : "Failed captcha verification"});
+   // }
+   //   res.json({"responseSuccess" : "Sucess"});
+   // });
+});
+ function sendMails(senderMail,filet,res){
+
+   var ext =  filet.originalname.split('.').pop();
+   console.log(ext);
+        if(ext !== 'png' && ext !== 'jpg' && ext !== 'pdf' && ext !== 'jpeg') {
+            res.send('Only images and pdf are allowed');
+            return false;
+        }
+  var content = "<p>name-</p>"+senderMail.name+"<p>email-</p>"+senderMail.email+"<p>phone-</p>"+senderMail.phone+"<p>bussinessName-</p>"+senderMail.bussinessName+"<p>QUANTITY-</p>"+senderMail.qty+"<p>type-</p>"+senderMail.type+"<p>service-</p>"+senderMail.service;
+  var transporter = nodemailer.createTransport({
+   service: 'gmail',
+     auth: {
+        user: 'aanandchamp@gmail.com',
+        pass: 'omsairam@#jio'
+    }
+});
+  var mailOptions = {
+   from: senderMail.email,
+   to: 'aanandchamp@gmail.com',
+   subject: 'Contact Info',
+   html:content,
+   attachments: [
+        {   // utf-8 string as an attachment
+            filename: filet.originalname,
+            path:filet.path
+        }
+    ]
+  };
+transporter.sendMail(mailOptions, function(error, info){
+  if (error) {
+    console.log(error);
+  } else {
+    res.send('Successfully submitted ');
+  }
+});
+}
+
+
+function sendMailsContent(senderMail,res){
+ var content = "<p>name-</p>"+senderMail.name+"<p>email-</p>"+senderMail.email+"<p>phone-</p>"+senderMail.phone+"<p>bussinessName-</p>"+senderMail.bussinessName+"<p>QUANTITY-</p>"+senderMail.qty+"<p>type-</p>"+senderMail.type+"<p>service-</p>"+senderMail.service;
+ var transporter = nodemailer.createTransport({
+  service: 'gmail',
+    auth: {
+       user: 'aanandchamp@gmail.com',
+       pass: 'omsairam@#jio'
+   }
+});
+ var mailOptions = {
+  from: senderMail.email,
+  to: 'aanandchamp@gmail.com',
+  subject: 'Contact Info',
+  html:content,
+ };
+transporter.sendMail(mailOptions, function(error, info){
+ if (error) {
+   console.log(error);
+ } else {
+   res.send('Successfully submitted ');
+
+ }
+});
+}
 
 app.get("/garment", function(req, res){
   // find the shop item with provided id
