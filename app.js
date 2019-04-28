@@ -518,15 +518,13 @@ PacificShop.create(
 
 // END MATT H AK
 
-// MATT AK FLAG
-
 PacificShop.create(
  {
-   name: "AK Flag",
-   imagemock: "/img/shop/matt_h_collection/matt_h_ak_flag/matt_h_ak_flag_mock.png",
+   name: "AK FLAG",
+   imagemock: "/img/shop/matt_h_collection/matt_h_ak_flag/uni_tshirt/matt_h_ak_flag_uni_white.png",
    image1: "/img/skiff_1_shop.jpg",
    image2: "/img/skiff_2_shop.jpg",
-   image3: "/img/shop/matt_h_collection/matt_h_ak_flag/matt_h_ak_flag_mock.png",
+   image3: "/img/shop/matt_h_collection/matt_h_ak_flag/uni_tshirt/matt_h_ak_flag_uni_white.png",
    desc:"test",
    size:[
      'Small',
@@ -548,21 +546,9 @@ PacificShop.create(
     ProductMeta.create(
       {
         garment: "Uni - Sex Tee Shirts",
-        color:[
-          "Black",
-          "Gray",
-          "Navy",
-          "Royal",
-          "Dk Green"
-        ],
-        images:[
-          "/img/shop/matt_h_collection/matt_h_ak_flag/uni_tshirt/matt_h_ak_flag_uni_black.png",
-          "/img/shop/matt_h_collection/matt_h_ak_flag/uni_tshirt/matt_h_ak_flag_uni_ash.png",
-          "/img/shop/matt_h_collection/matt_h_ak_flag/uni_tshirt/matt_h_ak_flag_uni_navy.png",
-          "/img/shop/matt_h_collection/matt_h_ak_flag/uni_tshirt/matt_h_ak_flag_uni_royal.png",
-          "/img/shop/matt_h_collection/matt_h_ak_flag/uni_tshirt/matt_h_ak_flag_uni_dkgreen.png"
-        ],
-        image1:"/img/shop/matt_h_collection/matt_h_ak_flag/uni_tshirt/matt_h_ak_flag_uni_black.png",
+        color:["White"],
+        images:["/img/shop/matt_h_collection/matt_h_ak_flag/uni_tshirt/matt_h_ak_flag_uni_white.png"],
+        image1:"/img/shop/matt_h_collection/matt_h_ak_flag/uni_tshirt/matt_h_ak_flag_uni_white.png",
         image2:"/img/download3.jpg",
         image3:"/img/downloa4.jpg",
         size:[
@@ -586,64 +572,40 @@ PacificShop.create(
        }
     });
     ProductMeta.create(
-      {
-        garment: "Uni - Sex Hoodies",
-        color:[
-          "Black",
-          "Gray",
-          "Navy",
-          "Royal",
-          "Dk Green"
-        ],
-        images:[
-          "/img/shop/matt_h_collection/matt_h_ak_flag/uni_hoodie/matt_h_ak_flag_hoodie_black.png",
-          "/img/shop/matt_h_collection/matt_h_ak_flag/uni_hoodie/matt_h_ak_flag_hoodie_gray.png",
-          "/img/shop/matt_h_collection/matt_h_ak_flag/uni_hoodie/matt_h_ak_flag_hoodie_navy.png",
-          "/img/shop/matt_h_collection/matt_h_ak_flag/uni_hoodie/matt_h_ak_flag_hoodie_royal.png",
-          "/img/shop/matt_h_collection/matt_h_ak_flag/uni_hoodie/matt_h_ak_flag_hoodie_dkgreen.png"
-        ],
-        image1:"/img/shop/matt_h_collection/matt_h_ak_flag/uni_hoodie/matt_h_ak_flag_hoodie_black.png",
-        image2:"/img/download3.jpg",
-        image3:"/img/downloa4.jpg",
-        size:[
-          'Small - $33.99',
-          'Medium - $33.99',
-          'Large - $33.99',
-          'X-Large - $33.99',
-          '2XL - $36.99',
-          '3XL - $36.99',
-          '4XL - $36.99'
-        ],
-        price_small:33.99,
-        price_big:36.99,
-        productID:announcements._id
-          }, function(err, announcements){
-           if(err) {
-        console.log(err);
-       } else {
-         console.log("CREATED SHOP ITEM: ");
-         console.log(announcements);
-       }
-    });
+    {
+      garment: "Uni - Sex Hoodie",
+      color:["White"],
+      images:["/img/shop/matt_h_collection/matt_h_ak_flag/uni_hoodie/matt_h_ak_flag_hoodie_white.png"],
+      image1:"/img/shop/matt_h_collection/matt_h_ak_flag/uni_hoodie/matt_h_ak_flag__white.png",
+      image2:"/img/download3.jpg",
+      image3:"/img/downloa4.jpg",
+      size:[
+        'Small - $33.99',
+        'Medium - $33.99',
+        'Large - $33.99',
+        'X-Large - $33.99',
+        '2XL - $36.99',
+        '3XL - $36.99',
+        '4XL - $36.99'
+      ],
+      price_small:17.99,
+      price_big:19.99,
+      productID:announcements._id
+        }, function(err, announcements){
+         if(err) {
+      console.log(err);
+     } else {
+       console.log("CREATED SHOP ITEM: ");
+       console.log(announcements);
+     }
+  });
     ProductMeta.create(
       {
         garment: "Premium Mens Tee Shirt",
-        color:[
-          "Vintage Black",
-          "Gray",
-          "Navy",
-          "Ocean Blue",
-          "Heather Green"
-        ],
-        images:[
-          "/img/shop/matt_h_collection/matt_h_ak_flag/mens_tshirt/matt_h_ak_flag_menst_vintageblack.png",
-          "/img/shop/matt_h_collection/matt_h_ak_flag/mens_tshirt/matt_h_ak_flag_menst_gray.png",
-          "/img/shop/matt_h_collection/matt_h_ak_flag/mens_tshirt/matt_h_ak_flag_menst_navy.png",
-          "/img/shop/matt_h_collection/matt_h_ak_flag/mens_tshirt/matt_h_ak_flag_menst_oceanblue.png",
-          "/img/shop/matt_h_collection/matt_h_ak_flag/mens_tshirt/matt_h_ak_flag_menst_heathergreen.png"
-        ],
+        color:["White"],
+        images:["/img/shop/matt_h_collection/matt_h_ak_flag/mens_tshirt/matt_h_ak_flag_menst_white.png"],
         image:"/img/download2.jpg",
-        image1:"/img/download.jpg",
+        image1:"/img/shop/matt_h_collection/matt_h_ak_flag/mens_tshirt/matt_h_ak_flag_menst_white.png",
         image2:"/img/download3.jpg",
         image3:"/img/downloa4.jpg",
         price_small:19.99,
@@ -669,20 +631,10 @@ PacificShop.create(
     ProductMeta.create(
       {
         garment: "Womens V - Neck",
-        color:[
-          "Black",
-          "New Navy",
-          "Dark Fuchsia",
-          "Deep Royal"
-        ],
-        images:[
-          "/img/shop/matt_h_collection/matt_h_ak_flag/womans_vneck/matt_h_ak_flag_womansv_black.png",
-          "/img/shop/matt_h_collection/matt_h_ak_flag/womans_vneck/matt_h_ak_flag_womansv_newnavy.png",
-          "/img/shop/matt_h_collection/matt_h_ak_flag/womans_vneck/matt_h_ak_flag_womansv_darkfuchsia.png",
-          "/img/shop/matt_h_collection/matt_h_ak_flag/womans_vneck/matt_h_ak_flag_womansv_deeproyal.png"
-        ],
+        color:["White"],
+        images:["/img/shop/matt_h_collection/matt_h_ak_flag/womans_vneck/matt_h_akflag_womansv_white.png"],
         image:"/img/download2.jpg",
-        image1:"/img/download.jpg",
+        image1:"assets/img/shop/matt_h_collection/matt_h_ak_flag/womans_vneck/matt_h_akflag_womansv_white.png",
         image2:"/img/download3.jpg",
         image3:"/img/downloa4.jpg",
         price_small:19.99,
@@ -708,19 +660,10 @@ PacificShop.create(
     ProductMeta.create(
       {
         garment: "Womens Tee Shirt",
-        color:[
-          "Black",
-          "New Navy",
-          "Dark Fuchsia",
-          "Deep Royal"],
-        images:[
-          "/img/shop/matt_h_collection/matt_h_ak_flag/womans_tshirt/matt_h_ak_flag_womans_black.png",
-          "/img/shop/matt_h_collection/matt_h_ak_flag/womans_tshirt/matt_h_ak_flag_womans_newnavy.png",
-          "/img/shop/matt_h_collection/matt_h_ak_flag/womans_tshirt/matt_h_ak_flag_womans_darkfuchsia.png",
-          "/img/shop/matt_h_collection/matt_h_ak_flag/womans_tshirt/matt_h_ak_flag_womans_deeproyal.png"
-        ],
+        color:["White"],
+        images:["/img/shop/matt_h_collection/matt_h_ak_flag/womans_tshirt/matt_h_akflag_womans_white.png"],
         image:"/img/download2.jpg",
-        image1:"/img/download.jpg",
+        image1:"assets/img/shop/matt_h_collection/matt_h_ak_flag/womans_tshirt/matt_h_akflag_womans_white.png",
         image2:"/img/download3.jpg",
         image3:"/img/downloa4.jpg",
         price_small:19.99,
