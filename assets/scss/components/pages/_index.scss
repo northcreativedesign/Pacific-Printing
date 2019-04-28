@@ -94,6 +94,36 @@
   .container {
     margin: 0;
   }
+  .slider-navigation-next {
+    display: none;
+  }
+
+  .slider-navigation-previous {
+    display: none;
+  }
+
+  .slider-pagination {
+    display: none;
+  }
+  .column {
+    padding: 0;
+  }
+  .is-6 {
+    overflow: hidden;
+    p {
+      padding-left: 50px;
+      color: #ffffff;
+      font-family: Upgrade;
+      font-size: 2rem;
+      font-weight: 500;
+      text-align: center;
+      padding-top: 250px;
+    }
+    .signature {
+      padding-top: 0px;
+      margin-top: 30px;
+    }
+  }
 }
 
 
@@ -122,5 +152,5 @@
     border: 0.063rem solid #707070;
     background-color: #ffffff;
   }
-  
+
 }

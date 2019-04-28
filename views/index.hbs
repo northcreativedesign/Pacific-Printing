@@ -27,7 +27,7 @@
 <!-- IMAGE SLIDER SECTION -->
 
 <section class="hero is-fullheight has-carousel">
-			<div id="carousel-demo" class="hero-carousel">
+			<div id="pacificPrinting-carousel" class="hero-carousel">
 				<div class="item-1">
 					<img src="/img/slider_image_1.jpg" alt="">
 				</div>
@@ -119,8 +119,21 @@
 <section class="testimonial-section">
   <div class="container is-fluid dan-hero">
     <div class="columns">
-      <div class="column is-12">
+      <div class="column is-6 is-offset-1 testimonials-carousel" id="testimonials">
+        <div class="item-1">
+             <p>“Amazing service! Great quality! Overall, Outstanding Product.
+              <br>I am thrilled with all my purchases from Pacific Printing and am
+              <br>looking forward to working with them on future orders.”
 
+              <p class="signature">- Dr. Marna Hall
+              <br>Island to Island Veterinary Clinic</p>
+        </div>
+        <div class="item-2">
+          <p>Placeholder Text</p>
+        </div>
+        <div class="item-3">
+          <p>Text Placeholder 2</p>
+        </div>
       </div>
     </div>
   </div>
@@ -145,7 +158,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
 		<script>
-			bulmaCarousel.attach('#carousel-demo', {
+			bulmaCarousel.attach('#pacificPrinting-carousel', {
 				slidesToScroll: 1,
 				slidesToShow: 1,
         autoplay: true,
@@ -154,3 +167,14 @@
         autoplaySpeed: 6000
 			});
 		</script>
+
+    <script>
+      bulmaCarousel.attach('#testimonials', {
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        autoplay: true,
+        duration: 600,
+        autoplaySpeed: 3000,
+        loop: true,
+      });
+    </script>

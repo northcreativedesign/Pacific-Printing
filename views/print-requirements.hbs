@@ -20,10 +20,10 @@
         <h4>Get to know what makes a really great shirt.</h4>
       </div>
       <!-- ARTWORK REQUIREMENTS ACCORDION -->
-      <div class="column is-12 accordion">
+      <div class="column is-12 accordion" onclick="artReqButton()">
         <div class="accordion-header toggle">
           <p>What are the artwork requirements?</p>
-          <i class="fas fa-plus"></i>
+          <i class="fas fa-plus" id="art-requirements"></i>
         </div>
         <div class="accordion-body">
           <div class="accordion-content print-requirements__text-styling">
@@ -35,10 +35,10 @@
         </div>
       </div>
       <!-- ORDER MINIMUMS ACCORDION -->
-      <div class="column is-12 accordion">
+      <div class="column is-12 accordion" onclick="minOrderButton()">
         <div class="accordion-header toggle">
           <p>What are your order minimums?</p>
-          <i class="fas fa-plus"></i>
+          <i class="fas fa-plus" id="min-order"></i>
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
@@ -47,10 +47,10 @@
         </div>
       </div>
       <!-- SETUP FEES ACCORDION -->
-      <div class="column is-12 accordion">
+      <div class="column is-12 accordion" onclick="setUpButton()">
         <div class="accordion-header toggle">
           <p>How much are your setup fees?</p>
-          <i class="fas fa-plus"></i>
+          <i class="fas fa-plus" id="setup-fees"></i>
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
@@ -59,10 +59,10 @@
         </div>
       </div>
       <!-- TURNAROUND ACCORDION -->
-      <div class="column is-12 accordion">
+      <div class="column is-12 accordion" onclick="turnaroundTimeButton()">
         <div class="accordion-header toggle">
           <p>What is your turnaround time?</p>
-          <i class="fas fa-plus"></i>
+          <i class="fas fa-plus" id="turnaround-time"></i>
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
@@ -71,10 +71,10 @@
         </div>
       </div>
       <!-- SHIRT STYLES ACCORDION -->
-      <div class="column is-12 accordion">
+      <div class="column is-12 accordion" onclick="stylesButton()">
         <div class="accordion-header toggle">
           <p>Can I mix and match shirt styles?</p>
-          <i class="fas fa-plus"></i>
+          <i class="fas fa-plus" id="shirt-styles"></i>
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
@@ -83,10 +83,10 @@
         </div>
       </div>
       <!-- PRICE DOWN ACCORDION -->
-      <div class="column is-12 accordion">
+      <div class="column is-12 accordion" onclick="priceDownButton()">
         <div class="accordion-header toggle">
           <p>How do I keep my price down?</p>
-          <i class="fas fa-plus"></i>
+          <i class="fas fa-plus" id="price-down"></i>
         </div>
         <div class="accordion-body">
           <div class="accordion-content print-requirements__text-styling">
@@ -105,3 +105,4 @@
 <script>
   var accordions = bulmaAccordion.attach();
 </script>
+<script src="/js/printbutton.js"></script>

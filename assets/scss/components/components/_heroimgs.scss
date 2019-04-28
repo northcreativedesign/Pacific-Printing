@@ -1,8 +1,9 @@
 .index-hero {
   @include heroimg('../img/main_hero.png');
-  height: 730px;
+  height: 150vh;
+  background-size: auto;
   margin-top: 3.313rem;
-  margin-top: -157px;
+  margin-top: -600px;
 }
 
 
