@@ -5,6 +5,12 @@ h1 {
   font-size: 6.313rem;
   font-family: $secondfont;
   font-weight: 700;
+  @include desktop-only {
+    font-size: 4.15rem;
+  }
+  @include tablet-only {
+    font-size: 4.3rem;
+  }
 }
 
 
@@ -12,18 +18,27 @@ h2 {
   font-size: 3rem;
   font-weight: 500;
   font-family: $mainfont;
+  @include tablet-only {
+    font-size: 2.7rem;
+  }
 }
 
 h3 {
   font-family: $secondfont;
   font-size: 4.625rem;
   font-weight: 700;
+  @include desktop-only {
+    font-size: 3.325rem;
+  }
 }
 
 h4 {
   font-size: 2.25rem;
   font-weight: 500;
   font-family: $mainfont;
+  @include desktop-only {
+    font-size: 2rem;
+  }
 }
 
 p {
@@ -45,12 +60,24 @@ p {
 .hero-text {
   position: absolute;
   top: 37vh;
+  @include desktop-only {
+    h1 {
+      padding-top: .75rem;
+    }
+  }
+  @include tablet-only {
+    position: relative;
+    top: 40vh;
+  }
 }
 
 
 .index-text {
   position: absolute;
   top: 65vh;
+  @include tablet-only {
+    position: relative;
+  }
 }
 
 
@@ -99,6 +126,10 @@ p {
     color: $lightgreencolor;
     margin-top: -15px;
     padding-right: 100px;
+    @include desktop-only {
+      padding-right: 0;
+      font-size: 1.9rem;
+    }
   }
 }
 
@@ -108,6 +139,11 @@ p {
     margin-top: 10px;
     margin-bottom: 50px;
     padding-right: 100px;
+    @include desktop-only {
+      padding-right: 15px;
+      font-size: 1.20rem;
+      line-height: 1.6;
+    }
   }
 }
 
@@ -120,6 +156,11 @@ p {
   p {
     margin-top: 30px;
     padding-right: 100px;
+    @include desktop-only {
+      padding-right: 15px;
+      font-size: 1.20rem;
+      line-height: 1.6;
+    }
   }
 
   .last-paragraph {

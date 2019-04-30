@@ -17,30 +17,39 @@
 
 .services-hero {
   @include heroimg('../img/services_hero.jpg');
-  margin-top: -157px;
+  margin-top: -172px;
 }
 
 
 .print-hero {
   @include heroimg('../img/print_hero.jpg');
-  margin-top: -157px;
+  margin-top: -172px;
   .is-12 {
     width: 102%;
+    @include tablet-only {
+      width: 100%;
+    }
+  }
+  .column {
+    @include desktop-only {
+      padding: 0;
+    }
   }
 }
 
 
-.contact-hero {
-  @include heroimg('../img/contact-hero.jpg');
-  margin-top: -157.5px;
-}
-
 
 .matt-hero {
   @include heroimg('../img/matt_hero.jpg');
-  margin-top: -157px;
+  margin-top: -172px;
+
+  h2 {
+    @include desktop-only {
+      font-size: 2.8rem;
+    }
+  }
 }
 
 .video-hero {
-  margin-top: -157px;
+  margin-top: -172px;
 }

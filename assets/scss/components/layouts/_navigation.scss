@@ -1,13 +1,35 @@
 .phone-nav {
-  width: 120.438rem;
+  width: 100%;
   height: 3.313rem;
   background-color: #004d86;
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+  @include tablet-only {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+  }
 }
 
 .shop-nav {
-  width: 120.438rem;
+  width: 100%;
   height: 3.313rem;
   background-color: #516700;
+  img {
+    display: block;
+    margin: 0 auto;
+    @include mobile {
+      display: none;
+    }
+  }
+}
+
+.burger {
+  color: white;
 }
 
 
@@ -31,17 +53,58 @@
       color: white;
       text-decoration: underline;
     }
+
+    @include desktop-only {
+      padding-left: 25px;
+      font-size: 1.8rem;
+    }
+
   }
 
-  span {
-    margin-right: 50px;
-    padding-top: 15px;
+  .cart-img {
+    padding-right: 25px;
+    position: relative;
+    right: 25px;
+    top: 25px;
+  }
+
+  .snipcart-total-items {
+    position: relative;
+    right: -80px;
+    top: -80px;
   }
 
   .logo {
     padding-left: 25px;
   }
 
+  .mobile-logo {
+    @include desktop {
+      display: none;
+    }
+  }
 
+  .logo-div {
+    @include tablet-only {
+      display: none;
+    }
+    @include mobile {
+      display: none;
+    }
+  }
 
+  .navbar-menu {
+    @include tablet-only {
+      background-color: $bluecolor;
+    }
+    @include mobile {
+      background-color: $bluecolor;
+    }
+  }
+
+  .navbar-end {
+    @include desktop-only {
+      margin-left: 23%;
+    }
+  }
 }

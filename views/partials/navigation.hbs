@@ -1,7 +1,7 @@
 <div class="{{navstrip}}">
   <div class="container">
     <div class="columns is-fluid">
-        <div class="column is-6 is-offset-4">
+        <div class="column is-12">
           <img src="{{stripimage}}" alt="">
         </div>
     </div>
@@ -9,24 +9,25 @@
 </div>
 <nav class="navbar" role="navigation" aria-label="navigation">
   <div class="navbar-brand">
-    <div class="navbar-item">
+    <div class="navbar-item logo-div">
       <a href="/" class="logo"><img src="/img/nav_logo.png" alt=""></a>
     </div>
-    <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+    <div class="navbar-burger burger" data-target="PacPrintingNav">
       <span></span>
       <span></span>
       <span></span>
     </div>
   </div>
-  <div class="navbar-menu">
+  <div class="navbar-menu" id="PacPrintingNav">
     <div class="navbar-end">
+      <a href="/" class="mobile-logo"><img src="/img/nav_logo.png" alt=""></a>
       <a href="/services" class="navbar-item">Services</a>
       <a href="/print-requirements" class="navbar-item">Print Requirments</a>
       <a href="/shop" class="navbar-item">Shop</a>
       <a href="/contact" class="navbar-item">Contact</a>
       <a href="#" class="navbar-item snipcart-checkout">
         Cart
-        <span class="cart-img"><img src="/img/cart_icon.png" alt=""></span>
+        <span class="cart-img"><img src="/img/cart_icon.png" alt=""><span>
          <div class="snipcart-summary" style="color:white">
          <span class="snipcart-total-items" ></span>
        </div>

@@ -11,6 +11,9 @@ footer {
     font-size: 1.813rem;
     font-weight: 500;
     padding-bottom: 8px;
+    @include desktop-only {
+      font-size: 1.6rem;
+    }
   }
 
   p {
@@ -20,6 +23,10 @@ footer {
     font-weight: 500;
     span {
       font-size: 0.938rem;
+    }
+    @include desktop-only {
+      font-size: 1.2rem;
+      text-align: center;
     }
   }
 

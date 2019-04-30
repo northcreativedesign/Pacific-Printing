@@ -1,6 +1,12 @@
 // MATT HAMILITON COLLECTION STYLING
 
 .matt-statement {
+  @include desktop-only {
+    .is-fluid {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
   h3 {
     color: $bluecolor;
     margin-top: 70px;
@@ -12,11 +18,19 @@
       color: $lightbluecolor;
       margin-bottom: 25px;
     }
+    @include desktop-only {
+      font-size: 1.65rem;
+    }
   }
   p {
     padding-right: 120px;
     padding-bottom: 15px;
     line-height: 1.5;
+    @include desktop-only {
+      padding-right: 15px;
+      font-size: 1.20rem;
+      line-height: 1.6;
+    }
   }
 }
 
@@ -31,6 +45,14 @@
   }
   h4 {
     color: $lightgreencolor;
+  }
+}
+
+.shop-section {
+  .container {
+    margin-left: 45px;
+    max-width: none;
+    width: 95%;
   }
 }
 

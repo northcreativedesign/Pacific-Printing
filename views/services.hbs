@@ -106,10 +106,10 @@
   <div class="container is-fluid accordions">
     <div class="columns is-multiline">
       <!-- SIZE CHART ACCORDION -->
-      <div class="column is-12 accordion">
+      <div class="column is-12 accordion" onclick="sizeChartButton()">
         <div class="accordion-header toggle">
           <p>Sizechart</p>
-          <i class="fas fa-plus"></i>
+          <i class="fas fa-plus" id="size-chart"></i>
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
@@ -119,9 +119,9 @@
       </div>
       <!-- TURNAROUND ACCORDION -->
       <div class="column is-12 accordion">
-        <div class="accordion-header toggle">
+        <div class="accordion-header toggle" onclick="turnAroundButton()">
           <p>Turnaround</p>
-          <i class="fas fa-plus"></i>
+          <i class="fas fa-plus" id="turn-around"></i>
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
@@ -132,10 +132,10 @@
         </div>
       </div>
       <!-- MINIMUMS ACCORDION -->
-      <div class="column is-12 accordion">
+      <div class="column is-12 accordion" onclick="minimumsButton()">
         <div class="accordion-header toggle">
           <p>Minimums</p>
-          <i class="fas fa-plus"></i>
+          <i class="fas fa-plus" id="minimum-order"></i>
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
@@ -145,10 +145,10 @@
         </div>
       </div>
       <!-- ARTWORK ACCORDION -->
-      <div class="column is-12 accordion">
+      <div class="column is-12 accordion" onclick="artWorkButton()">
         <div class="accordion-header toggle">
           <p>Artwork</p>
-          <i class="fas fa-plus"></i>
+          <i class="fas fa-plus" id="artwork"></i>
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
@@ -157,10 +157,10 @@
         </div>
       </div>
       <!-- ART APPROVAL & ORDER PROOFING ACCORDION -->
-      <div class="column is-12 accordion">
+      <div class="column is-12 accordion" onclick="artApprovalButton()">
         <div class="accordion-header toggle">
           <p>Art Approval & Order Proofing</p>
-          <i class="fas fa-plus"></i>
+          <i class="fas fa-plus" id="art-approval"></i>
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
@@ -169,10 +169,10 @@
         </div>
       </div>
       <!-- OUT OF STOCK ACCORDION -->
-      <div class="column is-12 accordion">
+      <div class="column is-12 accordion" onclick="outStockButton()">
         <div class="accordion-header toggle">
           <p>Out of Stock Items</p>
-          <i class="fas fa-plus"></i>
+          <i class="fas fa-plus" id="out-stock"></i>
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
@@ -181,10 +181,10 @@
         </div>
       </div>
       <!-- COLLAR & SEAM PRINTING ACCORDION -->
-      <div class="column is-12 accordion">
+      <div class="column is-12 accordion" onclick="collarButton()">
         <div class="accordion-header toggle">
           <p>Collar & Seam Printing</p>
-          <i class="fas fa-plus"></i>
+          <i class="fas fa-plus" id="collar"></i>
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
@@ -193,10 +193,10 @@
         </div>
       </div>
       <!-- HOODIE PRINTING ACCORDION -->
-      <div class="column is-12 accordion">
+      <div class="column is-12 accordion" onclick="hoodieButton()">
         <div class="accordion-header toggle">
           <p>Hoodie Printing</p>
-          <i class="fas fa-plus"></i>
+          <i class="fas fa-plus" id="hoodie"></i>
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
@@ -205,10 +205,10 @@
         </div>
       </div>
       <!-- SPECIFIC MEASUREMENTS WHEN PRINTING ACCORDION -->
-      <div class="column is-12 accordion">
+      <div class="column is-12 accordion" onclick="measurementsButton()">
         <div class="accordion-header toggle">
           <p>Specific Measurements When Printing</p>
-          <i class="fas fa-plus"></i>
+          <i class="fas fa-plus" id="measurements"></i>
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
@@ -217,10 +217,10 @@
         </div>
       </div>
       <!-- PAYMENT ACCORDION -->
-      <div class="column is-12 accordion">
+      <div class="column is-12 accordion" onclick="paymentButton()">
         <div class="accordion-header toggle">
           <p>Payment</p>
-          <i class="fas fa-plus"></i>
+          <i class="fas fa-plus" id="payment"></i>
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
@@ -229,10 +229,10 @@
         </div>
       </div>
       <!-- CHANGES TO ORDER AFTER PAYMENT ACCORDION -->
-      <div class="column is-12 accordion">
+      <div class="column is-12 accordion" onclick="changeOrderButton()">
         <div class="accordion-header toggle">
           <p>Changes to Your Order After Payment</p>
-          <i class="fas fa-plus"></i>
+          <i class="fas fa-plus" id="change-order"></i>
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
@@ -242,10 +242,10 @@
         </div>
       </div>
       <!-- CANCELLATIONS & RESTOCKING FEES ACCORDION -->
-      <div class="column is-12 accordion">
+      <div class="column is-12 accordion" onclick="restockingButton()">
         <div class="accordion-header toggle">
           <p>Cancellations & Restocking Fees</p>
-          <i class="fas fa-plus"></i>
+          <i class="fas fa-plus" id="restocking"></i>
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
@@ -255,10 +255,10 @@
         </div>
       </div>
       <!-- MUST HAVE DATES ACCORDION -->
-      <div class="column is-12 accordion">
+      <div class="column is-12 accordion" onclick="mustHaveButton()">
         <div class="accordion-header toggle">
           <p>Must Have Dates</p>
-          <i class="fas fa-plus"></i>
+          <i class="fas fa-plus" id="must-have"></i>
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
@@ -267,10 +267,10 @@
         </div>
       </div>
       <!-- SHIPPING ACCORDION -->
-      <div class="column is-12 accordion">
+      <div class="column is-12 accordion" onclick="shippingButton()">
         <div class="accordion-header toggle">
           <p>Shipping</p>
-          <i class="fas fa-plus"></i>
+          <i class="fas fa-plus" id="shipping"></i>
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
@@ -280,10 +280,10 @@
         </div>
       </div>
       <!-- UNDER RUNS & SPOILAGE ACCORDION -->
-      <div class="column is-12 accordion">
+      <div class="column is-12 accordion" onclick="underRunButton()">
         <div class="accordion-header toggle">
           <p>Under Runs & Spoilage</p>
-          <i class="fas fa-plus"></i>
+          <i class="fas fa-plus" id="under-run"></i>
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
@@ -293,10 +293,10 @@
         </div>
       </div>
       <!-- GARMENT DISCLAIMER ACCORDION -->
-      <div class="column is-12 accordion">
+      <div class="column is-12 accordion" onclick="disclaimerButton()">
         <div class="accordion-header toggle">
           <p>Garment Disclaimer</p>
-          <i class="fas fa-plus"></i>
+          <i class="fas fa-plus" id="disclaimer"></i>
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
@@ -305,10 +305,10 @@
         </div>
       </div>
       <!-- SATISFACTION CLAUSE ACCORDION -->
-      <div class="column is-12 accordion">
+      <div class="column is-12 accordion" onclick="satisfactionClause()">
         <div class="accordion-header toggle">
           <p>Satisfaction Clause</p>
-          <i class="fas fa-plus"></i>
+          <i class="fas fa-plus" id="satisfaction"></i>
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
@@ -317,10 +317,10 @@
         </div>
       </div>
       <!-- QUALITY ASSURANCE ACCORDION -->
-      <div class="column is-12 accordion">
+      <div class="column is-12 accordion" onclick="qualityButton()">
         <div class="accordion-header toggle">
           <p>Quality Assurance</p>
-          <i class="fas fa-plus"></i>
+          <i class="fas fa-plus" id="quality"></i>
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
@@ -329,10 +329,10 @@
         </div>
       </div>
       <!-- CLAIMS & REPRINTS ACCORDION -->
-      <div class="column is-12 accordion">
+      <div class="column is-12 accordion" onclick="claimsButton()">
         <div class="accordion-header toggle">
           <p>Claims & Reprints</p>
-          <i class="fas fa-plus"></i>
+          <i class="fas fa-plus" id="claims"></i>
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
@@ -349,3 +349,4 @@
 <script>
   var accordions = bulmaAccordion.attach();
 </script>
+<script src="/js/services.js"></script>
