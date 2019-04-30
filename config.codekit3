@@ -4493,6 +4493,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/assets/img/shop/matt_h_collection/matt_h_haida_clubs/matt_h_haida_clubs_mock.png": {
+		"ft": 32768,
+		"iS": 76882,
+		"oA": 0,
+		"oAP": "/assets/img/shop/matt_h_collection/matt_h_haida_clubs/matt_h_haida_clubs_mock.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/assets/img/shop/matt_h_collection/matt_h_haida_clubs/mens_tshirt/matt_h_haida_clubs_menst_gray.png": {
 		"ft": 32768,
 		"iS": 2299229,
@@ -4743,6 +4754,17 @@
 		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/img/shop/matt_h_collection/matt_h_halibut_circle/matt_h_halibut_circle_mock.png": {
+		"ft": 32768,
+		"iS": 80365,
+		"oA": 0,
+		"oAP": "/assets/img/shop/matt_h_collection/matt_h_halibut_circle/matt_h_halibut_circle_mock.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -4999,6 +5021,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/assets/img/shop/matt_h_collection/matt_h_hauling_gear/matt_h_hauling_gear_mock.png": {
+		"ft": 32768,
+		"iS": 80360,
+		"oA": 0,
+		"oAP": "/assets/img/shop/matt_h_collection/matt_h_hauling_gear/matt_h_hauling_gear_mock.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/assets/img/shop/matt_h_collection/matt_h_hauling_gear/mens_tshirt/matt_h_hauling_gear_menst_gray.png": {
 		"ft": 32768,
 		"iS": 2257662,
@@ -5249,6 +5282,17 @@
 		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/img/shop/matt_h_collection/matt_h_hucci/matt_h_hucci_mock.png": {
+		"ft": 32768,
+		"iS": 78726,
+		"oA": 0,
+		"oAP": "/assets/img/shop/matt_h_collection/matt_h_hucci/matt_h_hucci_mock.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},

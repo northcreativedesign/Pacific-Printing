@@ -49,10 +49,12 @@
 }
 
 .shop-section {
-  .container {
-    margin-left: 45px;
-    max-width: none;
-    width: 95%;
+  @include desktop-only {
+    .container {
+      margin-left: 45px;
+      max-width: none;
+      width: 95%;
+    }
   }
 }
 
