@@ -18,6 +18,18 @@
 }
 
 
+.services-screenprinting {
+  @include tablet-only {
+    &--description {
+      order: 2;
+    }
+    &--images {
+      order: 1;
+    }
+  }
+}
+
+
 .service-header {
  height: 22rem;
   h3 {

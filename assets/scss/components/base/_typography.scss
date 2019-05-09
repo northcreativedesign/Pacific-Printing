@@ -11,6 +11,9 @@ h1 {
   @include tablet-only {
     font-size: 4.3rem;
   }
+  @include mobile {
+    font-size: 4.4rem;
+  }
 }
 
 
@@ -21,6 +24,9 @@ h2 {
   @include tablet-only {
     font-size: 2.7rem;
   }
+  @include mobile {
+    font-size: 2.5rem;
+  }
 }
 
 h3 {
@@ -30,6 +36,9 @@ h3 {
   @include desktop-only {
     font-size: 3.325rem;
   }
+  @include mobile {
+    font-size: 3.4rem;
+  }
 }
 
 h4 {
@@ -38,6 +47,9 @@ h4 {
   font-family: $mainfont;
   @include desktop-only {
     font-size: 2rem;
+  }
+  @include mobile {
+    font-size: 1.85rem;
   }
 }
 
@@ -66,6 +78,10 @@ p {
     }
   }
   @include tablet-only {
+    position: relative;
+    top: 40vh;
+  }
+  @include mobile {
     position: relative;
     top: 40vh;
   }
@@ -130,6 +146,9 @@ p {
       padding-right: 0;
       font-size: 1.9rem;
     }
+    @include mobile {
+      padding-right: 0;
+    }
   }
 }
 
@@ -143,6 +162,9 @@ p {
       padding-right: 15px;
       font-size: 1.20rem;
       line-height: 1.6;
+    }
+    @include mobile {
+      padding-right: 0;
     }
   }
 }
@@ -160,6 +182,9 @@ p {
       padding-right: 15px;
       font-size: 1.20rem;
       line-height: 1.6;
+    }
+    @include mobile {
+      padding-right: 0;
     }
   }
 

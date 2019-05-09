@@ -22,9 +22,12 @@
   img {
     display: block;
     margin: 0 auto;
-    @include mobile {
-      display: none;
-    }
+  }
+  @include mobile {
+    display: none;
+  }
+  @include tablet-only {
+    display: none;
   }
 }
 

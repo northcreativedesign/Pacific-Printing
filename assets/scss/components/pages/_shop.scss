@@ -31,6 +31,9 @@
       font-size: 1.20rem;
       line-height: 1.6;
     }
+    @include mobile {
+      padding-right: 0;
+    }
   }
 }
 

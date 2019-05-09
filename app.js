@@ -99,7 +99,7 @@ const ProductMeta = mongoose.model("ProductMeta", productMetaSchema);
 //           "/img/shop/matt_h_collection/matt_h_907/uni_tshirt/matt_h_907_uni_ash.png",
 //           "/img/shop/matt_h_collection/matt_h_907/uni_tshirt/matt_h_907_uni_navy.png",
 //           "/img/shop/matt_h_collection/matt_h_907/uni_tshirt/matt_h_907_uni_royal.png",
-//           "/img/shop/matt_h_collection/matt_h_907/uni_tshirt/matt_h_907__uni_dkgreen.png"
+//           "/img/shop/matt_h_collection/matt_h_907/uni_tshirt/matt_h_907_uni_dkgreen.png"
 //         ],
 //         image1:"/img/shop/matt_h_collection/matt_h_907/uni_tshirt/matt_h_907_uni_black.png",
 //         image2:"/img/download3.jpg",
@@ -3775,7 +3775,7 @@ const ProductMeta = mongoose.model("ProductMeta", productMetaSchema);
 //           "/img/shop/matt_h_collection/matt_h_haida_clubs/uni_tshirt/matt_h_haida_clubs_uni_ash.png",
 //           "/img/shop/matt_h_collection/matt_h_haida_clubs/uni_tshirt/matt_h_haida_clubs_uni_navy.png",
 //           "/img/shop/matt_h_collection/matt_h_haida_clubs/uni_tshirt/matt_h_haida_clubs_uni_royal.png",
-//           "/img/shop/matt_h_collection/matt_h_haida_clubs/uni_tshirt/matt_h_haida_clubs__uni_dkgreen.png"
+//           "/img/shop/matt_h_collection/matt_h_haida_clubs/uni_tshirt/matt_h_haida_clubs_uni_dkgreen.png"
 //         ],
 //         image1:"/img/shop/matt_h_collection/matt_h_haida_clubs/uni_tshirt/matt_h_haida_clubs_uni_black.png",
 //         image2:"/img/download3.jpg",
@@ -4005,7 +4005,7 @@ const ProductMeta = mongoose.model("ProductMeta", productMetaSchema);
 //           "/img/shop/matt_h_collection/matt_h_halibut_circle/uni_tshirt/matt_h_halibut_circle_uni_ash.png",
 //           "/img/shop/matt_h_collection/matt_h_halibut_circle/uni_tshirt/matt_h_halibut_circle_uni_navy.png",
 //           "/img/shop/matt_h_collection/matt_h_halibut_circle/uni_tshirt/matt_h_halibut_circle_uni_royal.png",
-//           "/img/shop/matt_h_collection/matt_h_halibut_circle/uni_tshirt/matt_h_halibut_circle__uni_dkgreen.png"
+//           "/img/shop/matt_h_collection/matt_h_halibut_circle/uni_tshirt/matt_h_halibut_circle_uni_dkgreen.png"
 //         ],
 //         image1:"/img/shop/matt_h_collection/matt_h_halibut_circle/uni_tshirt/matt_h_halibut_circle_uni_black.png",
 //         image2:"/img/download3.jpg",
@@ -4235,7 +4235,7 @@ const ProductMeta = mongoose.model("ProductMeta", productMetaSchema);
 //           "/img/shop/matt_h_collection/matt_h_hauling_gear/uni_tshirt/matt_h_hauling_gear_uni_ash.png",
 //           "/img/shop/matt_h_collection/matt_h_hauling_gear/uni_tshirt/matt_h_hauling_gear_uni_navy.png",
 //           "/img/shop/matt_h_collection/matt_h_hauling_gear/uni_tshirt/matt_h_hauling_gear_uni_royal.png",
-//           "/img/shop/matt_h_collection/matt_h_hauling_gear/uni_tshirt/matt_h_hauling_gear__uni_dkgreen.png"
+//           "/img/shop/matt_h_collection/matt_h_hauling_gear/uni_tshirt/matt_h_hauling_gear_uni_dkgreen.png"
 //         ],
 //         image1:"/img/shop/matt_h_collection/matt_h_hauling_gear/uni_tshirt/matt_h_hauling_gear_uni_black.png",
 //         image2:"/img/download3.jpg",
@@ -4465,7 +4465,7 @@ const ProductMeta = mongoose.model("ProductMeta", productMetaSchema);
 //           "/img/shop/matt_h_collection/matt_h_hucci/uni_tshirt/matt_h_hucci_uni_ash.png",
 //           "/img/shop/matt_h_collection/matt_h_hucci/uni_tshirt/matt_h_hucci_uni_navy.png",
 //           "/img/shop/matt_h_collection/matt_h_hucci/uni_tshirt/matt_h_hucci_uni_royal.png",
-//           "/img/shop/matt_h_collection/matt_h_hucci/uni_tshirt/matt_h_hucci__uni_dkgreen.png"
+//           "/img/shop/matt_h_collection/matt_h_hucci/uni_tshirt/matt_h_hucci_uni_dkgreen.png"
 //         ],
 //         image1:"/img/shop/matt_h_collection/matt_h_hucci/uni_tshirt/matt_h_hucci_uni_black.png",
 //         image2:"/img/download3.jpg",
@@ -4652,6 +4652,5027 @@ const ProductMeta = mongoose.model("ProductMeta", productMetaSchema);
 // });
 //
 // // END HUCCI
+
+
+// // ICE CUBE
+//
+// PacificShop.create(
+//  {
+//    name: "Ice Cube",
+//    imagemock: "/img/shop/matt_h_collection/matt_h_ice_cube/matt_h_ice_cube_mock.png",
+//    image1: "/img/skiff_1_shop.jpg",
+//    image2: "/img/skiff_2_shop.jpg",
+//    image3: "/img/shop/matt_h_collection/matt_h_ice_cube/matt_h_ice_cube_mock.png",
+//    desc:"test",
+//    size:[
+//      'Small',
+//      'Medium',
+//      'Large',
+//      'X-Large',
+//      '2XL',
+//      '3XL',
+//      '4XL'
+//    ],
+//    price_small:17.99,
+//    price_big:19.99,
+//      }, function(err, announcements){
+//        if(err) {
+//   console.log(err);
+//   } else {
+//     console.log("CREATED SHOP ITEM:");
+//     console.log(announcements);
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Tee Shirts",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_ice_cube/uni_tshirt/matt_h_ice_cube_uni_black.png",
+//           "/img/shop/matt_h_collection/matt_h_ice_cube/uni_tshirt/matt_h_ice_cube_uni_ash.png",
+//           "/img/shop/matt_h_collection/matt_h_ice_cube/uni_tshirt/matt_h_ice_cube_uni_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_ice_cube/uni_tshirt/matt_h_ice_cube_uni_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_ice_cube/uni_tshirt/matt_h_ice_cube_uni_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_ice_cube/uni_tshirt/matt_h_ice_cube_uni_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $17.99',
+//           'Medium - $17.99',
+//           'Large - $17.99',
+//           'X-Large - $17.99',
+//           '2XL - $19.99',
+//           '3XL - $19.99',
+//           '4XL - $19.99'
+//         ],
+//         price_small:17.99,
+//         price_big:19.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Hoodies",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_ice_cube/uni_hoodie/matt_h_ice_cube_hoodie_black.png",
+//           "/img/shop/matt_h_collection/matt_h_ice_cube/uni_hoodie/matt_h_ice_cube_hoodie_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_ice_cube/uni_hoodie/matt_h_ice_cube_hoodie_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_ice_cube/uni_hoodie/matt_h_ice_cube_hoodie_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_ice_cube/uni_hoodie/matt_h_ice_cube_hoodie_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_ice_cube/uni_hoodie/matt_h_ice_cube_hoodie_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $33.99',
+//           'Medium - $33.99',
+//           'Large - $33.99',
+//           'X-Large - $33.99',
+//           '2XL - $36.99',
+//           '3XL - $36.99',
+//           '4XL - $36.99'
+//         ],
+//         price_small:33.99,
+//         price_big:36.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Premium Mens Tee Shirt",
+//         color:[
+//           "Vintage Black",
+//           "Gray",
+//           "Navy",
+//           "Ocean Blue",
+//           "Heather Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_ice_cube/mens_tshirt/matt_h_ice_cube_menst_vintageblack.png",
+//           "/img/shop/matt_h_collection/matt_h_ice_cube/mens_tshirt/matt_h_ice_cube_menst_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_ice_cube/mens_tshirt/matt_h_ice_cube_menst_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_ice_cube/mens_tshirt/matt_h_ice_cube_menst_oceanblue.png",
+//           "/img/shop/matt_h_collection/matt_h_ice_cube/mens_tshirt/matt_h_ice_cube_menst_heathergreen.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens V - Neck",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_ice_cube/womans_vneck/matt_h_ice_cube_womansv_black.png",
+//           "/img/shop/matt_h_collection/matt_h_ice_cube/womans_vneck/matt_h_ice_cube_womansv_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_ice_cube/womans_vneck/matt_h_ice_cube_womansv_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_ice_cube/womans_vneck/matt_h_ice_cube_womansv_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens Tee Shirt",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_ice_cube/womans_tshirt/matt_h_ice_cube_womans_black.png",
+//           "/img/shop/matt_h_collection/matt_h_ice_cube/womans_tshirt/matt_h_ice_cube_womans_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_ice_cube/womans_tshirt/matt_h_ice_cube_womans_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_ice_cube/womans_tshirt/matt_h_ice_cube_womans_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//   }
+// });
+//
+// // END ICE CUBE
+//
+// // IN YOUR FACE
+//
+// PacificShop.create(
+//  {
+//    name: "In Your Face",
+//    imagemock: "/img/shop/matt_h_collection/matt_h_in_your_face/matt_h_in_your_face_mock.png",
+//    image1: "/img/skiff_1_shop.jpg",
+//    image2: "/img/skiff_2_shop.jpg",
+//    image3: "/img/shop/matt_h_collection/matt_h_in_your_face/matt_h_in_your_face_mock.png",
+//    desc:"test",
+//    size:[
+//      'Small',
+//      'Medium',
+//      'Large',
+//      'X-Large',
+//      '2XL',
+//      '3XL',
+//      '4XL'
+//    ],
+//    price_small:17.99,
+//    price_big:19.99,
+//      }, function(err, announcements){
+//        if(err) {
+//   console.log(err);
+//   } else {
+//     console.log("CREATED SHOP ITEM:");
+//     console.log(announcements);
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Tee Shirts",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_in_your_face/uni_tshirt/matt_h_in_your_face_uni_black.png",
+//           "/img/shop/matt_h_collection/matt_h_in_your_face/uni_tshirt/matt_h_in_your_face_uni_ash.png",
+//           "/img/shop/matt_h_collection/matt_h_in_your_face/uni_tshirt/matt_h_in_your_face_uni_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_in_your_face/uni_tshirt/matt_h_in_your_face_uni_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_in_your_face/uni_tshirt/matt_h_in_your_face_uni_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_in_your_face/uni_tshirt/matt_h_in_your_face_uni_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $17.99',
+//           'Medium - $17.99',
+//           'Large - $17.99',
+//           'X-Large - $17.99',
+//           '2XL - $19.99',
+//           '3XL - $19.99',
+//           '4XL - $19.99'
+//         ],
+//         price_small:17.99,
+//         price_big:19.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Hoodies",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_in_your_face/uni_hoodie/matt_h_in_your_face_hoodie_black.png",
+//           "/img/shop/matt_h_collection/matt_h_in_your_face/uni_hoodie/matt_h_in_your_face_hoodie_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_in_your_face/uni_hoodie/matt_h_in_your_face_hoodie_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_in_your_face/uni_hoodie/matt_h_in_your_face_hoodie_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_in_your_face/uni_hoodie/matt_h_in_your_face_hoodie_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_in_your_face/uni_hoodie/matt_h_in_your_face_hoodie_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $33.99',
+//           'Medium - $33.99',
+//           'Large - $33.99',
+//           'X-Large - $33.99',
+//           '2XL - $36.99',
+//           '3XL - $36.99',
+//           '4XL - $36.99'
+//         ],
+//         price_small:33.99,
+//         price_big:36.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Premium Mens Tee Shirt",
+//         color:[
+//           "Vintage Black",
+//           "Gray",
+//           "Navy",
+//           "Ocean Blue",
+//           "Heather Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_in_your_face/mens_tshirt/matt_h_in_your_face_menst_vintageblack.png",
+//           "/img/shop/matt_h_collection/matt_h_in_your_face/mens_tshirt/matt_h_in_your_face_menst_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_in_your_face/mens_tshirt/matt_h_in_your_face_menst_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_in_your_face/mens_tshirt/matt_h_in_your_face_menst_oceanblue.png",
+//           "/img/shop/matt_h_collection/matt_h_in_your_face/mens_tshirt/matt_h_in_your_face_menst_heathergreen.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens V - Neck",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_in_your_face/womans_vneck/matt_h_in_your_face_womansv_black.png",
+//           "/img/shop/matt_h_collection/matt_h_in_your_face/womans_vneck/matt_h_in_your_face_womansv_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_in_your_face/womans_vneck/matt_h_in_your_face_womansv_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_in_your_face/womans_vneck/matt_h_in_your_face_womansv_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens Tee Shirt",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_in_your_face/womans_tshirt/matt_h_in_your_face_womans_black.png",
+//           "/img/shop/matt_h_collection/matt_h_in_your_face/womans_tshirt/matt_h_in_your_face_womans_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_in_your_face/womans_tshirt/matt_h_in_your_face_womans_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_in_your_face/womans_tshirt/matt_h_in_your_face_womans_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//   }
+// });
+//
+// // END IN YOUR FACE
+//
+// // KICK IT
+//
+// PacificShop.create(
+//  {
+//    name: "Kick It",
+//    imagemock: "/img/shop/matt_h_collection/matt_h_kick_it/matt_h_kick_it_mock.png",
+//    image1: "/img/skiff_1_shop.jpg",
+//    image2: "/img/skiff_2_shop.jpg",
+//    image3: "/img/shop/matt_h_collection/matt_h_kick_it/matt_h_kick_it_mock.png",
+//    desc:"test",
+//    size:[
+//      'Small',
+//      'Medium',
+//      'Large',
+//      'X-Large',
+//      '2XL',
+//      '3XL',
+//      '4XL'
+//    ],
+//    price_small:17.99,
+//    price_big:19.99,
+//      }, function(err, announcements){
+//        if(err) {
+//   console.log(err);
+//   } else {
+//     console.log("CREATED SHOP ITEM:");
+//     console.log(announcements);
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Tee Shirts",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_kick_it/uni_tshirt/matt_h_kick_it_uni_black.png",
+//           "/img/shop/matt_h_collection/matt_h_kick_it/uni_tshirt/matt_h_kick_it_uni_ash.png",
+//           "/img/shop/matt_h_collection/matt_h_kick_it/uni_tshirt/matt_h_kick_it_uni_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_kick_it/uni_tshirt/matt_h_kick_it_uni_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_kick_it/uni_tshirt/matt_h_kick_it_uni_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_kick_it/uni_tshirt/matt_h_kick_it_uni_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $17.99',
+//           'Medium - $17.99',
+//           'Large - $17.99',
+//           'X-Large - $17.99',
+//           '2XL - $19.99',
+//           '3XL - $19.99',
+//           '4XL - $19.99'
+//         ],
+//         price_small:17.99,
+//         price_big:19.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Hoodies",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_kick_it/uni_hoodie/matt_h_kick_it_hoodie_black.png",
+//           "/img/shop/matt_h_collection/matt_h_kick_it/uni_hoodie/matt_h_kick_it_hoodie_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_kick_it/uni_hoodie/matt_h_kick_it_hoodie_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_kick_it/uni_hoodie/matt_h_kick_it_hoodie_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_kick_it/uni_hoodie/matt_h_kick_it_hoodie_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_kick_it/uni_hoodie/matt_h_kick_it_hoodie_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $33.99',
+//           'Medium - $33.99',
+//           'Large - $33.99',
+//           'X-Large - $33.99',
+//           '2XL - $36.99',
+//           '3XL - $36.99',
+//           '4XL - $36.99'
+//         ],
+//         price_small:33.99,
+//         price_big:36.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Premium Mens Tee Shirt",
+//         color:[
+//           "Vintage Black",
+//           "Gray",
+//           "Navy",
+//           "Ocean Blue",
+//           "Heather Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_kick_it/mens_tshirt/matt_h_kick_it_menst_vintageblack.png",
+//           "/img/shop/matt_h_collection/matt_h_kick_it/mens_tshirt/matt_h_kick_it_menst_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_kick_it/mens_tshirt/matt_h_kick_it_menst_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_kick_it/mens_tshirt/matt_h_kick_it_menst_oceanblue.png",
+//           "/img/shop/matt_h_collection/matt_h_kick_it/mens_tshirt/matt_h_kick_it_menst_heathergreen.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens V - Neck",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_kick_it/womans_vneck/matt_h_kick_it_womansv_black.png",
+//           "/img/shop/matt_h_collection/matt_h_kick_it/womans_vneck/matt_h_kick_it_womansv_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_kick_it/womans_vneck/matt_h_kick_it_womansv_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_kick_it/womans_vneck/matt_h_kick_it_womansv_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens Tee Shirt",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_kick_it/womans_tshirt/matt_h_kick_it_womans_black.png",
+//           "/img/shop/matt_h_collection/matt_h_kick_it/womans_tshirt/matt_h_kick_it_womans_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_kick_it/womans_tshirt/matt_h_kick_it_womans_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_kick_it/womans_tshirt/matt_h_kick_it_womans_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//   }
+// });
+//
+// // END KICK IT
+//
+// // KILLING TIME
+//
+// PacificShop.create(
+//  {
+//    name: "Killing Time",
+//    imagemock: "/img/shop/matt_h_collection/matt_h_killing_time/matt_h_killing_time_mock.png",
+//    image1: "/img/skiff_1_shop.jpg",
+//    image2: "/img/skiff_2_shop.jpg",
+//    image3: "/img/shop/matt_h_collection/matt_h_killing_time/matt_h_killing_time_mock.png",
+//    desc:"test",
+//    size:[
+//      'Small',
+//      'Medium',
+//      'Large',
+//      'X-Large',
+//      '2XL',
+//      '3XL',
+//      '4XL'
+//    ],
+//    price_small:17.99,
+//    price_big:19.99,
+//      }, function(err, announcements){
+//        if(err) {
+//   console.log(err);
+//   } else {
+//     console.log("CREATED SHOP ITEM:");
+//     console.log(announcements);
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Tee Shirts",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_killing_time/uni_tshirt/matt_h_killing_time_uni_black.png",
+//           "/img/shop/matt_h_collection/matt_h_killing_time/uni_tshirt/matt_h_killing_time_uni_ash.png",
+//           "/img/shop/matt_h_collection/matt_h_killing_time/uni_tshirt/matt_h_killing_time_uni_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_killing_time/uni_tshirt/matt_h_killing_time_uni_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_killing_time/uni_tshirt/matt_h_killing_time_uni_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_killing_time/uni_tshirt/matt_h_killing_time_uni_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $17.99',
+//           'Medium - $17.99',
+//           'Large - $17.99',
+//           'X-Large - $17.99',
+//           '2XL - $19.99',
+//           '3XL - $19.99',
+//           '4XL - $19.99'
+//         ],
+//         price_small:17.99,
+//         price_big:19.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Hoodies",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_killing_time/uni_hoodie/matt_h_killing_time_hoodie_black.png",
+//           "/img/shop/matt_h_collection/matt_h_killing_time/uni_hoodie/matt_h_killing_time_hoodie_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_killing_time/uni_hoodie/matt_h_killing_time_hoodie_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_killing_time/uni_hoodie/matt_h_killing_time_hoodie_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_killing_time/uni_hoodie/matt_h_killing_time_hoodie_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_killing_time/uni_hoodie/matt_h_killing_time_hoodie_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $33.99',
+//           'Medium - $33.99',
+//           'Large - $33.99',
+//           'X-Large - $33.99',
+//           '2XL - $36.99',
+//           '3XL - $36.99',
+//           '4XL - $36.99'
+//         ],
+//         price_small:33.99,
+//         price_big:36.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Premium Mens Tee Shirt",
+//         color:[
+//           "Vintage Black",
+//           "Gray",
+//           "Navy",
+//           "Ocean Blue",
+//           "Heather Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_killing_time/mens_tshirt/matt_h_killing_time_menst_vintageblack.png",
+//           "/img/shop/matt_h_collection/matt_h_killing_time/mens_tshirt/matt_h_killing_time_menst_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_killing_time/mens_tshirt/matt_h_killing_time_menst_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_killing_time/mens_tshirt/matt_h_killing_time_menst_oceanblue.png",
+//           "/img/shop/matt_h_collection/matt_h_killing_time/mens_tshirt/matt_h_killing_time_menst_heathergreen.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens V - Neck",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_killing_time/womans_vneck/matt_h_killing_time_womansv_black.png",
+//           "/img/shop/matt_h_collection/matt_h_killing_time/womans_vneck/matt_h_killing_time_womansv_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_killing_time/womans_vneck/matt_h_killing_time_womansv_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_killing_time/womans_vneck/matt_h_killing_time_womansv_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens Tee Shirt",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_killing_time/womans_tshirt/matt_h_killing_time_womans_black.png",
+//           "/img/shop/matt_h_collection/matt_h_killing_time/womans_tshirt/matt_h_killing_time_womans_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_killing_time/womans_tshirt/matt_h_killing_time_womans_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_killing_time/womans_tshirt/matt_h_killing_time_womans_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//   }
+// });
+//
+// // END KILLING TIME
+//
+// // KRILLING
+//
+// PacificShop.create(
+//  {
+//    name: "Krilling",
+//    imagemock: "/img/shop/matt_h_collection/matt_h_krilling/matt_h_krilling_mock.png",
+//    image1: "/img/skiff_1_shop.jpg",
+//    image2: "/img/skiff_2_shop.jpg",
+//    image3: "/img/shop/matt_h_collection/matt_h_krilling/matt_h_krilling_mock.png",
+//    desc:"test",
+//    size:[
+//      'Small',
+//      'Medium',
+//      'Large',
+//      'X-Large',
+//      '2XL',
+//      '3XL',
+//      '4XL'
+//    ],
+//    price_small:17.99,
+//    price_big:19.99,
+//      }, function(err, announcements){
+//        if(err) {
+//   console.log(err);
+//   } else {
+//     console.log("CREATED SHOP ITEM:");
+//     console.log(announcements);
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Tee Shirts",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_krilling/uni_tshirt/matt_h_krilling_uni_black.png",
+//           "/img/shop/matt_h_collection/matt_h_krilling/uni_tshirt/matt_h_krilling_uni_ash.png",
+//           "/img/shop/matt_h_collection/matt_h_krilling/uni_tshirt/matt_h_krilling_uni_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_krilling/uni_tshirt/matt_h_krilling_uni_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_krilling/uni_tshirt/matt_h_krilling_uni_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_krilling/uni_tshirt/matt_h_krilling_uni_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $17.99',
+//           'Medium - $17.99',
+//           'Large - $17.99',
+//           'X-Large - $17.99',
+//           '2XL - $19.99',
+//           '3XL - $19.99',
+//           '4XL - $19.99'
+//         ],
+//         price_small:17.99,
+//         price_big:19.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Hoodies",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_krilling/uni_hoodie/matt_h_krilling_hoodie_black.png",
+//           "/img/shop/matt_h_collection/matt_h_krilling/uni_hoodie/matt_h_krilling_hoodie_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_krilling/uni_hoodie/matt_h_krilling_hoodie_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_krilling/uni_hoodie/matt_h_krilling_hoodie_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_krilling/uni_hoodie/matt_h_krilling_hoodie_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_krilling/uni_hoodie/matt_h_krilling_hoodie_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $33.99',
+//           'Medium - $33.99',
+//           'Large - $33.99',
+//           'X-Large - $33.99',
+//           '2XL - $36.99',
+//           '3XL - $36.99',
+//           '4XL - $36.99'
+//         ],
+//         price_small:33.99,
+//         price_big:36.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Premium Mens Tee Shirt",
+//         color:[
+//           "Vintage Black",
+//           "Gray",
+//           "Navy",
+//           "Ocean Blue",
+//           "Heather Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_krilling/mens_tshirt/matt_h_krilling_menst_vintageblack.png",
+//           "/img/shop/matt_h_collection/matt_h_krilling/mens_tshirt/matt_h_krilling_menst_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_krilling/mens_tshirt/matt_h_krilling_menst_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_krilling/mens_tshirt/matt_h_krilling_menst_oceanblue.png",
+//           "/img/shop/matt_h_collection/matt_h_krilling/mens_tshirt/matt_h_krilling_menst_heathergreen.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens V - Neck",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_krilling/womans_vneck/matt_h_krilling_womansv_black.png",
+//           "/img/shop/matt_h_collection/matt_h_krilling/womans_vneck/matt_h_krilling_womansv_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_krilling/womans_vneck/matt_h_krilling_womansv_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_krilling/womans_vneck/matt_h_krilling_womansv_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens Tee Shirt",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_krilling/womans_tshirt/matt_h_krilling_womans_black.png",
+//           "/img/shop/matt_h_collection/matt_h_krilling/womans_tshirt/matt_h_krilling_womans_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_krilling/womans_tshirt/matt_h_krilling_womans_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_krilling/womans_tshirt/matt_h_krilling_womans_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//   }
+// });
+//
+// // END KRILLING
+//
+// // LOWER 48
+//
+// PacificShop.create(
+//  {
+//    name: "Lower 48",
+//    imagemock: "/img/shop/matt_h_collection/matt_h_lower_48/matt_h_lower_48_mock.png",
+//    image1: "/img/skiff_1_shop.jpg",
+//    image2: "/img/skiff_2_shop.jpg",
+//    image3: "/img/shop/matt_h_collection/matt_h_lower_48/matt_h_lower_48_mock.png",
+//    desc:"test",
+//    size:[
+//      'Small',
+//      'Medium',
+//      'Large',
+//      'X-Large',
+//      '2XL',
+//      '3XL',
+//      '4XL'
+//    ],
+//    price_small:17.99,
+//    price_big:19.99,
+//      }, function(err, announcements){
+//        if(err) {
+//   console.log(err);
+//   } else {
+//     console.log("CREATED SHOP ITEM:");
+//     console.log(announcements);
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Tee Shirts",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_lower_48/uni_tshirt/matt_h_lower_48_uni_black.png",
+//           "/img/shop/matt_h_collection/matt_h_lower_48/uni_tshirt/matt_h_lower_48_uni_ash.png",
+//           "/img/shop/matt_h_collection/matt_h_lower_48/uni_tshirt/matt_h_lower_48_uni_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_lower_48/uni_tshirt/matt_h_lower_48_uni_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_lower_48/uni_tshirt/matt_h_lower_48_uni_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_lower_48/uni_tshirt/matt_h_lower_48_uni_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $17.99',
+//           'Medium - $17.99',
+//           'Large - $17.99',
+//           'X-Large - $17.99',
+//           '2XL - $19.99',
+//           '3XL - $19.99',
+//           '4XL - $19.99'
+//         ],
+//         price_small:17.99,
+//         price_big:19.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Hoodies",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_lower_48/uni_hoodie/matt_h_lower_48_hoodie_black.png",
+//           "/img/shop/matt_h_collection/matt_h_lower_48/uni_hoodie/matt_h_lower_48_hoodie_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_lower_48/uni_hoodie/matt_h_lower_48_hoodie_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_lower_48/uni_hoodie/matt_h_lower_48_hoodie_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_lower_48/uni_hoodie/matt_h_lower_48_hoodie_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_lower_48/uni_hoodie/matt_h_lower_48_hoodie_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $33.99',
+//           'Medium - $33.99',
+//           'Large - $33.99',
+//           'X-Large - $33.99',
+//           '2XL - $36.99',
+//           '3XL - $36.99',
+//           '4XL - $36.99'
+//         ],
+//         price_small:33.99,
+//         price_big:36.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Premium Mens Tee Shirt",
+//         color:[
+//           "Vintage Black",
+//           "Gray",
+//           "Navy",
+//           "Ocean Blue",
+//           "Heather Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_lower_48/mens_tshirt/matt_h_lower_48_menst_vintageblack.png",
+//           "/img/shop/matt_h_collection/matt_h_lower_48/mens_tshirt/matt_h_lower_48_menst_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_lower_48/mens_tshirt/matt_h_lower_48_menst_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_lower_48/mens_tshirt/matt_h_lower_48_menst_oceanblue.png",
+//           "/img/shop/matt_h_collection/matt_h_lower_48/mens_tshirt/matt_h_lower_48_menst_heathergreen.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens V - Neck",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_lower_48/womans_vneck/matt_h_lower_48_womansv_black.png",
+//           "/img/shop/matt_h_collection/matt_h_lower_48/womans_vneck/matt_h_lower_48_womansv_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_lower_48/womans_vneck/matt_h_lower_48_womansv_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_lower_48/womans_vneck/matt_h_lower_48_womansv_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens Tee Shirt",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_lower_48/womans_tshirt/matt_h_lower_48_womans_black.png",
+//           "/img/shop/matt_h_collection/matt_h_lower_48/womans_tshirt/matt_h_lower_48_womans_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_lower_48/womans_tshirt/matt_h_lower_48_womans_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_lower_48/womans_tshirt/matt_h_lower_48_womans_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//   }
+// });
+//
+// // END LOWER 48
+//
+//
+// // MOTHER MOTHER
+//
+// PacificShop.create(
+//  {
+//    name: "Mother Mother",
+//    imagemock: "/img/shop/matt_h_collection/matt_h_mother_mother/matt_h_mother_mother_mock.png",
+//    image1: "/img/skiff_1_shop.jpg",
+//    image2: "/img/skiff_2_shop.jpg",
+//    image3: "/img/shop/matt_h_collection/matt_h_mother_mother/matt_h_mother_mother_mock.png",
+//    desc:"test",
+//    size:[
+//      'Small',
+//      'Medium',
+//      'Large',
+//      'X-Large',
+//      '2XL',
+//      '3XL',
+//      '4XL'
+//    ],
+//    price_small:17.99,
+//    price_big:19.99,
+//      }, function(err, announcements){
+//        if(err) {
+//   console.log(err);
+//   } else {
+//     console.log("CREATED SHOP ITEM:");
+//     console.log(announcements);
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Tee Shirts",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_mother_mother/uni_tshirt/matt_h_mother_mother_uni_black.png",
+//           "/img/shop/matt_h_collection/matt_h_mother_mother/uni_tshirt/matt_h_mother_mother_uni_ash.png",
+//           "/img/shop/matt_h_collection/matt_h_mother_mother/uni_tshirt/matt_h_mother_mother_uni_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_mother_mother/uni_tshirt/matt_h_mother_mother_uni_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_mother_mother/uni_tshirt/matt_h_mother_mother_uni_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_mother_mother/uni_tshirt/matt_h_mother_mother_uni_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $17.99',
+//           'Medium - $17.99',
+//           'Large - $17.99',
+//           'X-Large - $17.99',
+//           '2XL - $19.99',
+//           '3XL - $19.99',
+//           '4XL - $19.99'
+//         ],
+//         price_small:17.99,
+//         price_big:19.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Hoodies",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_mother_mother/uni_hoodie/matt_h_mother_mother_hoodie_black.png",
+//           "/img/shop/matt_h_collection/matt_h_mother_mother/uni_hoodie/matt_h_mother_mother_hoodie_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_mother_mother/uni_hoodie/matt_h_mother_mother_hoodie_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_mother_mother/uni_hoodie/matt_h_mother_mother_hoodie_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_mother_mother/uni_hoodie/matt_h_mother_mother_hoodie_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_mother_mother/uni_hoodie/matt_h_mother_mother_hoodie_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $33.99',
+//           'Medium - $33.99',
+//           'Large - $33.99',
+//           'X-Large - $33.99',
+//           '2XL - $36.99',
+//           '3XL - $36.99',
+//           '4XL - $36.99'
+//         ],
+//         price_small:33.99,
+//         price_big:36.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Premium Mens Tee Shirt",
+//         color:[
+//           "Vintage Black",
+//           "Gray",
+//           "Navy",
+//           "Ocean Blue",
+//           "Heather Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_mother_mother/mens_tshirt/matt_h_mother_mother_menst_vintageblack.png",
+//           "/img/shop/matt_h_collection/matt_h_mother_mother/mens_tshirt/matt_h_mother_mother_menst_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_mother_mother/mens_tshirt/matt_h_mother_mother_menst_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_mother_mother/mens_tshirt/matt_h_mother_mother_menst_oceanblue.png",
+//           "/img/shop/matt_h_collection/matt_h_mother_mother/mens_tshirt/matt_h_mother_mother_menst_heathergreen.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens V - Neck",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_mother_mother/womans_vneck/matt_h_mother_mother_womansv_black.png",
+//           "/img/shop/matt_h_collection/matt_h_mother_mother/womans_vneck/matt_h_mother_mother_womansv_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_mother_mother/womans_vneck/matt_h_mother_mother_womansv_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_mother_mother/womans_vneck/matt_h_mother_mother_womansv_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens Tee Shirt",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_mother_mother/womans_tshirt/matt_h_mother_mother_womans_black.png",
+//           "/img/shop/matt_h_collection/matt_h_mother_mother/womans_tshirt/matt_h_mother_mother_womans_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_mother_mother/womans_tshirt/matt_h_mother_mother_womans_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_mother_mother/womans_tshirt/matt_h_mother_mother_womans_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//   }
+// });
+//
+// // END MOTHER MOTHER
+//
+// // MOTOR TO THE HEAD
+//
+// PacificShop.create(
+//  {
+//    name: "Motor To The Head",
+//    imagemock: "/img/shop/matt_h_collection/matt_h_motor_to_the_head/matt_h_motor_to_the_head_mock.png",
+//    image1: "/img/skiff_1_shop.jpg",
+//    image2: "/img/skiff_2_shop.jpg",
+//    image3: "/img/shop/matt_h_collection/matt_h_motor_to_the_head/matt_h_motor_to_the_head_mock.png",
+//    desc:"test",
+//    size:[
+//      'Small',
+//      'Medium',
+//      'Large',
+//      'X-Large',
+//      '2XL',
+//      '3XL',
+//      '4XL'
+//    ],
+//    price_small:17.99,
+//    price_big:19.99,
+//      }, function(err, announcements){
+//        if(err) {
+//   console.log(err);
+//   } else {
+//     console.log("CREATED SHOP ITEM:");
+//     console.log(announcements);
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Tee Shirts",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_motor_to_the_head/uni_tshirt/matt_h_motor_to_the_head_uni_black.png",
+//           "/img/shop/matt_h_collection/matt_h_motor_to_the_head/uni_tshirt/matt_h_motor_to_the_head_uni_ash.png",
+//           "/img/shop/matt_h_collection/matt_h_motor_to_the_head/uni_tshirt/matt_h_motor_to_the_head_uni_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_motor_to_the_head/uni_tshirt/matt_h_motor_to_the_head_uni_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_motor_to_the_head/uni_tshirt/matt_h_motor_to_the_head_uni_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_motor_to_the_head/uni_tshirt/matt_h_motor_to_the_head_uni_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $17.99',
+//           'Medium - $17.99',
+//           'Large - $17.99',
+//           'X-Large - $17.99',
+//           '2XL - $19.99',
+//           '3XL - $19.99',
+//           '4XL - $19.99'
+//         ],
+//         price_small:17.99,
+//         price_big:19.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Hoodies",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_motor_to_the_head/uni_hoodie/matt_h_motor_to_the_head_hoodie_black.png",
+//           "/img/shop/matt_h_collection/matt_h_motor_to_the_head/uni_hoodie/matt_h_motor_to_the_head_hoodie_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_motor_to_the_head/uni_hoodie/matt_h_motor_to_the_head_hoodie_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_motor_to_the_head/uni_hoodie/matt_h_motor_to_the_head_hoodie_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_motor_to_the_head/uni_hoodie/matt_h_motor_to_the_head_hoodie_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_motor_to_the_head/uni_hoodie/matt_h_motor_to_the_head_hoodie_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $33.99',
+//           'Medium - $33.99',
+//           'Large - $33.99',
+//           'X-Large - $33.99',
+//           '2XL - $36.99',
+//           '3XL - $36.99',
+//           '4XL - $36.99'
+//         ],
+//         price_small:33.99,
+//         price_big:36.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Premium Mens Tee Shirt",
+//         color:[
+//           "Vintage Black",
+//           "Gray",
+//           "Navy",
+//           "Ocean Blue",
+//           "Heather Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_motor_to_the_head/mens_tshirt/matt_h_motor_to_the_head_menst_vintageblack.png",
+//           "/img/shop/matt_h_collection/matt_h_motor_to_the_head/mens_tshirt/matt_h_motor_to_the_head_menst_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_motor_to_the_head/mens_tshirt/matt_h_motor_to_the_head_menst_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_motor_to_the_head/mens_tshirt/matt_h_motor_to_the_head_menst_oceanblue.png",
+//           "/img/shop/matt_h_collection/matt_h_motor_to_the_head/mens_tshirt/matt_h_motor_to_the_head_menst_heathergreen.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens V - Neck",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_motor_to_the_head/womans_vneck/matt_h_motor_to_the_head_womansv_black.png",
+//           "/img/shop/matt_h_collection/matt_h_motor_to_the_head/womans_vneck/matt_h_motor_to_the_head_womansv_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_motor_to_the_head/womans_vneck/matt_h_motor_to_the_head_womansv_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_motor_to_the_head/womans_vneck/matt_h_motor_to_the_head_womansv_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens Tee Shirt",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_motor_to_the_head/womans_tshirt/matt_h_motor_to_the_head_womans_black.png",
+//           "/img/shop/matt_h_collection/matt_h_motor_to_the_head/womans_tshirt/matt_h_motor_to_the_head_womans_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_motor_to_the_head/womans_tshirt/matt_h_motor_to_the_head_womans_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_motor_to_the_head/womans_tshirt/matt_h_motor_to_the_head_womans_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//   }
+// });
+//
+// // END MOTOR TO THE HEAD
+//
+// // OLD SCHOOL KING
+//
+// PacificShop.create(
+//  {
+//    name: "Old School King",
+//    imagemock: "/img/shop/matt_h_collection/matt_h_old_school_king/matt_h_old_school_king_mock.png",
+//    image1: "/img/skiff_1_shop.jpg",
+//    image2: "/img/skiff_2_shop.jpg",
+//    image3: "/img/shop/matt_h_collection/matt_h_old_school_king/matt_h_old_school_king_mock.png",
+//    desc:"test",
+//    size:[
+//      'Small',
+//      'Medium',
+//      'Large',
+//      'X-Large',
+//      '2XL',
+//      '3XL',
+//      '4XL'
+//    ],
+//    price_small:17.99,
+//    price_big:19.99,
+//      }, function(err, announcements){
+//        if(err) {
+//   console.log(err);
+//   } else {
+//     console.log("CREATED SHOP ITEM:");
+//     console.log(announcements);
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Tee Shirts",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_old_school_king/uni_tshirt/matt_h_old_school_king_uni_black.png",
+//           "/img/shop/matt_h_collection/matt_h_old_school_king/uni_tshirt/matt_h_old_school_king_uni_ash.png",
+//           "/img/shop/matt_h_collection/matt_h_old_school_king/uni_tshirt/matt_h_old_school_king_uni_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_old_school_king/uni_tshirt/matt_h_old_school_king_uni_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_old_school_king/uni_tshirt/matt_h_old_school_king_uni_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_old_school_king/uni_tshirt/matt_h_old_school_king_uni_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $17.99',
+//           'Medium - $17.99',
+//           'Large - $17.99',
+//           'X-Large - $17.99',
+//           '2XL - $19.99',
+//           '3XL - $19.99',
+//           '4XL - $19.99'
+//         ],
+//         price_small:17.99,
+//         price_big:19.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Hoodies",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_old_school_king/uni_hoodie/matt_h_old_school_king_hoodie_black.png",
+//           "/img/shop/matt_h_collection/matt_h_old_school_king/uni_hoodie/matt_h_old_school_king_hoodie_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_old_school_king/uni_hoodie/matt_h_old_school_king_hoodie_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_old_school_king/uni_hoodie/matt_h_old_school_king_hoodie_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_old_school_king/uni_hoodie/matt_h_old_school_king_hoodie_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_old_school_king/uni_hoodie/matt_h_old_school_king_hoodie_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $33.99',
+//           'Medium - $33.99',
+//           'Large - $33.99',
+//           'X-Large - $33.99',
+//           '2XL - $36.99',
+//           '3XL - $36.99',
+//           '4XL - $36.99'
+//         ],
+//         price_small:33.99,
+//         price_big:36.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Premium Mens Tee Shirt",
+//         color:[
+//           "Vintage Black",
+//           "Gray",
+//           "Navy",
+//           "Ocean Blue",
+//           "Heather Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_old_school_king/mens_tshirt/matt_h_old_school_king_menst_vintageblack.png",
+//           "/img/shop/matt_h_collection/matt_h_old_school_king/mens_tshirt/matt_h_old_school_king_menst_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_old_school_king/mens_tshirt/matt_h_old_school_king_menst_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_old_school_king/mens_tshirt/matt_h_old_school_king_menst_oceanblue.png",
+//           "/img/shop/matt_h_collection/matt_h_old_school_king/mens_tshirt/matt_h_old_school_king_menst_heathergreen.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens V - Neck",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_old_school_king/womans_vneck/matt_h_old_school_king_womansv_black.png",
+//           "/img/shop/matt_h_collection/matt_h_old_school_king/womans_vneck/matt_h_old_school_king_womansv_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_old_school_king/womans_vneck/matt_h_old_school_king_womansv_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_old_school_king/womans_vneck/matt_h_old_school_king_womansv_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens Tee Shirt",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_old_school_king/womans_tshirt/matt_h_old_school_king_womans_black.png",
+//           "/img/shop/matt_h_collection/matt_h_old_school_king/womans_tshirt/matt_h_old_school_king_womans_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_old_school_king/womans_tshirt/matt_h_old_school_king_womans_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_old_school_king/womans_tshirt/matt_h_old_school_king_womans_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//   }
+// });
+//
+// // END OLD SCHOOL KING
+//
+// // PORT HOLE
+//
+// PacificShop.create(
+//  {
+//    name: "Port Hole",
+//    imagemock: "/img/shop/matt_h_collection/matt_h_port_hole/matt_h_port_hole_mock.png",
+//    image1: "/img/skiff_1_shop.jpg",
+//    image2: "/img/skiff_2_shop.jpg",
+//    image3: "/img/shop/matt_h_collection/matt_h_port_hole/matt_h_port_hole_mock.png",
+//    desc:"test",
+//    size:[
+//      'Small',
+//      'Medium',
+//      'Large',
+//      'X-Large',
+//      '2XL',
+//      '3XL',
+//      '4XL'
+//    ],
+//    price_small:17.99,
+//    price_big:19.99,
+//      }, function(err, announcements){
+//        if(err) {
+//   console.log(err);
+//   } else {
+//     console.log("CREATED SHOP ITEM:");
+//     console.log(announcements);
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Tee Shirts",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_port_hole/uni_tshirt/matt_h_port_hole_uni_black.png",
+//           "/img/shop/matt_h_collection/matt_h_port_hole/uni_tshirt/matt_h_port_hole_uni_ash.png",
+//           "/img/shop/matt_h_collection/matt_h_port_hole/uni_tshirt/matt_h_port_hole_uni_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_port_hole/uni_tshirt/matt_h_port_hole_uni_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_port_hole/uni_tshirt/matt_h_port_hole_uni_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_port_hole/uni_tshirt/matt_h_port_hole_uni_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $17.99',
+//           'Medium - $17.99',
+//           'Large - $17.99',
+//           'X-Large - $17.99',
+//           '2XL - $19.99',
+//           '3XL - $19.99',
+//           '4XL - $19.99'
+//         ],
+//         price_small:17.99,
+//         price_big:19.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Hoodies",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_port_hole/uni_hoodie/matt_h_port_hole_hoodie_black.png",
+//           "/img/shop/matt_h_collection/matt_h_port_hole/uni_hoodie/matt_h_port_hole_hoodie_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_port_hole/uni_hoodie/matt_h_port_hole_hoodie_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_port_hole/uni_hoodie/matt_h_port_hole_hoodie_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_port_hole/uni_hoodie/matt_h_port_hole_hoodie_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_port_hole/uni_hoodie/matt_h_port_hole_hoodie_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $33.99',
+//           'Medium - $33.99',
+//           'Large - $33.99',
+//           'X-Large - $33.99',
+//           '2XL - $36.99',
+//           '3XL - $36.99',
+//           '4XL - $36.99'
+//         ],
+//         price_small:33.99,
+//         price_big:36.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Premium Mens Tee Shirt",
+//         color:[
+//           "Vintage Black",
+//           "Gray",
+//           "Navy",
+//           "Ocean Blue",
+//           "Heather Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_port_hole/mens_tshirt/matt_h_port_hole_menst_vintageblack.png",
+//           "/img/shop/matt_h_collection/matt_h_port_hole/mens_tshirt/matt_h_port_hole_menst_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_port_hole/mens_tshirt/matt_h_port_hole_menst_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_port_hole/mens_tshirt/matt_h_port_hole_menst_oceanblue.png",
+//           "/img/shop/matt_h_collection/matt_h_port_hole/mens_tshirt/matt_h_port_hole_menst_heathergreen.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens V - Neck",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_port_hole/womans_vneck/matt_h_port_hole_womansv_black.png",
+//           "/img/shop/matt_h_collection/matt_h_port_hole/womans_vneck/matt_h_port_hole_womansv_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_port_hole/womans_vneck/matt_h_port_hole_womansv_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_port_hole/womans_vneck/matt_h_port_hole_womansv_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens Tee Shirt",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_port_hole/womans_tshirt/matt_h_port_hole_womans_black.png",
+//           "/img/shop/matt_h_collection/matt_h_port_hole/womans_tshirt/matt_h_port_hole_womans_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_port_hole/womans_tshirt/matt_h_port_hole_womans_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_port_hole/womans_tshirt/matt_h_port_hole_womans_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//   }
+// });
+//
+// // END PORTHOLE
+
+
+// // REEL 907
+//
+// PacificShop.create(
+//  {
+//    name: "Reel 907",
+//    imagemock: "/img/shop/matt_h_collection/matt_h_reel_907/matt_h_reel_907_mock.png",
+//    image1: "/img/skiff_1_shop.jpg",
+//    image2: "/img/skiff_2_shop.jpg",
+//    image3: "/img/shop/matt_h_collection/matt_h_reel_907/matt_h_reel_907_mock.png",
+//    desc:"test",
+//    size:[
+//      'Small',
+//      'Medium',
+//      'Large',
+//      'X-Large',
+//      '2XL',
+//      '3XL',
+//      '4XL'
+//    ],
+//    price_small:17.99,
+//    price_big:19.99,
+//      }, function(err, announcements){
+//        if(err) {
+//   console.log(err);
+//   } else {
+//     console.log("CREATED SHOP ITEM:");
+//     console.log(announcements);
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Tee Shirts",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_reel_907/uni_tshirt/matt_h_reel_907_uni_black.png",
+//           "/img/shop/matt_h_collection/matt_h_reel_907/uni_tshirt/matt_h_reel_907_uni_ash.png",
+//           "/img/shop/matt_h_collection/matt_h_reel_907/uni_tshirt/matt_h_reel_907_uni_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_reel_907/uni_tshirt/matt_h_reel_907_uni_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_reel_907/uni_tshirt/matt_h_reel_907_uni_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_reel_907/uni_tshirt/matt_h_reel_907_uni_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $17.99',
+//           'Medium - $17.99',
+//           'Large - $17.99',
+//           'X-Large - $17.99',
+//           '2XL - $19.99',
+//           '3XL - $19.99',
+//           '4XL - $19.99'
+//         ],
+//         price_small:17.99,
+//         price_big:19.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Hoodies",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_reel_907/uni_hoodie/matt_h_reel_907_hoodie_black.png",
+//           "/img/shop/matt_h_collection/matt_h_reel_907/uni_hoodie/matt_h_reel_907_hoodie_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_reel_907/uni_hoodie/matt_h_reel_907_hoodie_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_reel_907/uni_hoodie/matt_h_reel_907_hoodie_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_reel_907/uni_hoodie/matt_h_reel_907_hoodie_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_reel_907/uni_hoodie/matt_h_reel_907_hoodie_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $33.99',
+//           'Medium - $33.99',
+//           'Large - $33.99',
+//           'X-Large - $33.99',
+//           '2XL - $36.99',
+//           '3XL - $36.99',
+//           '4XL - $36.99'
+//         ],
+//         price_small:33.99,
+//         price_big:36.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Premium Mens Tee Shirt",
+//         color:[
+//           "Vintage Black",
+//           "Gray",
+//           "Navy",
+//           "Ocean Blue",
+//           "Heather Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_reel_907/mens_tshirt/matt_h_reel_907_menst_vintageblack.png",
+//           "/img/shop/matt_h_collection/matt_h_reel_907/mens_tshirt/matt_h_reel_907_menst_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_reel_907/mens_tshirt/matt_h_reel_907_menst_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_reel_907/mens_tshirt/matt_h_reel_907_menst_oceanblue.png",
+//           "/img/shop/matt_h_collection/matt_h_reel_907/mens_tshirt/matt_h_reel_907_menst_heathergreen.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens V - Neck",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_reel_907/womans_vneck/matt_h_reel_907_womansv_black.png",
+//           "/img/shop/matt_h_collection/matt_h_reel_907/womans_vneck/matt_h_reel_907_womansv_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_reel_907/womans_vneck/matt_h_reel_907_womansv_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_reel_907/womans_vneck/matt_h_reel_907_womansv_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens Tee Shirt",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_reel_907/womans_tshirt/matt_h_reel_907_womans_black.png",
+//           "/img/shop/matt_h_collection/matt_h_reel_907/womans_tshirt/matt_h_reel_907_womans_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_reel_907/womans_tshirt/matt_h_reel_907_womans_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_reel_907/womans_tshirt/matt_h_reel_907_womans_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//   }
+// });
+//
+// // END Reel 907
+//
+// // SEA WEED
+//
+// PacificShop.create(
+//  {
+//    name: "Sea Weed",
+//    imagemock: "/img/shop/matt_h_collection/matt_h_sea_weed/matt_h_sea_weed_mock.png",
+//    image1: "/img/skiff_1_shop.jpg",
+//    image2: "/img/skiff_2_shop.jpg",
+//    image3: "/img/shop/matt_h_collection/matt_h_sea_weed/matt_h_sea_weed_mock.png",
+//    desc:"test",
+//    size:[
+//      'Small',
+//      'Medium',
+//      'Large',
+//      'X-Large',
+//      '2XL',
+//      '3XL',
+//      '4XL'
+//    ],
+//    price_small:17.99,
+//    price_big:19.99,
+//      }, function(err, announcements){
+//        if(err) {
+//   console.log(err);
+//   } else {
+//     console.log("CREATED SHOP ITEM:");
+//     console.log(announcements);
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Tee Shirts",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_sea_weed/uni_tshirt/matt_h_sea_weed_uni_black.png",
+//           "/img/shop/matt_h_collection/matt_h_sea_weed/uni_tshirt/matt_h_sea_weed_uni_ash.png",
+//           "/img/shop/matt_h_collection/matt_h_sea_weed/uni_tshirt/matt_h_sea_weed_uni_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_sea_weed/uni_tshirt/matt_h_sea_weed_uni_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_sea_weed/uni_tshirt/matt_h_sea_weed_uni_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_sea_weed/uni_tshirt/matt_h_sea_weed_uni_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $17.99',
+//           'Medium - $17.99',
+//           'Large - $17.99',
+//           'X-Large - $17.99',
+//           '2XL - $19.99',
+//           '3XL - $19.99',
+//           '4XL - $19.99'
+//         ],
+//         price_small:17.99,
+//         price_big:19.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Hoodies",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_sea_weed/uni_hoodie/matt_h_sea_weed_hoodie_black.png",
+//           "/img/shop/matt_h_collection/matt_h_sea_weed/uni_hoodie/matt_h_sea_weed_hoodie_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_sea_weed/uni_hoodie/matt_h_sea_weed_hoodie_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_sea_weed/uni_hoodie/matt_h_sea_weed_hoodie_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_sea_weed/uni_hoodie/matt_h_sea_weed_hoodie_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_sea_weed/uni_hoodie/matt_h_sea_weed_hoodie_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $33.99',
+//           'Medium - $33.99',
+//           'Large - $33.99',
+//           'X-Large - $33.99',
+//           '2XL - $36.99',
+//           '3XL - $36.99',
+//           '4XL - $36.99'
+//         ],
+//         price_small:33.99,
+//         price_big:36.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Premium Mens Tee Shirt",
+//         color:[
+//           "Vintage Black",
+//           "Gray",
+//           "Navy",
+//           "Ocean Blue",
+//           "Heather Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_sea_weed/mens_tshirt/matt_h_sea_weed_menst_vintageblack.png",
+//           "/img/shop/matt_h_collection/matt_h_sea_weed/mens_tshirt/matt_h_sea_weed_menst_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_sea_weed/mens_tshirt/matt_h_sea_weed_menst_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_sea_weed/mens_tshirt/matt_h_sea_weed_menst_oceanblue.png",
+//           "/img/shop/matt_h_collection/matt_h_sea_weed/mens_tshirt/matt_h_sea_weed_menst_heathergreen.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens V - Neck",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_sea_weed/womans_vneck/matt_h_sea_weed_womansv_black.png",
+//           "/img/shop/matt_h_collection/matt_h_sea_weed/womans_vneck/matt_h_sea_weed_womansv_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_sea_weed/womans_vneck/matt_h_sea_weed_womansv_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_sea_weed/womans_vneck/matt_h_sea_weed_womansv_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens Tee Shirt",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_sea_weed/womans_tshirt/matt_h_sea_weed_womans_black.png",
+//           "/img/shop/matt_h_collection/matt_h_sea_weed/womans_tshirt/matt_h_sea_weed_womans_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_sea_weed/womans_tshirt/matt_h_sea_weed_womans_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_sea_weed/womans_tshirt/matt_h_sea_weed_womans_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//   }
+// });
+//
+// // SEA WEED
+//
+// // SEINE OR SHINE
+//
+// PacificShop.create(
+//  {
+//    name: "Seine or Shine",
+//    imagemock: "/img/shop/matt_h_collection/matt_h_seine_or_shine/matt_h_seine_or_shine_mock.png",
+//    image1: "/img/skiff_1_shop.jpg",
+//    image2: "/img/skiff_2_shop.jpg",
+//    image3: "/img/shop/matt_h_collection/matt_h_seine_or_shine/matt_h_seine_or_shine_mock.png",
+//    desc:"test",
+//    size:[
+//      'Small',
+//      'Medium',
+//      'Large',
+//      'X-Large',
+//      '2XL',
+//      '3XL',
+//      '4XL'
+//    ],
+//    price_small:17.99,
+//    price_big:19.99,
+//      }, function(err, announcements){
+//        if(err) {
+//   console.log(err);
+//   } else {
+//     console.log("CREATED SHOP ITEM:");
+//     console.log(announcements);
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Tee Shirts",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_seine_or_shine/uni_tshirt/matt_h_seine_or_shine_uni_black.png",
+//           "/img/shop/matt_h_collection/matt_h_seine_or_shine/uni_tshirt/matt_h_seine_or_shine_uni_ash.png",
+//           "/img/shop/matt_h_collection/matt_h_seine_or_shine/uni_tshirt/matt_h_seine_or_shine_uni_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_seine_or_shine/uni_tshirt/matt_h_seine_or_shine_uni_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_seine_or_shine/uni_tshirt/matt_h_seine_or_shine_uni_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_seine_or_shine/uni_tshirt/matt_h_seine_or_shine_uni_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $17.99',
+//           'Medium - $17.99',
+//           'Large - $17.99',
+//           'X-Large - $17.99',
+//           '2XL - $19.99',
+//           '3XL - $19.99',
+//           '4XL - $19.99'
+//         ],
+//         price_small:17.99,
+//         price_big:19.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Hoodies",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_seine_or_shine/uni_hoodie/matt_h_seine_or_shine_hoodie_black.png",
+//           "/img/shop/matt_h_collection/matt_h_seine_or_shine/uni_hoodie/matt_h_seine_or_shine_hoodie_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_seine_or_shine/uni_hoodie/matt_h_seine_or_shine_hoodie_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_seine_or_shine/uni_hoodie/matt_h_seine_or_shine_hoodie_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_seine_or_shine/uni_hoodie/matt_h_seine_or_shine_hoodie_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_seine_or_shine/uni_hoodie/matt_h_seine_or_shine_hoodie_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $33.99',
+//           'Medium - $33.99',
+//           'Large - $33.99',
+//           'X-Large - $33.99',
+//           '2XL - $36.99',
+//           '3XL - $36.99',
+//           '4XL - $36.99'
+//         ],
+//         price_small:33.99,
+//         price_big:36.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Premium Mens Tee Shirt",
+//         color:[
+//           "Vintage Black",
+//           "Gray",
+//           "Navy",
+//           "Ocean Blue",
+//           "Heather Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_seine_or_shine/mens_tshirt/matt_h_seine_or_shine_menst_vintageblack.png",
+//           "/img/shop/matt_h_collection/matt_h_seine_or_shine/mens_tshirt/matt_h_seine_or_shine_menst_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_seine_or_shine/mens_tshirt/matt_h_seine_or_shine_menst_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_seine_or_shine/mens_tshirt/matt_h_seine_or_shine_menst_oceanblue.png",
+//           "/img/shop/matt_h_collection/matt_h_seine_or_shine/mens_tshirt/matt_h_seine_or_shine_menst_heathergreen.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens V - Neck",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_seine_or_shine/womans_vneck/matt_h_seine_or_shine_womansv_black.png",
+//           "/img/shop/matt_h_collection/matt_h_seine_or_shine/womans_vneck/matt_h_seine_or_shine_womansv_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_seine_or_shine/womans_vneck/matt_h_seine_or_shine_womansv_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_seine_or_shine/womans_vneck/matt_h_seine_or_shine_womansv_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens Tee Shirt",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_seine_or_shine/womans_tshirt/matt_h_seine_or_shine_womans_black.png",
+//           "/img/shop/matt_h_collection/matt_h_seine_or_shine/womans_tshirt/matt_h_seine_or_shine_womans_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_seine_or_shine/womans_tshirt/matt_h_seine_or_shine_womans_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_seine_or_shine/womans_tshirt/matt_h_seine_or_shine_womans_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//   }
+// });
+//
+// // END SEINE OR SHINE
+//
+//
+// // SKIFF HAIR
+//
+// PacificShop.create(
+//  {
+//    name: "Skiff Hair",
+//    imagemock: "/img/shop/matt_h_collection/matt_h_skiff_hair/matt_h_skiff_hair_mock.png",
+//    image1: "/img/skiff_1_shop.jpg",
+//    image2: "/img/skiff_2_shop.jpg",
+//    image3: "/img/shop/matt_h_collection/matt_h_skiff_hair/matt_h_skiff_hair_mock.png",
+//    desc:"test",
+//    size:[
+//      'Small',
+//      'Medium',
+//      'Large',
+//      'X-Large',
+//      '2XL',
+//      '3XL',
+//      '4XL'
+//    ],
+//    price_small:17.99,
+//    price_big:19.99,
+//      }, function(err, announcements){
+//        if(err) {
+//   console.log(err);
+//   } else {
+//     console.log("CREATED SHOP ITEM:");
+//     console.log(announcements);
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Tee Shirts",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_skiff_hair/uni_tshirt/matt_h_skiff_hair_uni_black.png",
+//           "/img/shop/matt_h_collection/matt_h_skiff_hair/uni_tshirt/matt_h_skiff_hair_uni_ash.png",
+//           "/img/shop/matt_h_collection/matt_h_skiff_hair/uni_tshirt/matt_h_skiff_hair_uni_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_skiff_hair/uni_tshirt/matt_h_skiff_hair_uni_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_skiff_hair/uni_tshirt/matt_h_skiff_hair_uni_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_skiff_hair/uni_tshirt/matt_h_skiff_hair_uni_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $17.99',
+//           'Medium - $17.99',
+//           'Large - $17.99',
+//           'X-Large - $17.99',
+//           '2XL - $19.99',
+//           '3XL - $19.99',
+//           '4XL - $19.99'
+//         ],
+//         price_small:17.99,
+//         price_big:19.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Hoodies",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_skiff_hair/uni_hoodie/matt_h_skiff_hair_hoodie_black.png",
+//           "/img/shop/matt_h_collection/matt_h_skiff_hair/uni_hoodie/matt_h_skiff_hair_hoodie_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_skiff_hair/uni_hoodie/matt_h_skiff_hair_hoodie_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_skiff_hair/uni_hoodie/matt_h_skiff_hair_hoodie_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_skiff_hair/uni_hoodie/matt_h_skiff_hair_hoodie_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_skiff_hair/uni_hoodie/matt_h_skiff_hair_hoodie_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $33.99',
+//           'Medium - $33.99',
+//           'Large - $33.99',
+//           'X-Large - $33.99',
+//           '2XL - $36.99',
+//           '3XL - $36.99',
+//           '4XL - $36.99'
+//         ],
+//         price_small:33.99,
+//         price_big:36.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Premium Mens Tee Shirt",
+//         color:[
+//           "Vintage Black",
+//           "Gray",
+//           "Navy",
+//           "Ocean Blue",
+//           "Heather Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_skiff_hair/mens_tshirt/matt_h_skiff_hair_menst_vintageblack.png",
+//           "/img/shop/matt_h_collection/matt_h_skiff_hair/mens_tshirt/matt_h_skiff_hair_menst_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_skiff_hair/mens_tshirt/matt_h_skiff_hair_menst_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_skiff_hair/mens_tshirt/matt_h_skiff_hair_menst_oceanblue.png",
+//           "/img/shop/matt_h_collection/matt_h_skiff_hair/mens_tshirt/matt_h_skiff_hair_menst_heathergreen.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens V - Neck",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_skiff_hair/womans_vneck/matt_h_skiff_hair_womansv_black.png",
+//           "/img/shop/matt_h_collection/matt_h_skiff_hair/womans_vneck/matt_h_skiff_hair_womansv_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_skiff_hair/womans_vneck/matt_h_skiff_hair_womansv_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_skiff_hair/womans_vneck/matt_h_skiff_hair_womansv_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens Tee Shirt",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_skiff_hair/womans_tshirt/matt_h_skiff_hair_womans_black.png",
+//           "/img/shop/matt_h_collection/matt_h_skiff_hair/womans_tshirt/matt_h_skiff_hair_womans_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_skiff_hair/womans_tshirt/matt_h_skiff_hair_womans_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_skiff_hair/womans_tshirt/matt_h_skiff_hair_womans_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//   }
+// });
+//
+// // END SKIFF HAIR
+//
+// // SKULL TUNNEL
+//
+// PacificShop.create(
+//  {
+//    name: "Skull Tunnel",
+//    imagemock: "/img/shop/matt_h_collection/matt_h_skull_tunnel/matt_h_skull_tunnel_mock.png",
+//    image1: "/img/skiff_1_shop.jpg",
+//    image2: "/img/skiff_2_shop.jpg",
+//    image3: "/img/shop/matt_h_collection/matt_h_skull_tunnel/matt_h_skull_tunnel_mock.png",
+//    desc:"test",
+//    size:[
+//      'Small',
+//      'Medium',
+//      'Large',
+//      'X-Large',
+//      '2XL',
+//      '3XL',
+//      '4XL'
+//    ],
+//    price_small:17.99,
+//    price_big:19.99,
+//      }, function(err, announcements){
+//        if(err) {
+//   console.log(err);
+//   } else {
+//     console.log("CREATED SHOP ITEM:");
+//     console.log(announcements);
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Tee Shirts",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_skull_tunnel/uni_tshirt/matt_h_skull_tunnel_uni_black.png",
+//           "/img/shop/matt_h_collection/matt_h_skull_tunnel/uni_tshirt/matt_h_skull_tunnel_uni_ash.png",
+//           "/img/shop/matt_h_collection/matt_h_skull_tunnel/uni_tshirt/matt_h_skull_tunnel_uni_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_skull_tunnel/uni_tshirt/matt_h_skull_tunnel_uni_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_skull_tunnel/uni_tshirt/matt_h_skull_tunnel_uni_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_skull_tunnel/uni_tshirt/matt_h_skull_tunnel_uni_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $17.99',
+//           'Medium - $17.99',
+//           'Large - $17.99',
+//           'X-Large - $17.99',
+//           '2XL - $19.99',
+//           '3XL - $19.99',
+//           '4XL - $19.99'
+//         ],
+//         price_small:17.99,
+//         price_big:19.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Hoodies",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_skull_tunnel/uni_hoodie/matt_h_skull_tunnel_hoodie_black.png",
+//           "/img/shop/matt_h_collection/matt_h_skull_tunnel/uni_hoodie/matt_h_skull_tunnel_hoodie_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_skull_tunnel/uni_hoodie/matt_h_skull_tunnel_hoodie_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_skull_tunnel/uni_hoodie/matt_h_skull_tunnel_hoodie_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_skull_tunnel/uni_hoodie/matt_h_skull_tunnel_hoodie_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_skull_tunnel/uni_hoodie/matt_h_skull_tunnel_hoodie_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $33.99',
+//           'Medium - $33.99',
+//           'Large - $33.99',
+//           'X-Large - $33.99',
+//           '2XL - $36.99',
+//           '3XL - $36.99',
+//           '4XL - $36.99'
+//         ],
+//         price_small:33.99,
+//         price_big:36.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Premium Mens Tee Shirt",
+//         color:[
+//           "Vintage Black",
+//           "Gray",
+//           "Navy",
+//           "Ocean Blue",
+//           "Heather Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_skull_tunnel/mens_tshirt/matt_h_skull_tunnel_menst_vintageblack.png",
+//           "/img/shop/matt_h_collection/matt_h_skull_tunnel/mens_tshirt/matt_h_skull_tunnel_menst_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_skull_tunnel/mens_tshirt/matt_h_skull_tunnel_menst_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_skull_tunnel/mens_tshirt/matt_h_skull_tunnel_menst_oceanblue.png",
+//           "/img/shop/matt_h_collection/matt_h_skull_tunnel/mens_tshirt/matt_h_skull_tunnel_menst_heathergreen.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens V - Neck",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_skull_tunnel/womans_vneck/matt_h_skull_tunnel_womansv_black.png",
+//           "/img/shop/matt_h_collection/matt_h_skull_tunnel/womans_vneck/matt_h_skull_tunnel_womansv_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_skull_tunnel/womans_vneck/matt_h_skull_tunnel_womansv_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_skull_tunnel/womans_vneck/matt_h_skull_tunnel_womansv_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens Tee Shirt",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_skull_tunnel/womans_tshirt/matt_h_skull_tunnel_womans_black.png",
+//           "/img/shop/matt_h_collection/matt_h_skull_tunnel/womans_tshirt/matt_h_skull_tunnel_womans_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_skull_tunnel/womans_tshirt/matt_h_skull_tunnel_womans_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_skull_tunnel/womans_tshirt/matt_h_skull_tunnel_womans_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//   }
+// });
+//
+// // END SKULL TUNNEL
+//
+// // SLUG LIFE
+//
+// PacificShop.create(
+//  {
+//    name: "Slug Life",
+//    imagemock: "/img/shop/matt_h_collection/matt_h_slug_life/matt_h_slug_life_mock.png",
+//    image1: "/img/skiff_1_shop.jpg",
+//    image2: "/img/skiff_2_shop.jpg",
+//    image3: "/img/shop/matt_h_collection/matt_h_slug_life/matt_h_slug_life_mock.png",
+//    desc:"test",
+//    size:[
+//      'Small',
+//      'Medium',
+//      'Large',
+//      'X-Large',
+//      '2XL',
+//      '3XL',
+//      '4XL'
+//    ],
+//    price_small:17.99,
+//    price_big:19.99,
+//      }, function(err, announcements){
+//        if(err) {
+//   console.log(err);
+//   } else {
+//     console.log("CREATED SHOP ITEM:");
+//     console.log(announcements);
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Tee Shirts",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_slug_life/uni_tshirt/matt_h_slug_life_uni_black.png",
+//           "/img/shop/matt_h_collection/matt_h_slug_life/uni_tshirt/matt_h_slug_life_uni_ash.png",
+//           "/img/shop/matt_h_collection/matt_h_slug_life/uni_tshirt/matt_h_slug_life_uni_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_slug_life/uni_tshirt/matt_h_slug_life_uni_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_slug_life/uni_tshirt/matt_h_slug_life_uni_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_slug_life/uni_tshirt/matt_h_slug_life_uni_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $17.99',
+//           'Medium - $17.99',
+//           'Large - $17.99',
+//           'X-Large - $17.99',
+//           '2XL - $19.99',
+//           '3XL - $19.99',
+//           '4XL - $19.99'
+//         ],
+//         price_small:17.99,
+//         price_big:19.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Hoodies",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_slug_life/uni_hoodie/matt_h_slug_life_hoodie_black.png",
+//           "/img/shop/matt_h_collection/matt_h_slug_life/uni_hoodie/matt_h_slug_life_hoodie_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_slug_life/uni_hoodie/matt_h_slug_life_hoodie_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_slug_life/uni_hoodie/matt_h_slug_life_hoodie_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_slug_life/uni_hoodie/matt_h_slug_life_hoodie_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_slug_life/uni_hoodie/matt_h_slug_life_hoodie_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $33.99',
+//           'Medium - $33.99',
+//           'Large - $33.99',
+//           'X-Large - $33.99',
+//           '2XL - $36.99',
+//           '3XL - $36.99',
+//           '4XL - $36.99'
+//         ],
+//         price_small:33.99,
+//         price_big:36.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Premium Mens Tee Shirt",
+//         color:[
+//           "Vintage Black",
+//           "Gray",
+//           "Navy",
+//           "Ocean Blue",
+//           "Heather Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_slug_life/mens_tshirt/matt_h_slug_life_menst_vintageblack.png",
+//           "/img/shop/matt_h_collection/matt_h_slug_life/mens_tshirt/matt_h_slug_life_menst_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_slug_life/mens_tshirt/matt_h_slug_life_menst_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_slug_life/mens_tshirt/matt_h_slug_life_menst_oceanblue.png",
+//           "/img/shop/matt_h_collection/matt_h_slug_life/mens_tshirt/matt_h_slug_life_menst_heathergreen.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens V - Neck",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_slug_life/womans_vneck/matt_h_slug_life_womansv_black.png",
+//           "/img/shop/matt_h_collection/matt_h_slug_life/womans_vneck/matt_h_slug_life_womansv_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_slug_life/womans_vneck/matt_h_slug_life_womansv_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_slug_life/womans_vneck/matt_h_slug_life_womansv_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens Tee Shirt",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_slug_life/womans_tshirt/matt_h_slug_life_womans_black.png",
+//           "/img/shop/matt_h_collection/matt_h_slug_life/womans_tshirt/matt_h_slug_life_womans_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_slug_life/womans_tshirt/matt_h_slug_life_womans_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_slug_life/womans_tshirt/matt_h_slug_life_womans_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//   }
+// });
+//
+// // END SLUG LIFE
+//
+//
+// // SOCKEYE
+//
+// PacificShop.create(
+//  {
+//    name: "Sockeye",
+//    imagemock: "/img/shop/matt_h_collection/matt_h_sockeye/uni_tshirt/matt_h_sockeye_uni_white.png",
+//    image1: "/img/skiff_1_shop.jpg",
+//    image2: "/img/skiff_2_shop.jpg",
+//    image3: "/img/shop/matt_h_collection/matt_h_sockeye/uni_tshirt/matt_h_sockeye_uni_white.png",
+//    desc:"test",
+//    size:[
+//      'Small',
+//      'Medium',
+//      'Large',
+//      'X-Large',
+//      '2XL',
+//      '3XL',
+//      '4XL'
+//    ],
+//    price_small:17.99,
+//    price_big:19.99,
+//      }, function(err, announcements){
+//        if(err) {
+//   console.log(err);
+//   } else {
+//     console.log("CREATED SHOP ITEM:");
+//     console.log(announcements);
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Tee Shirts",
+//         color:["White"],
+//         images:["/img/shop/matt_h_collection/matt_h_sockeye/uni_tshirt/matt_h_sockeye_uni_white.png"],
+//         image1:"/img/shop/matt_h_collection/matt_h_sockeye/uni_tshirt/matt_h_sockeye_uni_white.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $17.99',
+//           'Medium - $17.99',
+//           'Large - $17.99',
+//           'X-Large - $17.99',
+//           '2XL - $19.99',
+//           '3XL - $19.99',
+//           '4XL - $19.99'
+//         ],
+//         price_small:17.99,
+//         price_big:19.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//     {
+//       garment: "Uni - Sex Hoodie",
+//       color:["White"],
+//       images:["/img/shop/matt_h_collection/matt_h_sockeye/uni_hoodie/matt_h_sockeye_hoodie_white.png"],
+//       image1:"/img/shop/matt_h_collection/matt_h_sockeye/uni_hoodie/matt_h_sockeye__white.png",
+//       image2:"/img/download3.jpg",
+//       image3:"/img/downloa4.jpg",
+//       size:[
+//         'Small - $33.99',
+//         'Medium - $33.99',
+//         'Large - $33.99',
+//         'X-Large - $33.99',
+//         '2XL - $36.99',
+//         '3XL - $36.99',
+//         '4XL - $36.99'
+//       ],
+//       price_small:17.99,
+//       price_big:19.99,
+//       productID:announcements._id
+//         }, function(err, announcements){
+//          if(err) {
+//       console.log(err);
+//      } else {
+//        console.log("CREATED SHOP ITEM: ");
+//        console.log(announcements);
+//      }
+//   });
+//     ProductMeta.create(
+//       {
+//         garment: "Premium Mens Tee Shirt",
+//         color:["White"],
+//         images:["/img/shop/matt_h_collection/matt_h_sockeye/mens_tshirt/matt_h_sockeye_menst_white.png"],
+//         image:"/img/download2.jpg",
+//         image1:"/img/shop/matt_h_collection/matt_h_sockeye/mens_tshirt/matt_h_sockeye_menst_white.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens V - Neck",
+//         color:["White"],
+//         images:["/img/shop/matt_h_collection/matt_h_sockeye/womans_vneck/matt_h_sockeye_womansv_white.png"],
+//         image:"/img/download2.jpg",
+//         image1:"assets/img/shop/matt_h_collection/matt_h_sockeye/womans_vneck/matt_h_sockeye_womansv_white.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens Tee Shirt",
+//         color:["White"],
+//         images:["/img/shop/matt_h_collection/matt_h_sockeye/womans_tshirt/matt_h_sockeye_womans_white.png"],
+//         image:"/img/download2.jpg",
+//         image1:"assets/img/shop/matt_h_collection/matt_h_sockeye/womans_tshirt/matt_h_sockeye_womans_white.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//   }
+// });
+//
+//
+// // END SOCKEYE
+//
+// // SURVIVAL
+//
+// PacificShop.create(
+//  {
+//    name: "Survival",
+//    imagemock: "/img/shop/matt_h_collection/matt_h_survival/matt_h_survival_mock.png",
+//    image1: "/img/skiff_1_shop.jpg",
+//    image2: "/img/skiff_2_shop.jpg",
+//    image3: "/img/shop/matt_h_collection/matt_h_survival/matt_h_survival_mock.png",
+//    desc:"test",
+//    size:[
+//      'Small',
+//      'Medium',
+//      'Large',
+//      'X-Large',
+//      '2XL',
+//      '3XL',
+//      '4XL'
+//    ],
+//    price_small:17.99,
+//    price_big:19.99,
+//      }, function(err, announcements){
+//        if(err) {
+//   console.log(err);
+//   } else {
+//     console.log("CREATED SHOP ITEM:");
+//     console.log(announcements);
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Tee Shirts",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_survival/uni_tshirt/matt_h_survival_uni_black.png",
+//           "/img/shop/matt_h_collection/matt_h_survival/uni_tshirt/matt_h_survival_uni_ash.png",
+//           "/img/shop/matt_h_collection/matt_h_survival/uni_tshirt/matt_h_survival_uni_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_survival/uni_tshirt/matt_h_survival_uni_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_survival/uni_tshirt/matt_h_survival_uni_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_survival/uni_tshirt/matt_h_survival_uni_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $17.99',
+//           'Medium - $17.99',
+//           'Large - $17.99',
+//           'X-Large - $17.99',
+//           '2XL - $19.99',
+//           '3XL - $19.99',
+//           '4XL - $19.99'
+//         ],
+//         price_small:17.99,
+//         price_big:19.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Hoodies",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_survival/uni_hoodie/matt_h_survival_hoodie_black.png",
+//           "/img/shop/matt_h_collection/matt_h_survival/uni_hoodie/matt_h_survival_hoodie_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_survival/uni_hoodie/matt_h_survival_hoodie_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_survival/uni_hoodie/matt_h_survival_hoodie_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_survival/uni_hoodie/matt_h_survival_hoodie_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_survival/uni_hoodie/matt_h_survival_hoodie_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $33.99',
+//           'Medium - $33.99',
+//           'Large - $33.99',
+//           'X-Large - $33.99',
+//           '2XL - $36.99',
+//           '3XL - $36.99',
+//           '4XL - $36.99'
+//         ],
+//         price_small:33.99,
+//         price_big:36.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Premium Mens Tee Shirt",
+//         color:[
+//           "Vintage Black",
+//           "Gray",
+//           "Navy",
+//           "Ocean Blue",
+//           "Heather Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_survival/mens_tshirt/matt_h_survival_menst_vintageblack.png",
+//           "/img/shop/matt_h_collection/matt_h_survival/mens_tshirt/matt_h_survival_menst_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_survival/mens_tshirt/matt_h_survival_menst_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_survival/mens_tshirt/matt_h_survival_menst_oceanblue.png",
+//           "/img/shop/matt_h_collection/matt_h_survival/mens_tshirt/matt_h_survival_menst_heathergreen.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens V - Neck",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_survival/womans_vneck/matt_h_survival_womansv_black.png",
+//           "/img/shop/matt_h_collection/matt_h_survival/womans_vneck/matt_h_survival_womansv_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_survival/womans_vneck/matt_h_survival_womansv_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_survival/womans_vneck/matt_h_survival_womansv_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens Tee Shirt",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_survival/womans_tshirt/matt_h_survival_womans_black.png",
+//           "/img/shop/matt_h_collection/matt_h_survival/womans_tshirt/matt_h_survival_womans_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_survival/womans_tshirt/matt_h_survival_womans_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_survival/womans_tshirt/matt_h_survival_womans_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//   }
+// });
+//
+// // END SURVIVAL
+//
+// // UFF DA
+//
+// PacificShop.create(
+//  {
+//    name: "Uff Da",
+//    imagemock: "/img/shop/matt_h_collection/matt_h_uff_da/matt_h_uff_da_mock.png",
+//    image1: "/img/skiff_1_shop.jpg",
+//    image2: "/img/skiff_2_shop.jpg",
+//    image3: "/img/shop/matt_h_collection/matt_h_uff_da/matt_h_uff_da_mock.png",
+//    desc:"test",
+//    size:[
+//      'Small',
+//      'Medium',
+//      'Large',
+//      'X-Large',
+//      '2XL',
+//      '3XL',
+//      '4XL'
+//    ],
+//    price_small:17.99,
+//    price_big:19.99,
+//      }, function(err, announcements){
+//        if(err) {
+//   console.log(err);
+//   } else {
+//     console.log("CREATED SHOP ITEM:");
+//     console.log(announcements);
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Tee Shirts",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_uff_da/uni_tshirt/matt_h_uff_da_uni_black.png",
+//           "/img/shop/matt_h_collection/matt_h_uff_da/uni_tshirt/matt_h_uff_da_uni_ash.png",
+//           "/img/shop/matt_h_collection/matt_h_uff_da/uni_tshirt/matt_h_uff_da_uni_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_uff_da/uni_tshirt/matt_h_uff_da_uni_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_uff_da/uni_tshirt/matt_h_uff_da_uni_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_uff_da/uni_tshirt/matt_h_uff_da_uni_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $17.99',
+//           'Medium - $17.99',
+//           'Large - $17.99',
+//           'X-Large - $17.99',
+//           '2XL - $19.99',
+//           '3XL - $19.99',
+//           '4XL - $19.99'
+//         ],
+//         price_small:17.99,
+//         price_big:19.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Hoodies",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_uff_da/uni_hoodie/matt_h_uff_da_hoodie_black.png",
+//           "/img/shop/matt_h_collection/matt_h_uff_da/uni_hoodie/matt_h_uff_da_hoodie_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_uff_da/uni_hoodie/matt_h_uff_da_hoodie_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_uff_da/uni_hoodie/matt_h_uff_da_hoodie_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_uff_da/uni_hoodie/matt_h_uff_da_hoodie_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_uff_da/uni_hoodie/matt_h_uff_da_hoodie_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $33.99',
+//           'Medium - $33.99',
+//           'Large - $33.99',
+//           'X-Large - $33.99',
+//           '2XL - $36.99',
+//           '3XL - $36.99',
+//           '4XL - $36.99'
+//         ],
+//         price_small:33.99,
+//         price_big:36.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Premium Mens Tee Shirt",
+//         color:[
+//           "Vintage Black",
+//           "Gray",
+//           "Navy",
+//           "Ocean Blue",
+//           "Heather Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_uff_da/mens_tshirt/matt_h_uff_da_menst_vintageblack.png",
+//           "/img/shop/matt_h_collection/matt_h_uff_da/mens_tshirt/matt_h_uff_da_menst_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_uff_da/mens_tshirt/matt_h_uff_da_menst_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_uff_da/mens_tshirt/matt_h_uff_da_menst_oceanblue.png",
+//           "/img/shop/matt_h_collection/matt_h_uff_da/mens_tshirt/matt_h_uff_da_menst_heathergreen.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens V - Neck",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_uff_da/womans_vneck/matt_h_uff_da_womansv_black.png",
+//           "/img/shop/matt_h_collection/matt_h_uff_da/womans_vneck/matt_h_uff_da_womansv_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_uff_da/womans_vneck/matt_h_uff_da_womansv_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_uff_da/womans_vneck/matt_h_uff_da_womansv_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens Tee Shirt",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_uff_da/womans_tshirt/matt_h_uff_da_womans_black.png",
+//           "/img/shop/matt_h_collection/matt_h_uff_da/womans_tshirt/matt_h_uff_da_womans_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_uff_da/womans_tshirt/matt_h_uff_da_womans_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_uff_da/womans_tshirt/matt_h_uff_da_womans_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//   }
+// });
+//
+// // END UFF DA
+//
+// // WELCOME TO ALASKA
+//
+// PacificShop.create(
+//  {
+//    name: "Welcome to Alaska",
+//    imagemock: "/img/shop/matt_h_collection/matt_h_welcome_to_alaska/matt_h_welcome_to_alaska_mock.png",
+//    image1: "/img/skiff_1_shop.jpg",
+//    image2: "/img/skiff_2_shop.jpg",
+//    image3: "/img/shop/matt_h_collection/matt_h_welcome_to_alaska/matt_h_welcome_to_alaska_mock.png",
+//    desc:"test",
+//    size:[
+//      'Small',
+//      'Medium',
+//      'Large',
+//      'X-Large',
+//      '2XL',
+//      '3XL',
+//      '4XL'
+//    ],
+//    price_small:17.99,
+//    price_big:19.99,
+//      }, function(err, announcements){
+//        if(err) {
+//   console.log(err);
+//   } else {
+//     console.log("CREATED SHOP ITEM:");
+//     console.log(announcements);
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Tee Shirts",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_welcome_to_alaska/uni_tshirt/matt_h_welcome_to_alaska_uni_black.png",
+//           "/img/shop/matt_h_collection/matt_h_welcome_to_alaska/uni_tshirt/matt_h_welcome_to_alaska_uni_ash.png",
+//           "/img/shop/matt_h_collection/matt_h_welcome_to_alaska/uni_tshirt/matt_h_welcome_to_alaska_uni_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_welcome_to_alaska/uni_tshirt/matt_h_welcome_to_alaska_uni_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_welcome_to_alaska/uni_tshirt/matt_h_welcome_to_alaska_uni_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_welcome_to_alaska/uni_tshirt/matt_h_welcome_to_alaska_uni_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $17.99',
+//           'Medium - $17.99',
+//           'Large - $17.99',
+//           'X-Large - $17.99',
+//           '2XL - $19.99',
+//           '3XL - $19.99',
+//           '4XL - $19.99'
+//         ],
+//         price_small:17.99,
+//         price_big:19.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Hoodies",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_welcome_to_alaska/uni_hoodie/matt_h_welcome_to_alaska_hoodie_black.png",
+//           "/img/shop/matt_h_collection/matt_h_welcome_to_alaska/uni_hoodie/matt_h_welcome_to_alaska_hoodie_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_welcome_to_alaska/uni_hoodie/matt_h_welcome_to_alaska_hoodie_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_welcome_to_alaska/uni_hoodie/matt_h_welcome_to_alaska_hoodie_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_welcome_to_alaska/uni_hoodie/matt_h_welcome_to_alaska_hoodie_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_welcome_to_alaska/uni_hoodie/matt_h_welcome_to_alaska_hoodie_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $33.99',
+//           'Medium - $33.99',
+//           'Large - $33.99',
+//           'X-Large - $33.99',
+//           '2XL - $36.99',
+//           '3XL - $36.99',
+//           '4XL - $36.99'
+//         ],
+//         price_small:33.99,
+//         price_big:36.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Premium Mens Tee Shirt",
+//         color:[
+//           "Vintage Black",
+//           "Gray",
+//           "Navy",
+//           "Ocean Blue",
+//           "Heather Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_welcome_to_alaska/mens_tshirt/matt_h_welcome_to_alaska_menst_vintageblack.png",
+//           "/img/shop/matt_h_collection/matt_h_welcome_to_alaska/mens_tshirt/matt_h_welcome_to_alaska_menst_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_welcome_to_alaska/mens_tshirt/matt_h_welcome_to_alaska_menst_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_welcome_to_alaska/mens_tshirt/matt_h_welcome_to_alaska_menst_oceanblue.png",
+//           "/img/shop/matt_h_collection/matt_h_welcome_to_alaska/mens_tshirt/matt_h_welcome_to_alaska_menst_heathergreen.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens V - Neck",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_welcome_to_alaska/womans_vneck/matt_h_welcome_to_alaska_womansv_black.png",
+//           "/img/shop/matt_h_collection/matt_h_welcome_to_alaska/womans_vneck/matt_h_welcome_to_alaska_womansv_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_welcome_to_alaska/womans_vneck/matt_h_welcome_to_alaska_womansv_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_welcome_to_alaska/womans_vneck/matt_h_welcome_to_alaska_womansv_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens Tee Shirt",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_welcome_to_alaska/womans_tshirt/matt_h_welcome_to_alaska_womans_black.png",
+//           "/img/shop/matt_h_collection/matt_h_welcome_to_alaska/womans_tshirt/matt_h_welcome_to_alaska_womans_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_welcome_to_alaska/womans_tshirt/matt_h_welcome_to_alaska_womans_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_welcome_to_alaska/womans_tshirt/matt_h_welcome_to_alaska_womans_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//   }
+// });
+//
+// // END WELCOME TO ALASKA
+//
+// // WIFI
+//
+// PacificShop.create(
+//  {
+//    name: "WiFi",
+//    imagemock: "/img/shop/matt_h_collection/matt_h_wifi/matt_h_wifi_mock.png",
+//    image1: "/img/skiff_1_shop.jpg",
+//    image2: "/img/skiff_2_shop.jpg",
+//    image3: "/img/shop/matt_h_collection/matt_h_wifi/matt_h_wifi_mock.png",
+//    desc:"test",
+//    size:[
+//      'Small',
+//      'Medium',
+//      'Large',
+//      'X-Large',
+//      '2XL',
+//      '3XL',
+//      '4XL'
+//    ],
+//    price_small:17.99,
+//    price_big:19.99,
+//      }, function(err, announcements){
+//        if(err) {
+//   console.log(err);
+//   } else {
+//     console.log("CREATED SHOP ITEM:");
+//     console.log(announcements);
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Tee Shirts",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_wifi/uni_tshirt/matt_h_wifi_uni_black.png",
+//           "/img/shop/matt_h_collection/matt_h_wifi/uni_tshirt/matt_h_wifi_uni_ash.png",
+//           "/img/shop/matt_h_collection/matt_h_wifi/uni_tshirt/matt_h_wifi_uni_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_wifi/uni_tshirt/matt_h_wifi_uni_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_wifi/uni_tshirt/matt_h_wifi_uni_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_wifi/uni_tshirt/matt_h_wifi_uni_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $17.99',
+//           'Medium - $17.99',
+//           'Large - $17.99',
+//           'X-Large - $17.99',
+//           '2XL - $19.99',
+//           '3XL - $19.99',
+//           '4XL - $19.99'
+//         ],
+//         price_small:17.99,
+//         price_big:19.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Hoodies",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_wifi/uni_hoodie/matt_h_wifi_hoodie_black.png",
+//           "/img/shop/matt_h_collection/matt_h_wifi/uni_hoodie/matt_h_wifi_hoodie_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_wifi/uni_hoodie/matt_h_wifi_hoodie_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_wifi/uni_hoodie/matt_h_wifi_hoodie_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_wifi/uni_hoodie/matt_h_wifi_hoodie_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_wifi/uni_hoodie/matt_h_wifi_hoodie_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $33.99',
+//           'Medium - $33.99',
+//           'Large - $33.99',
+//           'X-Large - $33.99',
+//           '2XL - $36.99',
+//           '3XL - $36.99',
+//           '4XL - $36.99'
+//         ],
+//         price_small:33.99,
+//         price_big:36.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Premium Mens Tee Shirt",
+//         color:[
+//           "Vintage Black",
+//           "Gray",
+//           "Navy",
+//           "Ocean Blue",
+//           "Heather Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_wifi/mens_tshirt/matt_h_wifi_menst_vintageblack.png",
+//           "/img/shop/matt_h_collection/matt_h_wifi/mens_tshirt/matt_h_wifi_menst_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_wifi/mens_tshirt/matt_h_wifi_menst_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_wifi/mens_tshirt/matt_h_wifi_menst_oceanblue.png",
+//           "/img/shop/matt_h_collection/matt_h_wifi/mens_tshirt/matt_h_wifi_menst_heathergreen.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens V - Neck",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_wifi/womans_vneck/matt_h_wifi_womansv_black.png",
+//           "/img/shop/matt_h_collection/matt_h_wifi/womans_vneck/matt_h_wifi_womansv_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_wifi/womans_vneck/matt_h_wifi_womansv_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_wifi/womans_vneck/matt_h_wifi_womansv_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens Tee Shirt",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_wifi/womans_tshirt/matt_h_wifi_womans_black.png",
+//           "/img/shop/matt_h_collection/matt_h_wifi/womans_tshirt/matt_h_wifi_womans_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_wifi/womans_tshirt/matt_h_wifi_womans_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_wifi/womans_tshirt/matt_h_wifi_womans_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//   }
+// });
+//
+// // END WIFI
+//
+// // YELLOW EYE
+//
+// PacificShop.create(
+//  {
+//    name: "Yellow eye",
+//    imagemock: "/img/shop/matt_h_collection/matt_h_yellow_eye/matt_h_yellow_eye_mock.png",
+//    image1: "/img/skiff_1_shop.jpg",
+//    image2: "/img/skiff_2_shop.jpg",
+//    image3: "/img/shop/matt_h_collection/matt_h_yellow_eye/matt_h_yellow_eye_mock.png",
+//    desc:"test",
+//    size:[
+//      'Small',
+//      'Medium',
+//      'Large',
+//      'X-Large',
+//      '2XL',
+//      '3XL',
+//      '4XL'
+//    ],
+//    price_small:17.99,
+//    price_big:19.99,
+//      }, function(err, announcements){
+//        if(err) {
+//   console.log(err);
+//   } else {
+//     console.log("CREATED SHOP ITEM:");
+//     console.log(announcements);
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Tee Shirts",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_yellow_eye/uni_tshirt/matt_h_yellow_eye_uni_black.png",
+//           "/img/shop/matt_h_collection/matt_h_yellow_eye/uni_tshirt/matt_h_yellow_eye_uni_ash.png",
+//           "/img/shop/matt_h_collection/matt_h_yellow_eye/uni_tshirt/matt_h_yellow_eye_uni_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_yellow_eye/uni_tshirt/matt_h_yellow_eye_uni_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_yellow_eye/uni_tshirt/matt_h_yellow_eye_uni_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_yellow_eye/uni_tshirt/matt_h_yellow_eye_uni_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $17.99',
+//           'Medium - $17.99',
+//           'Large - $17.99',
+//           'X-Large - $17.99',
+//           '2XL - $19.99',
+//           '3XL - $19.99',
+//           '4XL - $19.99'
+//         ],
+//         price_small:17.99,
+//         price_big:19.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Uni - Sex Hoodies",
+//         color:[
+//           "Black",
+//           "Gray",
+//           "Navy",
+//           "Royal",
+//           "Dk Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_yellow_eye/uni_hoodie/matt_h_yellow_eye_hoodie_black.png",
+//           "/img/shop/matt_h_collection/matt_h_yellow_eye/uni_hoodie/matt_h_yellow_eye_hoodie_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_yellow_eye/uni_hoodie/matt_h_yellow_eye_hoodie_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_yellow_eye/uni_hoodie/matt_h_yellow_eye_hoodie_royal.png",
+//           "/img/shop/matt_h_collection/matt_h_yellow_eye/uni_hoodie/matt_h_yellow_eye_hoodie_dkgreen.png"
+//         ],
+//         image1:"/img/shop/matt_h_collection/matt_h_yellow_eye/uni_hoodie/matt_h_yellow_eye_hoodie_black.png",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         size:[
+//           'Small - $33.99',
+//           'Medium - $33.99',
+//           'Large - $33.99',
+//           'X-Large - $33.99',
+//           '2XL - $36.99',
+//           '3XL - $36.99',
+//           '4XL - $36.99'
+//         ],
+//         price_small:33.99,
+//         price_big:36.99,
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Premium Mens Tee Shirt",
+//         color:[
+//           "Vintage Black",
+//           "Gray",
+//           "Navy",
+//           "Ocean Blue",
+//           "Heather Green"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_yellow_eye/mens_tshirt/matt_h_yellow_eye_menst_vintageblack.png",
+//           "/img/shop/matt_h_collection/matt_h_yellow_eye/mens_tshirt/matt_h_yellow_eye_menst_gray.png",
+//           "/img/shop/matt_h_collection/matt_h_yellow_eye/mens_tshirt/matt_h_yellow_eye_menst_navy.png",
+//           "/img/shop/matt_h_collection/matt_h_yellow_eye/mens_tshirt/matt_h_yellow_eye_menst_oceanblue.png",
+//           "/img/shop/matt_h_collection/matt_h_yellow_eye/mens_tshirt/matt_h_yellow_eye_menst_heathergreen.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens V - Neck",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"
+//         ],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_yellow_eye/womans_vneck/matt_h_yellow_eye_womansv_black.png",
+//           "/img/shop/matt_h_collection/matt_h_yellow_eye/womans_vneck/matt_h_yellow_eye_womansv_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_yellow_eye/womans_vneck/matt_h_yellow_eye_womansv_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_yellow_eye/womans_vneck/matt_h_yellow_eye_womansv_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//     ProductMeta.create(
+//       {
+//         garment: "Womens Tee Shirt",
+//         color:[
+//           "Black",
+//           "New Navy",
+//           "Dark Fuchsia",
+//           "Deep Royal"],
+//         images:[
+//           "/img/shop/matt_h_collection/matt_h_yellow_eye/womans_tshirt/matt_h_yellow_eye_womans_black.png",
+//           "/img/shop/matt_h_collection/matt_h_yellow_eye/womans_tshirt/matt_h_yellow_eye_womans_newnavy.png",
+//           "/img/shop/matt_h_collection/matt_h_yellow_eye/womans_tshirt/matt_h_yellow_eye_womans_darkfuchsia.png",
+//           "/img/shop/matt_h_collection/matt_h_yellow_eye/womans_tshirt/matt_h_yellow_eye_womans_deeproyal.png"
+//         ],
+//         image:"/img/download2.jpg",
+//         image1:"/img/download.jpg",
+//         image2:"/img/download3.jpg",
+//         image3:"/img/downloa4.jpg",
+//         price_small:19.99,
+//         price_big:21.99,
+//         size:[
+//           'Small - $19.99',
+//           'Medium - $19.99',
+//           'Large - $19.99',
+//           'X-Large - $19.99',
+//           '2XL - $21.99',
+//           '3XL - $21.99',
+//           '4XL - $21.99'
+//         ],
+//         productID:announcements._id
+//           }, function(err, announcements){
+//            if(err) {
+//         console.log(err);
+//        } else {
+//          console.log("CREATED SHOP ITEM: ");
+//          console.log(announcements);
+//        }
+//     });
+//   }
+// });
+//
+// // END YELLOW EYE
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -4859,6 +9880,6 @@ app.get("/size", function(req, res){
 });
 
 
-app.listen(process.env.PORT || 8002, function(){
+app.listen(process.env.PORT || 8080, function(){
   console.log(`Pacific Printing Server Is Running`);
 });
